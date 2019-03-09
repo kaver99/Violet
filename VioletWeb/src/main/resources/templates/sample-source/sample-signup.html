@@ -1,0 +1,53 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" layout:decorate="~{layout/main-layout}" >
+<head>
+    <title>Violet Shop</title>
+    
+    <!--/*  User Css Start  */-->
+    <th:block layout:fragment="user-css">
+    	<link rel="stylesheet" type="text/css" th:href="@{/css/login/signup.css}" />
+    </th:block>
+    <!--/*  User Css End  */-->
+</head>
+<body>
+    <div layout:fragment="content">
+        <div class="wizard-main-card" style="background-image: url('../img/page-title.png')">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-sm-10 col-sm-offset-2">
+                        <!--      Wizard container        -->
+                        <div class="container">
+                            <div class="card wizard-card" data-color="purple" id="wizard">
+                                <form th:action="@{/signup.violet}" method="POST" novalidate="novalidate">
+                                <!--        You can switch " data-color="rose" "  with one of the next bright colors: "blue", "green", "orange", "purple"        -->
+
+                                    <div class="wizard-header">
+                                        <h3 class="wizard-title">Sign Up</h3>
+                                        <h5>Violet eCommers</h5>
+                                    </div>
+                                    <div class="wizard-navigation">
+                                        <ul class="nav nav-pills content-center">
+<!--                                             <li class="badge badge-pill badge-primary" style="width: 25%;"><h6>Certification</h6></li> -->
+                                            <li class="badge badge-pill badge-primary" style="width: 25%;"><h6>Account</h6></li>
+                                            <li class="badge" style="width: 25%;"><h6>Address</h6></li>
+                                            <li class="badge" style="width: 25%;"><h6>About</h6></li>
+                                        </ul>
+                                    </div>
+<!--                                     <div th:replace="login/signup-cert :: signup-cert"></div> -->
+									<div th:replace="login/signup-account :: signup-account"></div>
+
+                                </form>
+                            </div>
+                        </div> <!-- wizard container -->
+                    </div>
+                </div> <!-- row -->
+            </div>
+        </div>
+    </div>
+
+    <!--/*  User JS Start  */-->
+    <script type="text/javascript">
+    </script>
+    <!--/*  User JS End  */-->
+</body>
+</html>

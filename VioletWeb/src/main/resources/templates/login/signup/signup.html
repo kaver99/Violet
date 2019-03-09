@@ -1,0 +1,368 @@
+<!DOCTYPE html SYSTEM "http://www.thymeleaf.org/dtd/xhtml1-strict-thymeleaf-4.dtd">
+<html xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" layout:decorate="~{layout/main-layout}" >
+<head>
+    <title>Violet Shop</title>
+    
+    <!--/*  User Css Start  */-->
+	<link rel="stylesheet" type="text/css" th:href="@{/css/login/avatar/avatar.css}" />
+    <link rel="stylesheet" type="text/css" th:href="@{/css/login/signup/signup.css}" />
+    <!--/*  User Css End  */-->
+</head>
+<body>
+    <div layout:fragment="content" th:remove="tag">
+	    <div class="profile-page sidebar-collapse text-center">
+			<div class="page-header header-filter" data-parallax="true" style="background-image: url(&quot;../assets/img/city-profile.jpg&quot;);"></div>
+			
+			<div class="main main-raised col-md-6" style="display: inline-block; top: -100px;">
+				<div class="profile-content">
+    				<div class="container">
+      					<div class="form-row" style="margin: 25px;">
+							<div class="col-md-12 ml-auto mr-auto">
+							<form class="form" method="post" th:action="@{/signup.violet}" enctype="multipart/form-data" autocomplete="off">
+								<div class="avatar">
+									<label for="imageUpload">
+										<div id="imagePreview" style="display: inline-block;">
+											<div id="btn-icon" draggable="false">
+												<i class="material-icons" style="font-size: 5rem;">account_circle</i><h6>Click Here</h6>
+											</div>
+										</div>
+									</label>
+						            <input type='file' id="imageUpload" name="imageUpload" accept=".png, .jpg, .jpeg" readonly />
+								</div>
+								<!--/* Tab Menu Start */-->
+								<div class="col-md-12">
+									<ul class="nav nav-pills nav-pills-rose justify-content-center">
+										<li class="nav-item">
+											<a class="nav-link avoid-clicks float-left active" href="#step1" data-toggle="tab" style="margin-right: 20px;">
+												<i class="material-icons">verified_user</i> Certification
+											</a>
+											<a class="nav-link avoid-clicks float-left" href="#step2" data-toggle="tab" style="margin-right: 20px;">
+												<i class="material-icons">assignment_late</i> Agreement
+											</a>
+											<a class="nav-link avoid-clicks float-left" href="#step3" data-toggle="tab" style="margin-right: 20px;">
+												<i class="material-icons">assignment_ind</i> Details
+											</a>
+											<a class="nav-link avoid-clicks float-left" href="#step4" data-toggle="tab">
+												<i class="material-icons">how_to_vote</i> Address
+											</a>
+										</li>
+									</ul>
+									<hr/>
+								</div>
+								<!--/* Tab Menu End */-->
+								<div class="tab-content tab-space">
+									<!--/* Agreement Start */-->
+									<div class="tab-pane active" id="step1">
+										<div th:replace="login/signup/signup_certification :: signup_certification"></div>
+										<br/>
+										<div class="float-left" id="back-btn" style="display: flex;">
+											<a class="btn btn-default btn-lg text-white">
+												<i class="material-icons">arrow_back_ios</i>
+												BACK
+											</a>
+										</div>
+										
+										<div class="float-right" id="next-btn" style="display: flex;">
+											<a class="btn btn-primary btn-lg text-white">
+												NEXT
+												<i class="material-icons">arrow_forward_ios</i>
+											</a>
+										</div>
+									</div>
+									<!--/* Agreement End */-->
+									
+									<!--/* Certification Start */-->
+									<div class="tab-pane" id="step2">
+										<div th:replace="login/signup/signup_agreement :: signup_agreement"></div>
+										<br/>
+										<div class="float-left" id="back-btn" style="display: flex;">
+											<a class="btn btn-primary btn-lg text-white">
+												<i class="material-icons">arrow_back_ios</i>
+												BACK
+											</a>
+										</div>
+										
+										<div class="float-right" id="next-btn" style="display: flex;">
+											<a class="btn btn-primary btn-lg text-white">
+												NEXT
+												<i class="material-icons">arrow_forward_ios</i>
+											</a>
+										</div>
+									</div>
+									<!--/* Certification End */-->
+									
+									<!--/* Details Start */-->
+									<div class="tab-pane" id="step3">
+										<div th:replace="login/signup/signup_detail :: signup_detail"></div>
+										<br/>
+										<div class="float-left" id="back-btn" style="display: flex;">
+											<a class="btn btn-primary btn-lg text-white">
+												<i class="material-icons">arrow_back_ios</i>
+												BACK
+											</a>
+										</div>
+										
+										<div class="float-right" id="next-btn" style="display: flex;">
+											<a class="btn btn-primary btn-lg text-white">
+												NEXT
+												<i class="material-icons">arrow_forward_ios</i>
+											</a>
+										</div>
+									</div>
+									<!--/* Details End */-->
+									
+									<!--/* Address Start */-->
+									<div class="tab-pane" id="step4">
+										<div th:replace="login/signup/signup_address :: signup_address"></div>
+										<br/>
+										<div class="float-left" id="back-btn" style="display: flex;">
+											<a class="btn btn-primary btn-lg text-white">
+												<i class="material-icons">arrow_back_ios</i>
+												BACK
+											</a>
+										</div>
+										
+										<div class="float-right" id="finish-btn" style="display: flex;">
+											<button type="submit" class="btn btn-success btn-wd btn-lg"><i class="material-icons">check</i> Finish</button>
+										</div>
+									</div>
+								</div>
+							</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+	    </div>
+	    <!--/* Error Alert START */-->
+	    <div th:replace="common/alert :: alert"></div>
+	    <!--/* Error Alert END */-->
+	</div>
+<!--/*  User JS Start  */-->
+<th:block layout:fragment="user-js">
+	<script src="http://dmaps.daum.net/map_js_init/postcode.v2.js"></script>
+	<script th:src="@{/js/signup/validation.js}"></script>
+	
+	<script type="text/javascript">
+		/*[- Img Thumbnail Input Preview -]*/
+		var changeYN = false;
+		function readURL(input) {
+// 			console.log("filename : " +input.files[0].name);
+		    if (input.files && input.files[0]) {
+		        var reader = new FileReader();
+		        reader.onload = function(e) {
+		            $("#imagePreview").css("background-image", "url("+e.target.result +")");
+		            $("#imagePreview").hide();
+		            $("#imagePreview").fadeIn(650, function(){
+		            	changeYN = true;
+		            	$(".avatar > label").attr("for", "btn-icon");
+		            });
+		        }
+		        reader.readAsDataURL(input.files[0]);
+		        
+		    }
+		}
+		
+		/*[- Img Thumbnail -]*/
+		$("#imageUpload").change(function() {
+			$("#btn-icon").css("opacity", "0");
+			$("#btn-icon").html('<i class="material-icons" style="font-size: 5rem;">highlight_off</i><h6>Default Thumbnail</h6>');
+			readURL(this);
+		});
+		
+		$("#btn-icon").click(function() {
+			$("#btn-icon").css("opacity", "1");
+			$("#btn-icon").html('<i class="material-icons" style="font-size: 5rem;">account_circle</i><h6>Click Here</h6>');
+			$("#imageUpload").val("");
+			$("#imagePreview").css("background-image", "");
+            $("#imagePreview").hide();
+            $("#imagePreview").fadeIn(650, function(){
+            	$(".avatar > label").attr("for", "imageUpload");
+            });
+            changeYN = false;
+			
+		});
+		
+		$("#imagePreview").hover(
+			// after
+			function() {
+				$("#btn-icon").css("opacity", "1");
+				$("#btn-icon").css("background-color", "rgba(0,0,0,0.4)");
+				
+			// before
+			}, function() {
+				if(changeYN === true) {
+					$("#btn-icon").css("opacity", "0");
+				} else {
+					$("#btn-icon").css("opacity", "1");
+				}
+				$("#btn-icon").css("background-color", "");
+			}
+		);
+		
+		/*[- --------------------------------------------------------- -]*/
+		/*[- [back] / [next] button Event -]*/
+		/*[- BACK Button -]*/
+			$("#back-btn > a").click(function() {
+				$(".nav-item > .active").prev(".nav-link").trigger("click");
+			});
+			
+			/*[- NEXT Button -]*/
+			$("#next-btn > a").click(function() {
+				var step = $(".tab-content > .active").attr("id");
+				if(nextValidation(step) == true) {
+	  				$(".nav-item > .active").next(".nav-link").trigger("click");
+				}
+			});
+			
+			$("#finish-btn > a").click(function() {
+				var status = "[[${status == null ? '' : status}]]";
+				var content = "[[${errMsg == null ? '' : errMsg}]]";
+				alertCallEvent(status, content);
+			});
+		
+		/*[- --------------------------------------------------------- -]*/
+		/*[- inputbox & checkbox validation check -]*/
+		function nextValidation(step) {
+			$("#terms-of-service-chkbox").val('N');
+			$("#personal-information-chkbox").val('N');
+			$("#event-alarm-chkbox").val('N');
+			
+			/*[- CERTIFICATION -]*/
+			if(step === "step1") {
+				return certification_validation();
+				
+			/*[- AGREEMENT -]*/
+			} else if(step === "step2") {
+				return agreement_validation();
+				
+			/*[- DETAILS -]*/
+			} else if(step === "step3") {
+				return details_validation();
+
+			/*[- ADDRESS -]*/	
+			} else if(step === "step4") {
+				return address_validation();
+				
+			}
+		}
+
+		/*[- --------------------------------------------------------- -]*/
+		/*[- agreement CheckBox Event -]*/
+		$(function(){ 
+			/*[- [전체 선택 체크박스] 클릭 시 -]*/
+			$("#all-chkbox").click(function(){ 
+				/*[- [전체 선택 체크박스]가 체크된상태일경우 -]*/
+				if($("#all-chkbox").prop("checked")) { 
+					/*[- 화면 내 모든 checkbox를 체크 해준다 -]*/
+					$("input[type=checkbox]").prop("checked",true); 
+				// [전체 선택 체크박스]가 해제된 경우 
+				} else { 
+					/*[- 화면 내 모든 checkbox 체크를 해제 시킨다. -]*/ 
+					$("input[type=checkbox]").prop("checked",false); 
+				} 
+			});
+			
+			/*[- [개별로 체크박스] 클릭 시 -]*/ 
+			$("input[type=checkbox]").not("#all-chkbox").click(function(){ 
+				/*[- [전체용 체크박스]가 체크된상태일경우 -]*/
+				$("#all-chkbox").prop("checked",false); 
+			}); 
+		});
+		
+		/*[- --------------------------------------------------------- -]*/
+		/*[- email check and ajax user email using check -]*/
+		function checkId() {
+			var username = $('#username').val();
+			var regExp = /^[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*@[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*.[a-zA-Z]{2,3}$/i;
+
+			if(regExp.test(username)) {
+				setTimeout(function () {
+					$.ajax({
+						url: '/signup/userChk.violet'
+						,type: 'post'
+						,data: {username:username}
+						,success: function(data) {
+							if($.trim(data) == 0) {
+								$('#usernameInput').removeClass("has-danger");
+								$('#usernameInput').addClass("has-success");
+								$('#usernameInput > .form-control-feedback').html('<i class="material-icons">done</i>');
+								
+							} else {
+								$('#usernameInput').removeClass("has-success");
+								$('#usernameInput').addClass("has-danger");
+								$('#usernameInput > .form-control-feedback').html('<i class="material-icons">clear</i>');
+								
+							}
+						}
+						,error: function(msg) {
+		// 					$('.modal-domain').add('<div th:replace="menu/modal :: modal" th:remove="tag"></div>');
+						}
+					})
+				}, 500);
+				
+			} else {
+				$('#usernameInput').removeClass("has-success");
+				$('#usernameInput').addClass("has-danger");
+				$('.form-control-feedback').html('<i class="material-icons">clear</i>');
+				
+			}
+		}
+		
+		/*[- --------------------------------------------------------- -]*/
+	    /*[- DAUM ZipCode API -]*/
+	    function execDaumPostcode() {
+	        new daum.Postcode({
+	            oncomplete: function(data) {
+	            	/*[- 팝업에서 검색결과 항목을 클릭했을때 실행할 코드를 작성하는 부분. -]*/
+	
+	                /*[- 도로명 주소의 노출 규칙에 따라 주소를 조합한다. -]*/
+	                /*[- 내려오는 변수가 값이 없는 경우엔 공백('')값을 가지므로, 이를 참고하여 분기 한다. -]*/
+	                var fullRoadAddr = data.roadAddress; // 도로명 주소 변수
+	                var extraRoadAddr = ''; // 도로명 조합형 주소 변수
+	
+	                /*[- 법정동명이 있을 경우 추가한다. (법정리는 제외) -]*/
+	                /*[- 법정동의 경우 마지막 문자가 "동/로/가"로 끝난다. -]*/
+	                if(data.bname !== '' && /[동|로|가]$/g.test(data.bname)){
+	                    extraRoadAddr += data.bname;
+	                }
+	                /*[- 건물명이 있고, 공동주택일 경우 추가한다. -]*/
+	                if(data.buildingName !== '' && data.apartment === 'Y'){
+	                   extraRoadAddr += (extraRoadAddr !== '' ? ', ' + data.buildingName : data.buildingName);
+	                }
+	                /*[- 도로명, 지번 조합형 주소가 있을 경우, 괄호까지 추가한 최종 문자열을 만든다. -]*/
+	                if(extraRoadAddr !== ''){
+	                    extraRoadAddr = ' (' + extraRoadAddr + ')';
+	                }
+	                /*[- 도로명, 지번 주소의 유무에 따라 해당 조합형 주소를 추가한다. -]*/
+	                if(fullRoadAddr !== ''){
+	                    fullRoadAddr += extraRoadAddr;
+	                }
+	
+	                /*[- 우편번호와 주소 정보를 해당 필드에 넣는다. -]*/
+	                document.getElementById('post_code').value = data.zonecode; /*[- 5자리 새 우편번호 사용 -]*/
+	                document.getElementById('addr').value = fullRoadAddr;
+	                document.getElementById('jibun_addr').innerHTML = '<h6 style="float: left; margin: 0;">지번) ' + data.jibunAddress + '</h6>';
+	
+	                /*[- 사용자가 '선택 안함'을 클릭한 경우, 예상 주소라는 표시를 해준다. -]*/
+	                if(data.autoRoadAddress) {
+	                	/*[- 예상되는 도로명 주소에 조합형 주소를 추가한다. -]*/
+	                    var expRoadAddr = data.autoRoadAddress + extraRoadAddr;
+	                    document.getElementById('guide').innerHTML = '(예상 도로명 주소 : ' + expRoadAddr + ')';
+	
+	                } else if(data.autoJibunAddress) {
+	                    var expJibunAddr = data.autoJibunAddress;
+	                    document.getElementById('guide').innerHTML = '(예상 지번 주소 : ' + expJibunAddr + ')';
+	
+	                } else {
+	                    document.getElementById('guide').innerHTML = '';
+	                }
+	            }
+	        }).open();
+	        document.getElementById('sub_addr').focus();
+	    }
+	</script>
+</th:block>
+<!--/*  User JS End  */-->
+</body>
+</html>

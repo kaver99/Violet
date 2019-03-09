@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+    <!-- SEARCH START -->
+    <div class="input-group">
+        <input type="text" class="form-control" placeholder="Search text">
+        <button class="btn btn-primary btn-fab btn-round" data-toggle="tooltip" data-placement="bottom" title="SEARCH">
+            <i class="material-icons">search</i>
+        </button>
+    </div>
+    <!-- SEARCH END -->
+    <!-- TAG LIST START -->
+    <div class="tag-field">
+        <H4 class="card-title">#Tag</H4>
+        <div class="tag-list" style="display: flex; float: left;">
+            <a th:href="@{#?tag=trending}" src=""><h6 class="text-rose">#TRENDING</h6></a>
+            <a th:href="@{#?tag=hot}" src=""><h6 class="text-rose"> #HOT</h6></a>
+            <a th:href="@{#?tag=summer}" src=""><h6 class="text-rose">#SUMMER</h6></a>
+        </div>
+    </div>
+    <!-- TAG LIST END -->
+</body>
+</html>

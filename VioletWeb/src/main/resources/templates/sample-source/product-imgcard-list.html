@@ -1,0 +1,67 @@
+<div th:fragment="product-imgcard-list" class="card card-nav-tabs">
+    <!--  Card Body Start  -->
+    <div class="card-body">
+        <h3 class="card-title"><font class="text-primary">T</font>rend</h3>
+        <h6 class="card-category text-left text-info">Home &nbsp; &gt; &nbsp; Trend Items</h6>
+        <div class="related-products">
+            <div class="row">
+                <!--  Data List Start  -->
+                <div th:if="${#lists.size(trendList)} > 0" th:remove="tag">
+                <div th:each="dataLists : ${trendList}" th:remove="tag">
+                <!--  Card List Start  -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="card">
+                        <div class="border card-img-top ih-item square effect3 bottom_to_top cardlist-img">
+                            <a href="/itemDetail.violet" th:href="@{/itemDetail.violet(itemId=${dataLists.item_id})}">
+                                <img class="img" th:src="@{${'/img_upload/detail/' + dataLists.item_id + '/' + dataLists.img_path1}}" alt="Img" />
+                                <!-- <div class="img" th:style="'background-image:url(' + './img_upload/detail/' + ${dataLists.item_id} + '/' + ${dataLists.img_path1} + '); height: 380px;'"></div> -->
+                                <div class="info">
+                                    <p>Stylist by&nbsp;</p>
+                                    <h3><span th:text="${dataLists.stylist_name}" /></h3>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="card-body">
+                            <h6 class="card-category text-rose">[ <span th:text="${dataLists.class_item}" /> ]</h6>
+                            <p class="card-title text-primary"> <span th:text="${dataLists.title}" /> </p>
+                            <div class="stats">
+                                <span class="price-float-left"><h5 class="price">$<span th:text="${#numbers.formatInteger(dataLists.price, 0, 'COMMA')}" /></h5></span>
+                                <span class="fa-float-right">
+                                    <a href="/favorite.violet" th:href="@{/itemDetail.violet(userId=,itemId=${dataLists.item_id})}" rel="tooltip" title="Favorite" data-original-title="Saved to Wishlist">
+                                        <i class="material-icons text-primary">favorite</i>
+                                    </a>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--  Card List End  -->
+                </div>
+                </div>
+                <!--  Data List End  -->
+
+                <!--  No-Data List Start  -->
+                <div th:unless="${#lists.size(trendList)} > 0" th:remove="tag">
+                <!--  Card List Start  -->
+                    <div class="col-lg-12 col-md-12">
+                        <span class="text-center text-primary font-weight-bold font-italic"><H3>Item does not exist.</H3></span>
+                    </div>
+                <!--  Card List End  -->
+                </div>
+                <!--  No-Data List End  -->
+
+            </div>
+        </div>
+
+    </div>
+    <!--  Card Body End  -->
+    <!--  Card Footer Start  -->
+    <div th:if="${#lists.size(trendList)} > 0" th:remove="tag">
+    <div class="card-footer justify-content-center">
+        <a href="#more" class="btn btn-primary">
+            <i class="material-icons">add</i>MORE
+        </a>
+    </div>
+    </div>
+    <!--  Card Footer End  -->
+</div>

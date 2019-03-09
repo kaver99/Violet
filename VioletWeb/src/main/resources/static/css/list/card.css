@@ -1,0 +1,31 @@
+@charset "UTF-8";
+
+/* .card-body { */
+/*     padding: 0.9rem !important; */
+/* } */
+
+.card-category {
+    margin: 0 !important;
+}
+
+.card-footer {
+    display: block !important;
+    padding: 0 !important;
+}
+
+.card-title-label-primary {
+    border-left: 5px solid #9c27b0;
+}
+
+.card-img {
+	height: 350px;
+	background-size: cover;
+	border-radius: 5px;
+}
+
+.card-circle {
+	display: inline-block;
+	width: 200px;
+	height: 200px;
+	margin: 25px;
+}

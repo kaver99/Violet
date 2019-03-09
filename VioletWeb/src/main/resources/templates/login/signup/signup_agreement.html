@@ -1,0 +1,66 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org" >
+<head>
+    <title>Violet Shop</title>
+</head>
+<body>
+<div th:fragment="signup_agreement" th:remove="tag">
+<div class="profile text-left">
+	<div class="form-group">
+		<div class="form-check">
+		    <label class="form-check-label">
+		        <input class="form-check-input" id="all-chkbox" type="checkbox">
+		        <span class="form-check-sign">
+		            <span class="check"></span>
+		        </span>
+		        <b class="">이용약관, 개인정보 수집 및 이용, 프로모션 안내 메일 수신(선택)에 모두 동의합니다.</b>
+		    </label>
+	  	</div>
+	</div>
+	
+	<!--/* VIOLET 이용약관 동의 START */-->
+	<div class="form-group">
+		<div class="form-check">
+		    <label class="form-check-label">
+		        <input class="form-check-input" id="terms-of-service-chkbox" name="terms-of-service-chkbox" type="checkbox">
+		        <span class="form-check-sign">
+		            <span class="check"></span>
+		        </span>
+		        <b class="">VIOLET 이용약관 동의<font class="text-primary">&nbsp;(필수)</font></b>
+		    </label>
+	  	</div>
+		<div th:replace="login/signup/terms-of-service :: terms-of-service"></div>
+  	</div>
+  	<!--/* VIOLET 이용약관 동의 END */-->
+  	
+	<!--/* 개인정보 수집 및 이용에 대한 안내 START */-->
+	<div class="form-group">
+		<div class="form-check">
+		    <label class="form-check-label">
+		        <input class="form-check-input" id="personal-information-chkbox" name="personal-information-chkbox" type="checkbox" val="">
+		        <span class="form-check-sign">
+		            <span class="check"></span>
+		        </span>
+		        <b class="">VIOLET 개인정보 수집 및 이용에 대한 안내<font class="text-primary">&nbsp;(필수)</font></b>
+		    </label>
+	  	</div>
+		<div th:replace="login/signup/personal-information :: personal-information"></div>
+	</div>
+	<!--/* 개인정보 수집 및 이용에 대한 안내 END */-->
+	
+	<div class="form-group bmd-form-group is-filled">
+		<div class="form-check">
+		    <label class="form-check-label">
+		        <input class="form-check-input" id="event-alarm-chkbox" name="event-alarm-chkbox" type="checkbox" val="">
+		        <span class="form-check-sign">
+		            <span class="check"></span>
+		        </span>
+		        <b class="">프로모션 안내 메일 수신<font class="text-default">&nbsp;(선택)</font></b>
+		    </label>
+	  	</div>
+	  	<div th:replace="login/signup/event-information :: event-information"></div>
+	</div>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="indexMapper">
+    <select id="paperListCount" resultType="int">
+        SELECT COUNT(1) FROM violet_paper
+    </select>
+
+    <select id="paperListAll" resultType="com.violet.web.index.PaperEntity">
+        SELECT paper_no
+            , paper_title
+            , paper_description
+            , create_date
+            , paper_img
+        FROM violet_paper
+        WHERE 1=1
+        AND ROWNUM &lt;= 5
+        ORDER BY paper_no ASC
+    </select>
+
+    <select id="newListCount" resultType="int">
+		SELECT COUNT(1) 
+        FROM violet_item
+		WHERE 1=1
+		AND opening_yn = 'Y'
+		AND opening_date IS NOT NULL
+		ORDER BY opening_date DESC
+    </select>
+
+    <select id="newListAll" resultType="com.violet.web.item.ItemEntity">
+		SELECT item_id
+			, class_item
+			, stylist_name
+			, img_path1
+			, title
+			, description 
+			, price
+		FROM violet_item
+		WHERE 1=1
+		AND ROWNUM &lt;= 8
+		AND opening_yn = 'Y'
+		AND opening_date IS NOT NULL
+		ORDER BY opening_date DESC
+    </select>
+
+
+
+</mapper>

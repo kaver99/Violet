@@ -1,0 +1,18 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<head></head>
+<body>
+	<div th:fragment="alert" id="violet-alert" class="violet-error-alert alert alert-danger">
+		<div class="float-left col-md-1">
+			<i class="material-icons">error_outline</i>
+		</div>
+		<div class="float-left col-md-10" style="line-height: 5px;">
+			<h6>Error : <span id="alert-errMsg"></span></h6>
+		</div>
+		<div class="float-right col-md-1" style="padding: 0 5px 0 5px;">
+			<button type="button" id="alert-close" class="close" aria-label="Close">
+				<span aria-hidden="true"><i class="material-icons">clear</i></span>
+			</button>								
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,6 @@
+@charset "UTF-8";
+
+/* click event disable */
+.avoid-clicks {
+  pointer-events: none;
+}

@@ -1,0 +1,110 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org" >
+<head>
+    <title>Violet Shop</title>
+</head>
+<body>
+<div th:fragment="signup_detail" th:remove="tag">
+<div class="profile">
+	<div class="card-description text-default">
+		<b>Violet eCommers 서비스를 이용하기 위해 고객님의 정보를 입력해 주세요.</b>
+		<h6>입력하신 정보는 Violet 서비스를 이용하기 위한 용도로만 사용이 됩니다.</h6>
+	</div>
+
+	<!--/* Email Start */-->
+    <div class="input-group">
+    	<div class="input-group-prepend" style="margin-left: 10px;">
+			<span class="input-group-text">
+	        	<i class="material-icons">mail</i>
+			</span>
+		</div>
+        <div id="usernameInput" class="form-group bmd-form-group col-md-10">
+        	<label for="emailInput" class="bmd-label-floating" style="display: block;">Email</label>
+        	<input type="email" id="username" name="username" class="form-control" oninput="checkId();" autofocus required>
+        	<span class="form-control-feedback"></span>
+        	<span class="bmd-help">Email 양식에 맞춰 입력해 주세요.</span>
+        </div>
+	</div>
+	<!--/* Email End */-->
+	
+	<!--/* Name Start */-->
+	<div class="input-group">
+		<div class="input-group-prepend" style="margin-left: 10px;">
+			<span class="input-group-text">
+				<i class="material-icons">perm_identity</i>
+			</span>
+        </div>
+        <div id="nameInput" class="form-group bmd-form-group col-md-10">
+        	<label for="nameInput" class="bmd-label-floating" style="display: block;">Name</label>
+			<input type="text" id="name" name="name" class="form-control" required>
+			<span class="form-control-feedback"></span>
+			<span class="bmd-help">이름을 20자 이하로 입력해 주세요.</span>
+		</div>
+    </div>
+    <!--/* Name End */-->
+    
+    <!--/* Password Start */-->
+    <div class="input-group">
+        <div class="input-group-prepend" style="margin-left: 10px;">
+			<span class="input-group-text">
+				<i class="material-icons">lock_outline</i>
+			</span>
+        </div>
+        <div id="passwordInput" class="form-group bmd-form-group col-md-10">
+        	<label for="passwordInput" class="bmd-label-floating" style="display: block;">Password</label>
+        	<input type="password" id="password" name="password" class="form-control" required>
+        	<span class="form-control-feedback"></span>
+        	<span class="bmd-help">패스워드를 20자 이하, 앞자리 대문자, 하나 이상의 숫자 및 특수 문자 포함하여 입력해 주세요.</span>
+        </div>
+	</div>
+	<!--/* Password End */-->
+	
+	<!--/* Password-Confirm Start */-->
+	<div class="input-group">
+        <div class="input-group-prepend" style="margin-left: 10px;">
+			<span class="input-group-text">
+				<i class="material-icons">lock_outline</i>
+			</span>
+        </div>
+        <div id="passwordInput2" class="form-group bmd-form-group col-md-10">
+        	<label for="passwordInput2" class="bmd-label-floating" style="display: block;">Password-Confirm</label>
+        	<input type="password" id="password2" name="password2" class="form-control" required>
+        	<span class="form-control-feedback"></span>
+        	<span class="bmd-help">패스워드 확인을 패스워드와 동일하게 입력하여 주세요.</span>
+        </div>
+	</div>
+	<!--/* Password-Confirm End */-->
+	   	
+	<!--/* phone Start */-->
+	<div class="input-group">
+		<div class="input-group-prepend" style="margin-left: 10px;">
+			<span class="input-group-text">
+				<i class="material-icons">phone</i>
+			</span>
+		</div>
+		<div id="phoneInput" class="form-group bmd-form-group col-md-10">
+			<label for="phoneInput" class="bmd-label-floating" style="display: block;">Phone</label>
+			<div class="col-md-9" style="float: left; padding-left: 0;">
+				<input type="text" id="phone" name="phone" class="form-control" maxlength="11" pattern="[0-9]{2,3}[0-9]{3,4}[0-9]{3,4}" required>
+			</div>
+			<div class="col-md-3" style="float: right; padding: 0;">
+				<select class="form-control selectpicker" data-style="btn btn-link" id="telecom" name="telecom" size="1" required>
+					<option selected="selected" disabled="disabled" value="">Telecom</option>
+					<option value="SKT">SKT</option>
+					<option value="LGU">LG U+</option>
+					<option value="KT">KT</option>
+					<option value="OTHER">OTHER</option>
+				</select>
+			</div>
+			<span class="form-control-feedback"></span>
+		    <div class="clearfix"></div>
+		    <span class="bmd-help">휴대폰 번호 및 통신사를 선택하여 입력하여 주세요.</span>
+		</div>
+	</div>
+	<!--/* phone End */-->
+	<div class="card-description text-default">
+	</div>
+</div>
+</div>
+</body>
+</html>

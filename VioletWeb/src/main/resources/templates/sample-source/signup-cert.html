@@ -1,0 +1,35 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<div th:fragment="signup-cert" th:remove="tag">
+	<div class="tab-content" id="content1">
+	      	<div class="tab-title"><h4 style="text-align: center;">고객님의 개인정보 보호를 위해 인증을 통해 회원가입을 하고 있습니다.</h4></div>
+	      	<div class="tab-body" style="text-align: center;">고객님이 원하시는 인증 방법을 선택하여 주시길 바랍니다.</div>
+	</div>
+	<div class="wizard-footer">
+		<div class="phone-cert">
+			<div class="choice" data-toggle="wizard-radio" rel="tooltip" title="" data-original-title="PHONE Certification">
+				<div class="icon">
+					<i class="material-icons">phone</i>
+				</div>
+				<h6>PHONE</h6>
+			</div>
+		</div>
+		<div class="email-cert">
+			<div class="choice" data-toggle="wizard-radio" rel="tooltip" title="" data-original-title="EMAIL Certification">
+				<div class="icon">
+					<i class="material-icons">email</i>
+				</div>
+				<h6>EMAIL</h6>
+			</div>
+		</div>
+       
+<!--                                         <div class="pull-right"> -->
+<!--                                             <input type="button" class="btn btn-next btn-fill btn-primary btn-wd" name="next" value="Next"> -->
+<!--                                             <input type="button" class="btn btn-finish btn-fill btn-primary btn-wd" name="finish" value="Finish" style="display: none;"> -->
+<!--                                         </div> -->
+<!--                                         <div class="pull-left"> -->
+<!--                                             <input type="button" class="btn btn-previous btn-fill btn-default btn-wd disabled" name="previous" value="Previous"> -->
+<!--                                         </div> -->
+	</div>
+</div>
+</html>

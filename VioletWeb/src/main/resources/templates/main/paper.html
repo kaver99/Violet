@@ -1,0 +1,64 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+</head>
+<body>
+	<div th:fragment="paper">
+	    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        	<div th:if="${#lists.isEmpty(paperListAll)}" th:remove="tag">
+        	</div>
+        	<div th:unless="${#lists.isEmpty(paperListAll)}" th:remove="tag">
+        		<ol class="carousel-indicators">
+	            <th:block th:each="paperList : ${paperListAll}" th:remove="tag">
+                	<li data-target="#carouselExampleIndicators" th:attr="data-slide-to=${paperList.paper_no - 1}" th:class="${paperList.paper_no == 1 ? 'active' : ''}"></li>
+	            </th:block>
+	            </ol>
+            </div>
+	        <div class="carousel-inner">
+	        <div th:if="${#lists.isEmpty(paperListAll)}" th:remove="tag">
+	            <div class="page-header header-filter" style="background-color: currentColor;">
+	                <div class="container">
+	                    <div class="row">
+	                        <div class="col-md-6 text-left" style="margin-left: 20px;">
+	                            <h1 class="title">No Title.</h1>
+	                            <h4>Product is being prepared.</h4>
+	                        </div>
+	                    </div>
+	                </div>
+	            </div>
+	        </div>
+	        <div th:unless="${#lists.isEmpty(paperListAll)}" th:remove="tag">
+	            <div th:each="paperList : ${paperListAll}" th:remove="tag">
+	                <div th:class="${paperList.paper_no == 1 ? 'carousel-item active' : 'carousel-item'}">
+	                    <div class="page-header header-filter" th:style="'background-image: url(&quot;./img/main/paper/' + ${paperList.paper_img} + '&quot;);'">
+	                        <div class="container">
+	                            <div class="row">
+	                                <div class="col-md-6 text-left" style="margin-left: 20px;">
+	                                    <h1 class="title">[[${paperList.paper_title}]]</h1>
+	                                    <h4>[[${paperList.paper_description}]]</h4>
+	                                    <br>
+	                                    <div class="buttons">
+	                                        <a href="#" class="btn btn-danger btn-lg">
+	                                            More <i class="material-icons">add</i>
+	                                        </a>
+	                                    </div>
+	                                </div>
+	                            </div>
+	                        </div>
+	                    </div>
+	                </div>
+	            </div>
+	        </div>
+	        </div>
+	        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+	            <i class="material-icons">keyboard_arrow_left</i>
+	            <span class="sr-only">Previous</span>
+	        </a>
+	        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+	            <i class="material-icons">keyboard_arrow_right</i>
+	            <span class="sr-only">Next</span>
+	        </a>
+	    </div>
+	</div>
+</body>
+</html>

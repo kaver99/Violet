@@ -1,0 +1,285 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" layout:decorate="~{layout/main-layout}" >
+<head>
+    <title>Violet Shop</title>
+    
+    <!--/*  User Css Start  */-->
+    <th:block layout:fragment="user-css">
+    <link rel="stylesheet/less" type="text/css" th:href="@{/css/login/profile/avatar.less}" />
+    </th:block>
+    <!--/*  User Css End  */-->
+</head>
+<body>
+    <div layout:fragment="content" th:remove="tag">
+    	<div class="modal-domain"></div>
+	    <div class="profile-page sidebar-collapse">
+			<div class="page-header header-filter" data-parallax="true" style="background-image: url(&quot;../assets/img/city-profile.jpg&quot;); transform: translate3d(0px, 0px, 0px);"></div>
+			<div class="main main-raised">
+				<div class="profile-content">
+    				<div class="container">
+      					<div class="form-row">
+							<div class="col-md-6 ml-auto mr-auto">
+							<form class="form" method="post" th:action="@{/profile.violet}" enctype="multipart/form-data">
+								<div class="profile" style="margin-bottom: 50px; margin-top: -120px;">
+									<div class="avatar">
+										<div class="img">
+											<div class="avatar-upload">
+										        <div class="avatar-edit">
+										            <input type='file' id="imageUpload" name="imageUpload" accept=".png, .jpg, .jpeg" readonly />
+										            <label for="imageUpload"></label>
+										        </div>
+										        <div class="avatar-preview">
+										            <div id="imagePreview" th:style="'background-image: url(' + ${userEntity.img_thumbnail} + '); background-repeat: repeat-y;'">
+										            </div>
+										        </div>
+										    </div>
+										</div>
+									</div>
+									<div class="input-group">
+			                                <span class="input-group-text">
+			                                    <i class="material-icons">mail</i>
+			                                </span>
+		                                <div id="usernameinput" class="form-group bmd-form-group col-md-10 is-focused">
+		                                	<label for="emailInput" class="bmd-label-floating" style="display: block;">Email</label>
+		                                	<div id="username" class="form-control font-weight-bold" style="text-align: left;">[[${userEntity.username}]]</div>
+		                                </div>
+		                            </div>
+		                            <!--/* Social Login not modify */-->
+		                            <div th:if="${userEntity.socialType == 'local'}" th:remove="tag">
+		                            <div class="input-group">
+		                                <div class="input-group-prepend">
+			                                <span class="input-group-text">
+			                                    <i class="material-icons">lock_outline</i>
+			                                </span>
+		                                </div>
+		                                <div class="form-group bmd-form-group col-md-10">
+		                                	<label for="passwordInput" class="bmd-label-floating" style="display: block;">Password</label>
+		                                	<input type="password" id="password" name="password" class="form-control" required>
+		                                	<span class="bmd-help"></span>
+		                                </div>
+		                            </div>
+		                            </div>
+		                            <div class="input-group">
+		                                <div class="input-group-prepend">
+			                                <span class="input-group-text">
+			                                    <i class="material-icons">perm_identity</i>
+			                                </span>
+		                                </div>
+		                                <div class="form-group bmd-form-group col-md-10">
+		                                	<label for="nameInput" class="bmd-label-floating" style="display: block;">Name</label>
+		                                	<input type="text" id="name" name="name" class="form-control" th:value="${userEntity.name}" required>
+		                                	<span class="bmd-help"></span>
+		                                </div>
+		                            </div>
+									<div class="input-group">
+		                                <div class="input-group-prepend">
+			                                <span class="input-group-text">
+			                                    <i class="material-icons">phone</i>
+			                                </span>
+		                                </div>
+		                                <div class="form-group bmd-form-group col-md-10">
+										    <label for="PhoneInput" class="bmd-label-floating" style="display: block;">Phone</label>
+										    <div class="col-md-9" style="float: left; padding-left: 0;">
+										    	<input type="text" id="phone" name="phone" class="form-control" maxlength="11" th:value="${userEntity.phone} ?: '' " pattern="[0-9]{2,3}[0-9]{3,4}[0-9]{3,4}" required>
+										    </div>
+										    <div class="col-md-3" style="float: right; padding: 0;">
+				                                <select class="form-control selectpicker" data-style="btn btn-link" id="telecom" name="telecom" size="1" required>
+				                                	<option th:selected="${userEntity.telecom} == null" disabled="disabled" value="">Telecom</option>
+													<option th:selected="${userEntity.telecom} == 'SKT'" value="SKT">SKT</option>
+													<option th:selected="${userEntity.telecom} == 'LGU'" value="LGU">LG U+</option>
+													<option th:selected="${userEntity.telecom} == 'KT'"  value="KT">KT</option>
+													<option th:selected="${userEntity.telecom} == 'OTHER'" value="OTHER">OTHER</option>
+											    </select>
+										    </div>
+										    <div class="clearfix"></div>
+										    <span class="bmd-help"></span>
+										</div>
+									</div>
+								</div>
+								<hr/>
+								<div class="profile">
+									<div class="input-group">
+										<div class="input-group-prepend">
+			                                <span class="input-group-text">
+			                                    <i class="material-icons" style="padding: 12px;"></i>
+			                                </span>
+		                                </div>
+		                                <div class="form-group bmd-form-group col-md-4" style="margin-bottom: 0;">
+		                                	<label for="post_codeInput" class="bmd-label-floating" style="display: block;">Post Code</label>
+											<input type="text" id="post_code" name="post_code" class="form-control" th:value="${userAddrData?.post_code}">
+										</div>
+										<div class="form-group bmd-form-group col-md-4" style="margin-bottom: 0;">
+										<button type="button" onclick="execDaumPostcode();" class="btn btn-primary btn-sm" style="height: 43px;">Search PostCode</button>
+										</div>
+									</div>
+									<div class="input-group">
+										<div class="input-group-prepend">
+			                                <span class="input-group-text">
+			                                    <i class="material-icons">place</i>
+			                                </span>
+		                                </div>
+		                                <div class="form-group bmd-form-group col-md-10">
+											<label for="addrInput" class="bmd-label-floating" style="display: block;">Address</label>
+											<input type="text" id="addr" name="addr" class="form-control" th:value="${userAddrData?.addr}">
+											<span id="jibun_addr" class=""></span>                          
+		                                </div>
+		                                <div class="input-group-prepend">
+			                                <span class="input-group-text">
+			                                    <i class="material-icons" style="padding: 12px;"></i>
+			                                </span>
+		                                </div>
+										<div class="form-group bmd-form-group col-md-10">
+											<label for="sub_addrInput" class="bmd-label-floating" style="display: block;">Sub Address</label>
+											<input type="text" id="sub_addr" name="sub_addr" class="form-control" th:value="${userAddrData?.sub_addr}">
+										</div>
+									</div>
+									<span id="guide" style="color:#999"></span>
+									
+									<br/>
+									<div class="footer text-center">
+										<button type="submit" class="btn btn-primary btn-link btn-wd btn-lg">Submit</button>
+									</div>
+								</div>
+							</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+	    </div>
+	</div>
+<!--/*  User JS Start  */-->
+<th:block layout:fragment="user-js">
+	<script src="//cdnjs.cloudflare.com/ajax/libs/less.js/3.9.0/less.min.js" ></script>
+<!-- 	<script type="text/javascript" src="../js/util/modal.js" ></script> -->
+	<script src="http://dmaps.daum.net/map_js_init/postcode.v2.js"></script>
+	
+	<script type="text/javascript">
+		function readURL(input) {
+			console.log("filename : " +input.files[0].name);
+		    if (input.files && input.files[0]) {
+		        var reader = new FileReader();
+		        reader.onload = function(e) {
+		            $('#imagePreview').css('background-image', 'url('+e.target.result +')');
+		            $('#imagePreview').hide();
+		            $('#imagePreview').fadeIn(650);
+		        }
+		        reader.readAsDataURL(input.files[0]);
+		    }
+		}
+		/*[- Img Thumbnail -]*/
+		$("#imageUpload").change(function() {
+			readURL(this);
+			
+			console.log("imgupload : " + $("#imageUpload").val());
+			
+// 		    $.ajax({
+// 		    	url: './book.jsp'
+// 		    	,type: 'post'
+// 		        ,data: {imageUpload: this.files[0].name}
+// 		        ,success: function(data){
+// 		        	//readURL(data);
+// 		        	$('#imagePreview').css('background-image', 'url(../img/profile'+ data +')');
+// 		            $('#imagePreview').hide();
+// 		            $('#imagePreview').fadeIn(650);
+// 		        }
+// 		        ,error: function(title, status, error) {
+// 		            alert(error);
+// 		        }  
+// 		    });
+		});
+		
+		
+		function checkId() {
+			var username = $('#username').val();
+			var regExp = /^[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*@[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*.[a-zA-Z]{2,3}$/i;
+
+			if(regExp.test(username)) {
+				setTimeout(function () {
+					$.ajax({
+						url: '/signup/userChk.violet'
+						,type: 'post'
+						,data: {username:username}
+						,success: function(data) {
+							if($.trim(data) == 0) {
+								$('#usernameinput').removeClass("has-danger");
+								$('#usernameinput').addClass("has-success");
+								$('.form-control-feedback').html('<i class="material-icons">done</i>');
+								
+							} else {
+								$('#usernameinput').removeClass("has-success");
+								$('#usernameinput').addClass("has-danger");
+								$('.form-control-feedback').html('<i class="material-icons">clear</i>');
+								
+							}
+						}
+						,error: function(msg) {
+		// 					$('.modal-domain').add('<div th:replace="menu/modal :: modal" th:remove="tag"></div>');
+						}
+					})
+				}, 500);
+				
+			} else {
+				$('#usernameinput').removeClass("has-success");
+				$('#usernameinput').addClass("has-danger");
+				$('.form-control-feedback').html('<i class="material-icons">clear</i>');
+				
+			}
+		}
+	
+	    /*[- DAUM ZipCode API -]*/
+	    function execDaumPostcode() {
+	        new daum.Postcode({
+	            oncomplete: function(data) {
+	                // 팝업에서 검색결과 항목을 클릭했을때 실행할 코드를 작성하는 부분.
+	
+	                // 도로명 주소의 노출 규칙에 따라 주소를 조합한다.
+	                // 내려오는 변수가 값이 없는 경우엔 공백('')값을 가지므로, 이를 참고하여 분기 한다.
+	                var fullRoadAddr = data.roadAddress; // 도로명 주소 변수
+	                var extraRoadAddr = ''; // 도로명 조합형 주소 변수
+	
+	                // 법정동명이 있을 경우 추가한다. (법정리는 제외)
+	                // 법정동의 경우 마지막 문자가 "동/로/가"로 끝난다.
+	                if(data.bname !== '' && /[동|로|가]$/g.test(data.bname)){
+	                    extraRoadAddr += data.bname;
+	                }
+	                // 건물명이 있고, 공동주택일 경우 추가한다.
+	                if(data.buildingName !== '' && data.apartment === 'Y'){
+	                   extraRoadAddr += (extraRoadAddr !== '' ? ', ' + data.buildingName : data.buildingName);
+	                }
+	                // 도로명, 지번 조합형 주소가 있을 경우, 괄호까지 추가한 최종 문자열을 만든다.
+	                if(extraRoadAddr !== ''){
+	                    extraRoadAddr = ' (' + extraRoadAddr + ')';
+	                }
+	                // 도로명, 지번 주소의 유무에 따라 해당 조합형 주소를 추가한다.
+	                if(fullRoadAddr !== ''){
+	                    fullRoadAddr += extraRoadAddr;
+	                }
+	
+	                // 우편번호와 주소 정보를 해당 필드에 넣는다.
+	                document.getElementById('post_code').value = data.zonecode; //5자리 새우편번호 사용
+	                document.getElementById('addr').value = fullRoadAddr;
+	                document.getElementById('jibun_addr').innerHTML = '<h6 style="float: left; margin: 0;">지번) ' + data.jibunAddress + '</h6>';
+	
+	                // 사용자가 '선택 안함'을 클릭한 경우, 예상 주소라는 표시를 해준다.
+	                if(data.autoRoadAddress) {
+	                    //예상되는 도로명 주소에 조합형 주소를 추가한다.
+	                    var expRoadAddr = data.autoRoadAddress + extraRoadAddr;
+	                    document.getElementById('guide').innerHTML = '(예상 도로명 주소 : ' + expRoadAddr + ')';
+	
+	                } else if(data.autoJibunAddress) {
+	                    var expJibunAddr = data.autoJibunAddress;
+	                    document.getElementById('guide').innerHTML = '(예상 지번 주소 : ' + expJibunAddr + ')';
+	
+	                } else {
+	                    document.getElementById('guide').innerHTML = '';
+	                }
+	            }
+	        }).open();
+	        document.getElementById('sub_addr').focus();
+	    }
+	</script>
+</th:block>
+<!--/*  User JS End  */-->
+</body>
+</html>

@@ -1,0 +1,205 @@
+2019-01-30 13:49:27 [INFO ] [StartupInfoLogger.java] logStarting(50) : Starting VioletWebApplication on Minui-MacBook-Pro.local with PID 682 (/Users/minsungkim/eclipse-workspace/VioletWeb/target/classes started by minsungkim in /Users/minsungkim/eclipse-workspace/VioletWeb)
+2019-01-30 13:49:27 [INFO ] [SpringApplication.java] logStartupProfileInfo(679) : The following profiles are active: local
+2019-01-30 13:49:27 [WARN ] [ClassPathMapperScanner.java] doScan(166) : No MyBatis mapper was found in '[com.violet.web]' package. Please check your configuration.
+2019-01-30 13:49:28 [INFO ] [PostProcessorRegistrationDelegate.java] postProcessAfterInitialization(330) : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$6c6f9171] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-01-30 13:49:28 [INFO ] [AbstractAddressingEndpointMapping.java] afterPropertiesSet(236) : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2019-01-30 13:49:28 [INFO ] [PostProcessorRegistrationDelegate.java] postProcessAfterInitialization(330) : Bean 'org.springframework.hateoas.config.HateoasConfiguration' of type [org.springframework.hateoas.config.HateoasConfiguration$$EnhancerBySpringCGLIB$$475819a4] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-01-30 13:49:28 [INFO ] [PostProcessorRegistrationDelegate.java] postProcessAfterInitialization(330) : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$c7d7cc72] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-01-30 13:49:28 [INFO ] [TomcatWebServer.java] initialize(90) : Tomcat initialized with port(s): 80 (http)
+2019-01-30 13:49:28 [INFO ] [DirectJDKLog.java] log(173) : Starting service [Tomcat]
+2019-01-30 13:49:28 [INFO ] [DirectJDKLog.java] log(173) : Starting Servlet Engine: Apache Tomcat/9.0.13
+2019-01-30 13:49:28 [INFO ] [DirectJDKLog.java] log(173) : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/minsungkim/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2019-01-30 13:49:28 [INFO ] [DirectJDKLog.java] log(173) : Initializing Spring embedded WebApplicationContext
+2019-01-30 13:49:28 [INFO ] [ServletWebServerApplicationContext.java] prepareWebApplicationContext(296) : Root WebApplicationContext: initialization completed in 1197 ms
+2019-01-30 13:49:29 [INFO ] [DefaultSecurityFilterChain.java] <init>(43) : Creating filter chain: Ant [pattern='/js/**'], []
+2019-01-30 13:49:29 [INFO ] [DefaultSecurityFilterChain.java] <init>(43) : Creating filter chain: Ant [pattern='/css/**'], []
+2019-01-30 13:49:29 [INFO ] [DefaultSecurityFilterChain.java] <init>(43) : Creating filter chain: Ant [pattern='/img/**'], []
+2019-01-30 13:49:29 [INFO ] [DefaultSecurityFilterChain.java] <init>(43) : Creating filter chain: Ant [pattern='/assets/**'], []
+2019-01-30 13:49:29 [INFO ] [DefaultSecurityFilterChain.java] <init>(43) : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7b61bf11, org.springframework.security.web.context.SecurityContextPersistenceFilter@4130955c, org.springframework.security.web.header.HeaderWriterFilter@2b4b96a4, org.springframework.security.web.csrf.CsrfFilter@3c9c6245, org.springframework.security.web.authentication.logout.LogoutFilter@3b4a1a75, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@b73433, org.springframework.web.filter.CompositeFilter@40247d48, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@71adfedd, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@b67cc70, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3ff54f3d, org.springframework.security.web.session.SessionManagementFilter@17e9bc9e, org.springframework.security.web.access.ExceptionTranslationFilter@3d20e575, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@21263314]
+2019-01-30 13:49:29 [INFO ] [ExecutorConfigurationSupport.java] initialize(171) : Initializing ExecutorService 'applicationTaskExecutor'
+2019-01-30 13:49:30 [INFO ] [WelcomePageHandlerMapping.java] <init>(61) : Adding welcome page template: index
+2019-01-30 13:49:30 [INFO ] [TomcatWebServer.java] start(204) : Tomcat started on port(s): 80 (http) with context path ''
+2019-01-30 13:49:30 [INFO ] [StartupInfoLogger.java] logStarted(59) : Started VioletWebApplication in 3.343 seconds (JVM running for 3.845)
+2019-01-30 13:50:06 [INFO ] [DirectJDKLog.java] log(173) : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-01-30 13:50:06 [INFO ] [FrameworkServlet.java] initServletBean(524) : Initializing Servlet 'dispatcherServlet'
+2019-01-30 13:50:06 [INFO ] [FrameworkServlet.java] initServletBean(546) : Completed initialization in 13 ms
+2019-01-30 13:50:06 [WARN ] [HikariConfig.java] validateNumerics(1008) : {} - idleTimeout has been set but has no effect because the pool is operating as a fixed size pool.
+2019-01-30 13:50:06 [INFO ] [HikariDataSource.java] getConnection(110) : hikari-cp - Starting...
+2019-01-30 13:50:06 [WARN ] [DriverDataSource.java] <init>(68) : Registered driver with driverClassName=oracle.jdbc.driver.OracleDriver was not found, trying direct instantiation.
+2019-01-30 13:50:08 [INFO ] [PoolBase.java] getAndSetNetworkTimeout(525) : hikari-cp - Driver does not support get/set network timeout for connections. (oracle.jdbc.driver.T4CConnection.getNetworkTimeout()I)
+2019-01-30 13:50:08 [INFO ] [HikariDataSource.java] getConnection(123) : hikari-cp - Start completed.
+2019-01-30 13:50:09 [WARN ] [FragmentProcessor.groovy] doProcess(75) : You don't need to put the layout:fragment/data-layout-fragment attribute into the <head> section - the decoration process will automatically copy the <head> section of your content templates into your layout page.
+2019-01-30 14:08:25 [INFO ] [AuthSuccessHandler.java] onAuthenticationSuccess(154) : Login AuthSuccess : [ <kakao> kaver00@nate.com / 0:0:0:0:0:0:0:1 ]
+2019-01-30 14:40:10 [WARN ] [HikariPool.java] run(766) : hikari-cp - Thread starvation or clock leap detected (housekeeper delta=2m31s609ms).
+2019-01-30 15:17:12 [WARN ] [HikariPool.java] run(766) : hikari-cp - Thread starvation or clock leap detected (housekeeper delta=3m14s551ms).
+2019-01-30 16:04:32 [WARN ] [ProxyConnection.java] checkException(153) : hikari-cp - Connection oracle.jdbc.driver.T4CConnection@41602476 marked as broken because of SQLSTATE(08006), ErrorCode(17002)
+java.sql.SQLRecoverableException: IO 오류: Connection reset
+	at oracle.jdbc.driver.T4CPreparedStatement.executeForDescribe(T4CPreparedStatement.java:792)
+	at oracle.jdbc.driver.OracleStatement.executeMaybeDescribe(OracleStatement.java:897)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1034)
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3820)
+	at oracle.jdbc.driver.OraclePreparedStatement.execute(OraclePreparedStatement.java:3923)
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.execute(OraclePreparedStatementWrapper.java:1385)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.execute(HikariProxyPreparedStatement.java)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.query(PreparedStatementHandler.java:63)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.query(RoutingStatementHandler.java:79)
+	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:63)
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:326)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:156)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:136)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:148)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:141)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectOne(DefaultSqlSession.java:77)
+	at com.violet.web.user.UserMapper.findByUserNameCount(UserMapper.java:81)
+	at com.violet.web.config.AuthProvider.authenticate(AuthProvider.java:43)
+	at org.springframework.security.authentication.ProviderManager.authenticate(ProviderManager.java:174)
+	at org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter.attemptAuthentication(UsernamePasswordAuthenticationFilter.java:94)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:212)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.csrf.CsrfFilter.doFilterInternal(CsrfFilter.java:124)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:74)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:357)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:270)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.security.oauth2.client.filter.OAuth2ClientContextFilter.doFilter(OAuth2ClientContextFilter.java:60)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:791)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1417)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(SocketInputStream.java:210)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at oracle.net.ns.Packet.receive(Packet.java:311)
+	at oracle.net.ns.DataPacket.receive(DataPacket.java:105)
+	at oracle.net.ns.NetInputStream.getNextPacket(NetInputStream.java:305)
+	at oracle.net.ns.NetInputStream.read(NetInputStream.java:249)
+	at oracle.net.ns.NetInputStream.read(NetInputStream.java:171)
+	at oracle.net.ns.NetInputStream.read(NetInputStream.java:89)
+	at oracle.jdbc.driver.T4CSocketInputStreamWrapper.readNextPacket(T4CSocketInputStreamWrapper.java:123)
+	at oracle.jdbc.driver.T4CSocketInputStreamWrapper.read(T4CSocketInputStreamWrapper.java:79)
+	at oracle.jdbc.driver.T4CMAREngineStream.unmarshalUB1(T4CMAREngineStream.java:426)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:390)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:249)
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:566)
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:215)
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:58)
+	at oracle.jdbc.driver.T4CPreparedStatement.executeForDescribe(T4CPreparedStatement.java:776)
+	... 76 common frames omitted
+2019-01-30 16:04:32 [ERROR] [UserMapper.java] findByUserNameCount(84) : User Count Error : org.apache.ibatis.exceptions.PersistenceException: 
+### Error querying database.  Cause: java.sql.SQLRecoverableException: IO 오류: Connection reset
+### The error may exist in file [/Users/minsungkim/eclipse-workspace/VioletWeb/target/classes/mybatis/mapper/user/User-Mapper.xml]
+### The error may involve userMapper.findByUserNameCount-Inline
+### The error occurred while setting parameters
+### SQL: SELECT COUNT(1)      FROM violet_user a, violet_userrole b      WHERE 1=1      AND a.username = b.username      AND a.socialType = b.socialType      AND a.username = ?      AND a.socialType = ?
+### Cause: java.sql.SQLRecoverableException: IO 오류: Connection reset
+2019-01-30 16:04:32 [ERROR] [UserMapper.java] findByUserNameCount(84) : User Count Error : org.apache.ibatis.exceptions.PersistenceException: 
+### Error querying database.  Cause: java.sql.SQLException: Connection is closed
+### The error may exist in file [/Users/minsungkim/eclipse-workspace/VioletWeb/target/classes/mybatis/mapper/user/User-Mapper.xml]
+### The error may involve userMapper.findByUserNameCount
+### The error occurred while executing a query
+### SQL: SELECT COUNT(1)      FROM violet_user a, violet_userrole b      WHERE 1=1      AND a.username = b.username      AND a.socialType = b.socialType      AND a.username = ?      AND a.socialType = ?
+### Cause: java.sql.SQLException: Connection is closed
+2019-01-30 16:04:32 [ERROR] [AuthFailureHandler.java] onAuthenticationFailure(32) : Nonexistent or unauthenticated email.org.springframework.security.core.userdetails.UsernameNotFoundException: Authentication failed : [ t@t ]  Not Found Exception.
+2019-01-30 16:04:40 [INFO ] [SpringApplicationAdminMXBeanRegistrar.java] shutdown(164) : Application shutdown requested.
+2019-01-30 16:04:40 [INFO ] [ExecutorConfigurationSupport.java] shutdown(208) : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-01-30 16:04:40 [INFO ] [HikariDataSource.java] close(350) : hikari-cp - Shutdown initiated...
+2019-01-30 16:04:40 [INFO ] [HikariDataSource.java] close(352) : hikari-cp - Shutdown completed.
+2019-01-30 16:04:44 [INFO ] [StartupInfoLogger.java] logStarting(50) : Starting VioletWebApplication on Minui-MacBook-Pro.local with PID 1126 (/Users/minsungkim/eclipse-workspace/VioletWeb/target/classes started by minsungkim in /Users/minsungkim/eclipse-workspace/VioletWeb)
+2019-01-30 16:04:44 [INFO ] [SpringApplication.java] logStartupProfileInfo(679) : The following profiles are active: local
+2019-01-30 16:04:44 [WARN ] [ClassPathMapperScanner.java] doScan(166) : No MyBatis mapper was found in '[com.violet.web]' package. Please check your configuration.
+2019-01-30 16:04:45 [INFO ] [PostProcessorRegistrationDelegate.java] postProcessAfterInitialization(330) : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$755271a8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-01-30 16:04:45 [INFO ] [AbstractAddressingEndpointMapping.java] afterPropertiesSet(236) : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2019-01-30 16:04:45 [INFO ] [PostProcessorRegistrationDelegate.java] postProcessAfterInitialization(330) : Bean 'org.springframework.hateoas.config.HateoasConfiguration' of type [org.springframework.hateoas.config.HateoasConfiguration$$EnhancerBySpringCGLIB$$503af9db] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-01-30 16:04:45 [INFO ] [PostProcessorRegistrationDelegate.java] postProcessAfterInitialization(330) : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$d0baaca9] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-01-30 16:04:45 [INFO ] [TomcatWebServer.java] initialize(90) : Tomcat initialized with port(s): 80 (http)
+2019-01-30 16:04:45 [INFO ] [DirectJDKLog.java] log(173) : Starting service [Tomcat]
+2019-01-30 16:04:45 [INFO ] [DirectJDKLog.java] log(173) : Starting Servlet Engine: Apache Tomcat/9.0.13
+2019-01-30 16:04:45 [INFO ] [DirectJDKLog.java] log(173) : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/minsungkim/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2019-01-30 16:04:45 [INFO ] [DirectJDKLog.java] log(173) : Initializing Spring embedded WebApplicationContext
+2019-01-30 16:04:45 [INFO ] [ServletWebServerApplicationContext.java] prepareWebApplicationContext(296) : Root WebApplicationContext: initialization completed in 899 ms
+2019-01-30 16:04:46 [INFO ] [DefaultSecurityFilterChain.java] <init>(43) : Creating filter chain: Ant [pattern='/js/**'], []
+2019-01-30 16:04:46 [INFO ] [DefaultSecurityFilterChain.java] <init>(43) : Creating filter chain: Ant [pattern='/css/**'], []
+2019-01-30 16:04:46 [INFO ] [DefaultSecurityFilterChain.java] <init>(43) : Creating filter chain: Ant [pattern='/img/**'], []
+2019-01-30 16:04:46 [INFO ] [DefaultSecurityFilterChain.java] <init>(43) : Creating filter chain: Ant [pattern='/assets/**'], []
+2019-01-30 16:04:46 [INFO ] [DefaultSecurityFilterChain.java] <init>(43) : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1c3259fa, org.springframework.security.web.context.SecurityContextPersistenceFilter@5f1483fd, org.springframework.security.web.header.HeaderWriterFilter@6c479fdf, org.springframework.security.web.csrf.CsrfFilter@72bdd7c7, org.springframework.security.web.authentication.logout.LogoutFilter@273a5a8a, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@d3f4505, org.springframework.web.filter.CompositeFilter@217bf99e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6e03db1f, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@54089484, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6807a356, org.springframework.security.web.session.SessionManagementFilter@19b206ee, org.springframework.security.web.access.ExceptionTranslationFilter@16aed49f, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@45c9b3]
+2019-01-30 16:04:46 [INFO ] [ExecutorConfigurationSupport.java] initialize(171) : Initializing ExecutorService 'applicationTaskExecutor'
+2019-01-30 16:04:46 [INFO ] [WelcomePageHandlerMapping.java] <init>(61) : Adding welcome page template: index
+2019-01-30 16:04:46 [INFO ] [TomcatWebServer.java] start(204) : Tomcat started on port(s): 80 (http) with context path ''
+2019-01-30 16:04:46 [INFO ] [StartupInfoLogger.java] logStarted(59) : Started VioletWebApplication in 2.585 seconds (JVM running for 2.937)
+2019-01-30 16:04:52 [INFO ] [DirectJDKLog.java] log(173) : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-01-30 16:04:52 [INFO ] [FrameworkServlet.java] initServletBean(524) : Initializing Servlet 'dispatcherServlet'
+2019-01-30 16:04:52 [INFO ] [FrameworkServlet.java] initServletBean(546) : Completed initialization in 10 ms
+2019-01-30 16:04:52 [WARN ] [FragmentProcessor.groovy] doProcess(75) : You don't need to put the layout:fragment/data-layout-fragment attribute into the <head> section - the decoration process will automatically copy the <head> section of your content templates into your layout page.
+2019-01-30 16:04:57 [WARN ] [HikariConfig.java] validateNumerics(1008) : {} - idleTimeout has been set but has no effect because the pool is operating as a fixed size pool.
+2019-01-30 16:04:57 [INFO ] [HikariDataSource.java] getConnection(110) : hikari-cp - Starting...
+2019-01-30 16:04:57 [WARN ] [DriverDataSource.java] <init>(68) : Registered driver with driverClassName=oracle.jdbc.driver.OracleDriver was not found, trying direct instantiation.
+2019-01-30 16:04:57 [INFO ] [PoolBase.java] getAndSetNetworkTimeout(525) : hikari-cp - Driver does not support get/set network timeout for connections. (oracle.jdbc.driver.T4CConnection.getNetworkTimeout()I)
+2019-01-30 16:04:57 [INFO ] [HikariDataSource.java] getConnection(123) : hikari-cp - Start completed.
+2019-01-30 16:04:58 [ERROR] [AuthFailureHandler.java] onAuthenticationFailure(32) : Nonexistent or unauthenticated email.org.springframework.security.core.userdetails.UsernameNotFoundException: Authentication failed : [ t@t.com ]  Not Found Exception.
+2019-01-30 16:06:35 [ERROR] [AuthFailureHandler.java] onAuthenticationFailure(32) : Nonexistent or unauthenticated email.org.springframework.security.core.userdetails.UsernameNotFoundException: Authentication failed : [ t@t.com ]  Not Found Exception.
+2019-01-30 16:06:41 [ERROR] [AuthFailureHandler.java] onAuthenticationFailure(32) : Nonexistent or unauthenticated email.org.springframework.security.core.userdetails.UsernameNotFoundException: Authentication failed : [ t@t ]  Not Found Exception.
+2019-01-30 16:07:03 [ERROR] [AuthFailureHandler.java] onAuthenticationFailure(32) : Nonexistent or unauthenticated email.org.springframework.security.core.userdetails.UsernameNotFoundException: Authentication failed : [ t@t ]  Not Found Exception.
+2019-01-30 16:07:48 [ERROR] [AuthFailureHandler.java] onAuthenticationFailure(32) : Nonexistent or unauthenticated email.org.springframework.security.core.userdetails.UsernameNotFoundException: Authentication failed : [ t@t ]  Not Found Exception.
+2019-01-30 16:07:53 [ERROR] [AuthFailureHandler.java] onAuthenticationFailure(32) : Nonexistent or unauthenticated email.org.springframework.security.core.userdetails.UsernameNotFoundException: Authentication failed : [ t@t.com ]  Not Found Exception.
+2019-01-30 16:08:11 [ERROR] [AuthFailureHandler.java] onAuthenticationFailure(32) : Nonexistent or unauthenticated email.org.springframework.security.core.userdetails.UsernameNotFoundException: Authentication failed : [ t@t.com ]  Not Found Exception.
+2019-01-30 16:08:15 [ERROR] [AuthFailureHandler.java] onAuthenticationFailure(32) : Nonexistent or unauthenticated email.org.springframework.security.core.userdetails.UsernameNotFoundException: Authentication failed : [ t@t ]  Not Found Exception.
+2019-01-30 16:08:31 [ERROR] [AuthFailureHandler.java] onAuthenticationFailure(32) : Nonexistent or unauthenticated email.org.springframework.security.core.userdetails.UsernameNotFoundException: Authentication failed : [ t@t ]  Not Found Exception.
+2019-01-30 16:08:39 [ERROR] [AuthFailureHandler.java] onAuthenticationFailure(32) : Nonexistent or unauthenticated email.org.springframework.security.core.userdetails.UsernameNotFoundException: Authentication failed : [ t@t ]  Not Found Exception.
+2019-01-30 16:08:41 [ERROR] [AuthFailureHandler.java] onAuthenticationFailure(32) : Nonexistent or unauthenticated email.org.springframework.security.core.userdetails.UsernameNotFoundException: Authentication failed : [ t@t ]  Not Found Exception.
+2019-01-30 16:10:00 [ERROR] [AuthFailureHandler.java] onAuthenticationFailure(32) : Nonexistent or unauthenticated email.org.springframework.security.core.userdetails.UsernameNotFoundException: Authentication failed : [ t@t ]  Not Found Exception.
+2019-01-30 16:54:19 [ERROR] [AuthFailureHandler.java] onAuthenticationFailure(32) : Nonexistent or unauthenticated email.org.springframework.security.core.userdetails.UsernameNotFoundException: Authentication failed : [ t@t.com ]  Not Found Exception.
+2019-01-30 16:59:24 [WARN ] [HikariPool.java] run(766) : hikari-cp - Thread starvation or clock leap detected (housekeeper delta=56s528ms).
+2019-01-30 17:02:16 [WARN ] [HikariPool.java] run(766) : hikari-cp - Thread starvation or clock leap detected (housekeeper delta=2m52s119ms).
+2019-01-30 17:59:49 [ERROR] [AuthFailureHandler.java] onAuthenticationFailure(32) : Nonexistent or unauthenticated email.org.springframework.security.core.userdetails.UsernameNotFoundException: Authentication failed : [ t@t ]  Not Found Exception.
+2019-01-30 17:59:54 [ERROR] [AuthFailureHandler.java] onAuthenticationFailure(32) : Nonexistent or unauthenticated email.org.springframework.security.core.userdetails.UsernameNotFoundException: Authentication failed : [ t@t ]  Not Found Exception.
+2019-01-30 18:14:21 [ERROR] [AuthFailureHandler.java] onAuthenticationFailure(32) : Nonexistent or unauthenticated email.org.springframework.security.core.userdetails.UsernameNotFoundException: Authentication failed : [ t@t ]  Not Found Exception.
+2019-01-30 18:14:30 [ERROR] [AuthFailureHandler.java] onAuthenticationFailure(28) : Email or password does not match. org.springframework.security.authentication.BadCredentialsException: Authentication failed : [ test@test.com ]  is password Inconsistency.
+2019-01-30 20:24:09 [INFO ] [SpringApplicationAdminMXBeanRegistrar.java] shutdown(164) : Application shutdown requested.
+2019-01-30 20:24:09 [INFO ] [ExecutorConfigurationSupport.java] shutdown(208) : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-01-30 20:24:09 [INFO ] [HikariDataSource.java] close(350) : hikari-cp - Shutdown initiated...
+2019-01-30 20:24:09 [INFO ] [HikariDataSource.java] close(352) : hikari-cp - Shutdown completed.

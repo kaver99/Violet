@@ -1,0 +1,87 @@
+@charset "UTF-8";
+
+.alert-active {
+	display: block !important;
+	-webkit-animation: fadein 0.7s 0.5s forwards ease;
+	-moz-animation: fadein 0.7s 0.5s forwards ease;
+	-ms-animation: fadein 0.7s 0.5s forwards ease;
+	-o-animation: fadein 0.7s 0.5s forwards ease;
+	animation: fadein 0.7s 0.5s forwards ease;
+}
+
+.alert-danger {
+	margin-bottom: 0;
+	padding: 5px;
+	border-radius: 5px;
+	z-index: 3;
+}
+
+.violet-error-alert {
+	cursor: pointer;
+	display: none;
+	position: fixed;
+	right: 1rem;
+	bottom: 1rem;
+	width: 400px;
+	height: 70px;
+	line-height: 70px;
+	opacity: 0;
+	text-overflow: ellipsis;
+}
+
+#alert-errMsg {
+	display: block;
+	overflow: hidden; 
+	text-overflow: ellipsis;
+	width: 280px;
+}
+
+@-webkit-keyframes fadein { 
+	from {
+		right: -10rem;
+	}
+	to { 
+		opacity: 100;
+		right: 1rem;
+	}
+}
+
+@-moz-keyframes fadein { 
+	from {
+		right: -10rem;
+	}
+	to { 
+		opacity: 100;
+		right: 1rem;
+	}
+}
+
+@-ms-keyframes fadein { 
+	from {
+		right: -10rem;
+	}
+	to { 
+		opacity: 100;
+		right: 1rem;
+	}
+}
+
+@-o-keyframes fadein { 
+	from {
+		right: -10rem;
+	}
+	to { 
+		opacity: 100;
+		right: 1rem;
+	}
+}
+
+@keyframes fadein { 
+	from {
+		right: -10rem;
+	}
+	to { 
+		opacity: 100;
+		right: 1rem;
+	}
+}

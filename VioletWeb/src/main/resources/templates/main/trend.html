@@ -1,0 +1,61 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+</head>
+<body>
+	<div th:fragment="trend" id="trendList" class="section section-blog bg-dark">
+	    <div class="container">
+	        <div class="row">
+	            <h2 class="title menu-title"><a th:href="@{/trend.violet}">&nbsp;Trend</a></h2>
+	        </div>
+	        <div class="row" style="margin-top: 30px;">
+	            <!--/*  List Start  */-->
+	            <div class="col-md-3">
+	                <div class="card">
+	                    <div class="card-header card-header-image">
+	                        <a th:href="@{/trend.violet}">
+	                            <img th:src="@{/img/item/card-product1.jpg}" alt="Img" />
+	                            <div class="colored-shadow" style="background-image: url(&quot;./img/item/card-product1.jpg&quot;); opacity: 1;"></div>
+	                            <div class="img-overlay-mark">
+	                                <ul>
+	                                    <li class="img-overlay-mark-text">
+	                                        <h6>Gucci</h6>
+	                                    </li>
+	                                    <li>
+	                                        <div class="img-overlay-mark-right"></div>
+	                                    </li>
+	                                </ul>
+	                            </div>
+	                        </a>
+	                    </div>
+	                    <div class="card-body">
+	                        <div class="card-category text-rose">
+	                            <h6>outer</h6>
+	                        </div>
+	                        <div class="card-title card-title-label-primary"> 
+	                            <h4 class="font-weight-bold">
+	                                <a th:href="@{'/trend.violet?itemId='}">&nbsp;Gucci Classic</a>
+	                            </h4>
+	                        </div>
+	                        <div class="card-footer">
+	                            <div class="text-right">
+	                                <a th:href="@{'/favorite.violet?itemId='}" rel="tooltip" title="Favorite" data-original-title="Saved to Wishlist">
+	                                    <i class="material-icons text-primary">favorite</i>
+	                                </a>
+	                            </div>
+	                        </div>
+	                    </div>
+	                </div>
+	            </div>
+	            <!--/*  List End  */-->
+	
+	        </div>
+	        <div class="justify-content-center" style="display: flex;">
+	            <a th:href="@{/trend.violet}" class="btn btn-primary btn-lg">
+	                More <i class="material-icons">add</i>
+	            </a>
+	        </div>
+	    </div>
+	</div>
+</body>
+</html>

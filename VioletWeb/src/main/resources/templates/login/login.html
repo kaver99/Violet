@@ -1,0 +1,100 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" layout:decorate="~{layout/main-layout}" >
+<head>
+    <title>Violet Shop</title>
+    
+    <!--/*  User Css Start  */-->
+    <link rel="stylesheet" type="text/css" th:href="@{/css/login/login.css}" />
+    <!--/*  User Css End  */-->
+</head>
+<body>
+    <div layout:fragment="content">
+        <div class="page-header header-filter" th:style="'background-image:url(' + @{/assets/img/bg7.jpg} + ');'">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 ml-auto mr-auto">
+                        <div class="card card-login">
+                        <form class="form" method="post" th:action="@{/login.violet}">
+                            <div class="login-header card-header-primary text-center">
+                            	<div class="login-title">
+	                            	<h3 class=""><b>VIOLET</b></h3>
+	                            	<h4 class=""><b>eCommerce</b></h4>
+	                            </div>
+                            </div>
+                            <div class="card-body">
+	                            <div class="input-group">
+	                                <div class="input-group-prepend">
+		                                <span class="input-group-text">
+		                                    <i class="material-icons">mail</i>
+		                                </span>
+	                                </div>
+	                                <div class="form-group bmd-form-group col-md-9" style="padding: 25px 0 0 0;">
+	                                	<label for="usernameInput" class="bmd-label-floating" style="display: block;">Email</label>
+	                                	<input type="email" id="username" name="username" class="form-control" required>
+	                                </div>
+	                                <div class="input-group-prepend">
+		                                <span class="input-group-text">
+		                                    <i class="material-icons">lock_outline</i>
+		                                </span>
+	                                </div>
+	                                <div class="form-group bmd-form-group col-md-9" style="padding: 25px 0 0 0;">
+	                                	<label for="usernameInput" class="bmd-label-floating" style="display: block;">Password</label>
+	                                	<input type="password" id="password" name="password" class="form-control">
+	                                </div>
+	                            </div>
+                            </div>
+                            <div class="footer text-center col-md-12">
+                                <button type="submit" class="btn btn-primary btn-wd" style="width: 100%;">Login</button>
+                                <div class="justify-content-between">
+                                	<a th:href="@{/signup.violet}" class="btn-link float-left">Sign Up</a>
+                                	<a th:href="@{/signup.violet}" class="btn-link float-right">Forgot Password</a>
+                                </div>
+                                <br/>
+                                <hr/>
+                                <a th:href="@{/login/kakao}" class="btn btn-white btn-wd social-btn" style="background-color: #ffd400;">
+                                	<div class="float-left" style="border-right: 2px solid white;">
+                                		<img th:src="@{/img/login/KAKAO_login_Icon.png}" class="social-icon">
+                                	</div>
+                                	<div style="display: inline-block; vertical-align: middle;">
+                                		<h6 class="" style="color: #411b1e;">Log in With KAKAO</h6>
+                                	</div>
+                                </a>
+                                <a th:href="@{/login/naver}" class="btn btn-white btn-wd social-btn" style="background-color: #1fbc02;">
+                                	<div class="float-left" style="border-right: 2px solid white;">
+                                		<img th:src="@{/img/login/NAVER_login_icon.png}" class="social-icon">
+                                	</div>
+                                	<div style="display: inline-block; vertical-align: middle;">
+                                		<h6 class="" style="color: #fff;">Log in With NAVER</h6>
+                                	</div>
+                                </a>
+                                <a th:href="@{/login/facebook}" class="btn btn-white btn-wd social-btn" style="background-color: #4267b2;">
+                               		<div class="float-left" style="border-right: 2px solid white;">
+                               			<img th:src="@{/img/login/FACEBOOK_login_Icon.png}" class="social-icon">
+                               		</div>
+                                	<div style="display: inline-block; vertical-align: middle;">
+                                		<h6 class="" style="color: #fff;">Log in With FACEBOOK</h6>
+                                	</div>
+                                </a>
+                                <br/>
+                            </div>
+                        </form>
+                        </div>
+                    </div>
+					<div th:replace="common/alert :: alert"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!--/*  User JS Start  */-->
+    <th:block layout:fragment="user-js">
+	    <script>
+	    	var status = "[[${status == null ? '' : status}]]";
+	    	var content = "[[${errMsg == null ? '' : errMsg}]]";
+	    	alertCallEvent(status, content);	    
+	    </script>
+    </th:block>
+    <!--/*  User JS End  */-->
+    
+</body>
+</html>

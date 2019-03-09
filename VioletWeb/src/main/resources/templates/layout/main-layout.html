@@ -1,0 +1,53 @@
+<!DOCTYPE html SYSTEM "http://www.thymeleaf.org/dtd/xhtml1-strict-thymeleaf-4.dtd">
+<html xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" >
+<head>
+    <!--/*  Head Layout  */-->
+    <th:block th:replace="layout/head-layout :: head-layout"></th:block>
+    <th:block layout:fragment="user-css"></th:block>
+</head>
+<body>
+    <!--/*  Menu Nav Start  */-->
+    <div th:replace="menu/menubar :: menubar"></div>
+    <!--/*  Menu Nav Start  */-->
+
+    <!--/*  Main Start  */-->
+    <div layout:fragment="content"></div>
+    <!--/*  Main End  */-->
+
+    <!--/*  Footer Layout  */-->
+    <th:block th:replace="layout/footer-layout :: footer-layout"></th:block>
+
+    <!--/*  Common JS Start  */-->
+    <script type="text/javascript" th:src="@{/assets/js/core/jquery.min.js}"></script>
+    <script type="text/javascript" th:src="@{/assets/js/core/popper.min.js}"></script>
+    <script type="text/javascript" th:src="@{/assets/js/core/bootstrap-material-design.min.js}"></script>
+
+    <script type="text/javascript" th:src="@{/assets/js/material-kit.js?v=2.0.4}"></script>
+    <script type="text/javascript" th:src="@{/assets/js/jquery.bootstrap.js}"></script>
+    <script type="text/javascript" th:src="@{/assets/js/jquery.validate.min.js}"></script>
+<!--     <script type="text/javascript" th:src="@{/assets/js/material-bootstrap-wizard.js}"></script> -->
+	
+	<!--/* Action List Layout */-->
+<!-- 	<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script> -->
+
+	<!--/* Ajax CSRF Filter */-->
+	<script>
+    	var token = $("meta[name='_csrf']").attr("content");
+    	var header = $("meta[name='_csrf_header']").attr("content");
+    	$(function() {
+    	    $(document).ajaxSend(function(e, xhr, options) {
+    	        xhr.setRequestHeader(header, token);
+    	    });
+    	});
+    </script>
+
+    <!--/*  Common JS End  */-->
+
+    <!--/*  User JS Start  */-->
+    <script type="text/javascript" th:src="@{/js/util/alert.js}"></script>
+    <th:block layout:fragment="user-js">
+    </th:block>
+    <!--/*  User JS End  */-->
+    
+</body> 
+</html>

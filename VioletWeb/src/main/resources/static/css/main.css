@@ -1,0 +1,18 @@
+@charset "UTF-8";
+
+.menu-title {
+    border-left: 5px solid #9c27b0;
+}
+
+/*  Trend List CSS Start  */
+#trendList .menu-title a {
+    color: #fff;
+}
+
+/*  Trend List CSS End  */
+
+
+.title {
+	margin: 0;
+}
+

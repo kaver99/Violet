@@ -1,0 +1,103 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+<head>
+</head>
+<body>
+<div th:fragment="menubar" class="index-page sidebar-collapse">
+    <!-- this is header -->
+    <nav class="navbar navbar-color-on-scroll navbar-transparent fixed-top navbar-expand-md bg-primary" color-on-scroll="100">
+        <div class="menu-container">
+            <div class="navbar-translate">
+                <a class="navbar-brand" th:href="@{/}">VIOLET</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="navbar-toggler-icon"></span>
+                    <span class="navbar-toggler-icon"></span>
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav ml-auto">
+                    <!--/*  User Role - Management Option  */-->
+                    <div th:switch="${session.userRole}">
+                    <li th:case="ROLE_MANAGER" class="dropdown nav-item">
+                        <a th:href="@{#manager}" class="nav-link" data-toggle="dropdown">
+                            <div class="" data-toggle="tooltip" data-placement="bottom" title="MANAGER">
+                                <i class="material-icons">verified_user</i>MANAGER
+                            </div>
+                        </a>
+                        <div class="nav-menu dropdown-menu dropdown-menu-right">
+                            <h6 class="dropdown-header">MANAGER MENU</h6>
+                            <a th:href="@{#profile}" class="dropdown-item"><i class="material-icons">important_devices</i>&nbsp; Items monitoring</a>
+                            <a th:href="@{#profile}" class="dropdown-item"><i class="material-icons">add</i>&nbsp; Add Items</a>
+                            <a th:href="@{#settings}" class="dropdown-item"><i class="material-icons">check_circle_outline</i>&nbsp; Items Posting</a>
+                            <a th:href="@{#signout}" class="text-danger dropdown-item"><i class="material-icons">build</i>&nbsp; Display Modify</a>
+                        </div>
+                    </li>
+                    </div>
+                    <li class="nav-item">
+                        <a th:href="@{#category}" class="dropdown nav-link" id="category-menubtn" data-toggle="dropdown">
+                            <div class="" data-toggle="tooltip" data-placement="bottom" title="CATEGORY">
+                                <i class="material-icons" style="font-size: 24px;">apps</i>
+                            </div>
+                        </a>
+                        <div th:replace="menu/category :: category"></div>
+                    </li>
+
+					<!--/*  User Login Start  */-->
+					<div th:if="${session.username != null}" th:remove="tag">
+                        <li class="dropdown nav-item">
+                            <a th:href="@{#login.violet}" class="profile-photo dropdown-toggle nav-link" data-toggle="dropdown">
+                               	<div th:if="${session.imgThumbnail == null}" th:remove="tag">
+                                	<div class="" data-toggle="tooltip" data-placement="bottom" title="LOGIN">
+                           				<i class="material-icons" style="font-size: 40px;">account_circle</i>
+                           			</div>
+                           		</div>
+                         		<div th:if="${session.imgThumbnail != null}" th:remove="tag">
+     	                      		<div class="profile-photo-small" data-toggle="tooltip" data-placement="bottom" title="LOGIN">
+                                    	<img th:src="@{${session.imgThumbnail}}" alt="Circle Image" class="rounded-circle img-fluid" style="width: 40px; height: 40px;">
+                                    </div>
+                                </div>
+                            </a>
+                            <!--/* user profile */-->
+                            <div class="nav-menu dropdown-menu dropdown-menu-right" style="width: 400px; padding: 10px;">
+                            	<ul class="navmenu-header" style="width: 30%;">
+                            		<li class="nav-item">
+                           				<div th:if="${session.imgThumbnail != null}" th:remove="tag"> 
+                           					<img th:src="@{${session.imgThumbnail}}" alt="Circle Image" class="Rounded Image img-fluid" style="width: 114px; height: 114px;">
+                           				</div>
+                           				<div th:if="${session.imgThumbnail == null}" th:remove="tag">
+                           					<i class="material-icons" style="font-size: 114px;">account_circle</i>
+                           				</div>
+                            		</li>
+                            	</ul>
+                            	<ul class="navmenu-body">
+                            		<li class="navmenu-item-header">
+		                            	<h4 class="dropdown-header font-weight-bold">[[${session.username}]]</h4>
+		                            </li>
+		                            <li class="navmenu-item-body">
+		                            	<h4 class="font-weight-bold">[[${session.name}]]&nbsp;[[${session.userRole == 'ROLE_USER' ? '매니저' : '고객'}]]님</h4>
+		                            </li>
+                                	<li class="navmenu-item-footer">
+                                		<a th:href="@{/profile.violet}" class="dropdown-item"><i class="material-icons">assignment_ind</i>&nbsp;Profile</a>
+		                                <a th:href="@{/logout.violet}" class="text-danger dropdown-item"><i class="material-icons">power_settings_new</i>&nbsp;Log Out</a>
+                                	</li>
+                                </ul>
+                            </div>
+                        </li>
+                    </div>
+                    <div th:if="${session.username == null}" th:remove="tag">
+                        <li class="nav-item">
+                            <a th:href="@{/login.violet}" class="nav-link" data-toggle="tooltip" data-placement="bottom" title="LOGIN" style="font-size: 15px;">
+								<i class="material-icons" style="font-size: 25px;">account_circle</i>&nbsp;LOGIN
+                            </a>
+                        </li>
+					</div>
+                    <!--/*  User Login End  */-->
+                </ul>
+            </div>
+        </div>
+    </nav>
+</div>
+</body>
+</html>

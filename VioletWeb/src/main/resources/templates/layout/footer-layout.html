@@ -1,0 +1,27 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<head></head>
+<body>
+<th:block th:fragment="footer-layout">
+    <footer class="footer footer-default">
+        <div class="container">
+            <nav class="float-left">
+                <ul>
+                    <li>
+                        <a th:href="@{/}">
+                            Violet
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="copyright float-right">
+                &copy;
+                <script>
+                    document.write(new Date().getFullYear())
+                </script>, made with <i class="material-icons">copyright</i> by
+                <a th:href="@{/}" target="blank">KMS</a> for a better web.
+            </div>
+        </div>
+    </footer>
+</th:block>
+</body>
+</html>

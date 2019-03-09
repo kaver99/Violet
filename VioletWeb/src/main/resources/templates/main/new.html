@@ -1,0 +1,55 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org"> 
+<head>
+</head>
+<body>
+	<div th:fragment="new" id="newList" class="section section-blog">
+	    <div class="container">
+	        <div class="row">
+	            <h2 class="title menu-title"><a th:href="@{/new.violet}">&nbsp;NEW</a></h2>
+	        </div>
+	        <div class="row">
+	        	<div th:if="${#lists.isEmpty(newListAll)}" th:remove="tag"></div>
+	            <div th:unless="${#lists.isEmpty(newListAll)}" th:remove="tag">
+	                <div th:each="newList : ${newListAll}" th:remove="tag">
+	                    <div class="col-md-3">
+	                        <div class="card card-plain">
+	                            <div class="card-header card-header-image">
+	                                <!--/* new Item URL */-->
+	                                <a th:href="@{'/new.violet?itemId=' + ${newList.item_id}}">
+	<!--                                     <img class="img" th:src="@{'/img/item/' + ${newList.img_path1}}"> -->
+										<div class="card-img" th:style="'background-image: url(&quot;./img/item/' + ${newList.img_path1} + '&quot;); background-position: center;'"></div>
+	                                    <div class="colored-shadow" th:style="'background-image: url(&quot;./img/item/' + ${newList.img_path1} + '&quot;); opacity: 1;'"></div>
+	                                </a>
+	                            </div>
+	                            <div class="card-body">
+	                                <div class="card-title card-title-label-primary">
+	                                    <h4 class="font-weight-bold">
+	                                        <!--/* new Item URL */-->
+	                                        <a th:href="@{'/new.violet?itemId=' + ${newList.item_id}}">&nbsp;[[${newList.title}]]</a>
+	                                    </h4>
+	                                </div>
+	                                <!--/* 
+	                                <div class="card-description font-weight-normal">
+	                                    <p>[[${newList.description}]]</p>
+	                                </div>
+	                                 */-->
+	                                <div class="card-footer">
+	                                    <h6 class="text-muted">stylist by<font class="text-primary">&nbsp;&nbsp;[[${newList.stylist_name}]]</font></h6>
+	                                   	<h5 class="title">[[${#numbers.formatInteger(newList.price, 3, 'COMMA')}]]원</h5>
+	                                </div>
+	                            </div>
+	                        </div>
+	                    </div>
+	                </div>
+	            </div>
+	        </div>
+	        <div class="justify-content-center" style="display: flex;">
+	            <a th:href="@{/new.violet}" class="btn btn-primary btn-lg">
+	                More <i class="material-icons">add</i>
+	            </a>
+	        </div>
+	    </div>
+	</div>
+</body>
+</html>

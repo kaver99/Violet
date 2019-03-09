@@ -1,0 +1,70 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<div th:fragment="menubar">
+    <!-- this is header -->
+    <nav class="navbar navbar-color-on-scroll navbar-transparent navbar fixed-top navbar-expand-md bg-primary" color-on-scroll="100">
+        <div class="menu-container">
+            <div class="navbar-translate">
+                <a class="navbar-brand" th:href="@{/}">VIOLET</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="navbar-toggler-icon"></span>
+                    <span class="navbar-toggler-icon"></span>
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <!-- class="nav-link" -->
+                        <a th:href="@{#category}" class="nav-link" id="category-menubtn">
+                            <div class="" data-toggle="tooltip" data-placement="bottom" title="CATEGORY">
+                                <i class="material-icons">apps</i>CATEGORY
+                            </div>
+                        </a>
+                        <div th:replace="menu/category :: category"/>
+                    </li>
+                    <div th:switch="M">
+                    <li th:case="M" class="dropdown nav-item">
+                        <a th:href="@{#manager}" class="nav-link" data-toggle="dropdown">
+                            <div class="" data-toggle="tooltip" data-placement="bottom" title="MANAGER">
+                                <i class="material-icons">verified_user</i>MANAGER
+                            </div>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right">
+                            <h6 class="dropdown-header">MANAGER MENU</h6>
+                            <a th:href="@{#profile}" class="dropdown-item"><i class="material-icons">important_devices</i>&nbsp; Items monitoring</a>
+                            <a th:href="@{#profile}" class="dropdown-item"><i class="material-icons">add</i>&nbsp; Add Items</a>
+                            <a th:href="@{#settings}" class="dropdown-item"><i class="material-icons">check_circle_outline</i>&nbsp; Items Posting</a>
+                            <a th:href="@{#signout}" class="text-danger dropdown-item"><i class="material-icons">build</i>&nbsp; Display Modify</a>
+                        </div>
+                    </li>
+                    </div>
+                    <!-- <div th:switch="${user.id}"> -->
+                    <div th:switch="1">
+                        <li th:case="0" class="nav-item">
+                            <a th:href="@{#login}" class="nav-link" data-toggle="dropdown">
+                                <div class="" data-toggle="tooltip" data-placement="bottom" title="LOGIN">
+                                    <i class="material-icons">account_circle</i>LOGIN
+                                </div>
+                            </a>
+                        </li>
+                        <li th:case="1" class="dropdown nav-item">
+                            <a th:href="@{#login}" class="profile-photo dropdown-toggle nav-link" data-toggle="dropdown">
+                                <div class="profile-photo-small" data-toggle="tooltip" data-placement="bottom" title="LOGIN">
+                                    <img th:src="@{./img/profile/avatar.jpg}" alt="Circle Image" class="rounded-circle img-fluid">
+                                </div>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right">
+                                <h6 class="dropdown-header">Setting</h6>
+                                <a th:href="@{#profile}" class="dropdown-item"><i class="material-icons">assignment_ind</i>&nbsp;Profile</a>
+                                <a th:href="@{#settings}" class="dropdown-item"><i class="material-icons">settings</i>&nbsp;Settings</a>
+                                <a th:href="@{#signout}" class="text-danger dropdown-item"><i class="material-icons">power_settings_new</i>&nbsp;Sign out</a>
+                            </div>
+                        </li>
+                    </div>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</div>
+</html>
