@@ -1,38 +1,38 @@
-2019-02-28 13:05:58 [INFO ] [StartupInfoLogger.java] logStarting(50) : Starting VioletWebApplication on Minui-MacBook-Pro.local with PID 2332 (/Users/minsungkim/eclipse-workspace/VioletWeb/target/classes started by minsungkim in /Users/minsungkim/eclipse-workspace/VioletWeb)
-2019-02-28 13:05:58 [INFO ] [SpringApplication.java] logStartupProfileInfo(679) : The following profiles are active: local
-2019-02-28 13:05:58 [WARN ] [ClassPathMapperScanner.java] doScan(166) : No MyBatis mapper was found in '[com.violet.web]' package. Please check your configuration.
-2019-02-28 13:05:58 [INFO ] [PostProcessorRegistrationDelegate.java] postProcessAfterInitialization(330) : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$af490da8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-02-28 13:05:58 [INFO ] [AbstractAddressingEndpointMapping.java] afterPropertiesSet(236) : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
-2019-02-28 13:05:58 [INFO ] [PostProcessorRegistrationDelegate.java] postProcessAfterInitialization(330) : Bean 'org.springframework.hateoas.config.HateoasConfiguration' of type [org.springframework.hateoas.config.HateoasConfiguration$$EnhancerBySpringCGLIB$$8a3195db] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-02-28 13:05:58 [INFO ] [PostProcessorRegistrationDelegate.java] postProcessAfterInitialization(330) : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$ab148a9] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-02-28 13:05:59 [INFO ] [TomcatWebServer.java] initialize(90) : Tomcat initialized with port(s): 80 (http)
-2019-02-28 13:05:59 [INFO ] [DirectJDKLog.java] log(173) : Starting service [Tomcat]
-2019-02-28 13:05:59 [INFO ] [DirectJDKLog.java] log(173) : Starting Servlet Engine: Apache Tomcat/9.0.13
-2019-02-28 13:05:59 [INFO ] [DirectJDKLog.java] log(173) : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/minsungkim/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
-2019-02-28 13:05:59 [INFO ] [DirectJDKLog.java] log(173) : Initializing Spring embedded WebApplicationContext
-2019-02-28 13:05:59 [INFO ] [ServletWebServerApplicationContext.java] prepareWebApplicationContext(296) : Root WebApplicationContext: initialization completed in 1097 ms
-2019-02-28 13:06:00 [INFO ] [DefaultSecurityFilterChain.java] <init>(43) : Creating filter chain: Ant [pattern='/js/**'], []
-2019-02-28 13:06:00 [INFO ] [DefaultSecurityFilterChain.java] <init>(43) : Creating filter chain: Ant [pattern='/css/**'], []
-2019-02-28 13:06:00 [INFO ] [DefaultSecurityFilterChain.java] <init>(43) : Creating filter chain: Ant [pattern='/img/**'], []
-2019-02-28 13:06:00 [INFO ] [DefaultSecurityFilterChain.java] <init>(43) : Creating filter chain: Ant [pattern='/assets/**'], []
-2019-02-28 13:06:00 [INFO ] [DefaultSecurityFilterChain.java] <init>(43) : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@51b77cdf, org.springframework.security.web.context.SecurityContextPersistenceFilter@d675f9f, org.springframework.security.web.header.HeaderWriterFilter@217bf99e, org.springframework.security.web.csrf.CsrfFilter@276cc8dc, org.springframework.security.web.authentication.logout.LogoutFilter@748a654a, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@2262d6d5, org.springframework.web.filter.CompositeFilter@441fbe89, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@49469ffa, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@11d045b4, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6088451e, org.springframework.security.web.session.SessionManagementFilter@7ddd84b5, org.springframework.security.web.access.ExceptionTranslationFilter@2fe74516, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1665fa54]
-2019-02-28 13:06:00 [INFO ] [ExecutorConfigurationSupport.java] initialize(171) : Initializing ExecutorService 'applicationTaskExecutor'
-2019-02-28 13:06:00 [INFO ] [WelcomePageHandlerMapping.java] <init>(61) : Adding welcome page template: index
-2019-02-28 13:06:00 [INFO ] [TomcatWebServer.java] start(204) : Tomcat started on port(s): 80 (http) with context path ''
-2019-02-28 13:06:00 [INFO ] [StartupInfoLogger.java] logStarted(59) : Started VioletWebApplication in 3.236 seconds (JVM running for 8.015)
-2019-02-28 13:06:10 [INFO ] [DirectJDKLog.java] log(173) : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2019-02-28 13:06:10 [INFO ] [FrameworkServlet.java] initServletBean(524) : Initializing Servlet 'dispatcherServlet'
-2019-02-28 13:06:10 [INFO ] [FrameworkServlet.java] initServletBean(546) : Completed initialization in 12 ms
-2019-02-28 13:06:10 [WARN ] [HikariConfig.java] validateNumerics(1008) : {} - idleTimeout has been set but has no effect because the pool is operating as a fixed size pool.
-2019-02-28 13:06:10 [INFO ] [HikariDataSource.java] getConnection(110) : hikari-cp - Starting...
-2019-02-28 13:06:10 [WARN ] [DriverDataSource.java] <init>(68) : Registered driver with driverClassName=oracle.jdbc.driver.OracleDriver was not found, trying direct instantiation.
-2019-02-28 13:06:11 [ERROR] [HikariPool.java] throwPoolInitializationException(574) : hikari-cp - Exception during pool initialization.
+2019-10-30 13:55:53 [INFO ] [StartupInfoLogger.java] logStarting(50) : Starting VioletWebApplication on Minui-MacBook-Pro.local with PID 2031 (/Users/minsungkim/git/Violet/VioletWeb/target/classes started by minsungkim in /Users/minsungkim/git/Violet/VioletWeb)
+2019-10-30 13:55:53 [INFO ] [SpringApplication.java] logStartupProfileInfo(679) : The following profiles are active: local
+2019-10-30 13:55:54 [WARN ] [ClassPathMapperScanner.java] doScan(166) : No MyBatis mapper was found in '[com.violet.web]' package. Please check your configuration.
+2019-10-30 13:55:54 [INFO ] [PostProcessorRegistrationDelegate.java] postProcessAfterInitialization(330) : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$f21cb70a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-30 13:55:54 [INFO ] [AbstractAddressingEndpointMapping.java] afterPropertiesSet(236) : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2019-10-30 13:55:54 [INFO ] [PostProcessorRegistrationDelegate.java] postProcessAfterInitialization(330) : Bean 'org.springframework.hateoas.config.HateoasConfiguration' of type [org.springframework.hateoas.config.HateoasConfiguration$$EnhancerBySpringCGLIB$$cd053f3d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-30 13:55:54 [INFO ] [PostProcessorRegistrationDelegate.java] postProcessAfterInitialization(330) : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$4d84f20b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-30 13:55:54 [INFO ] [TomcatWebServer.java] initialize(90) : Tomcat initialized with port(s): 80 (http)
+2019-10-30 13:55:54 [INFO ] [DirectJDKLog.java] log(173) : Starting service [Tomcat]
+2019-10-30 13:55:54 [INFO ] [DirectJDKLog.java] log(173) : Starting Servlet Engine: Apache Tomcat/9.0.13
+2019-10-30 13:55:54 [INFO ] [DirectJDKLog.java] log(173) : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/minsungkim/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2019-10-30 13:55:54 [INFO ] [DirectJDKLog.java] log(173) : Initializing Spring embedded WebApplicationContext
+2019-10-30 13:55:54 [INFO ] [ServletWebServerApplicationContext.java] prepareWebApplicationContext(296) : Root WebApplicationContext: initialization completed in 1146 ms
+2019-10-30 13:55:55 [INFO ] [DefaultSecurityFilterChain.java] <init>(43) : Creating filter chain: Ant [pattern='/js/**'], []
+2019-10-30 13:55:55 [INFO ] [DefaultSecurityFilterChain.java] <init>(43) : Creating filter chain: Ant [pattern='/css/**'], []
+2019-10-30 13:55:55 [INFO ] [DefaultSecurityFilterChain.java] <init>(43) : Creating filter chain: Ant [pattern='/img/**'], []
+2019-10-30 13:55:55 [INFO ] [DefaultSecurityFilterChain.java] <init>(43) : Creating filter chain: Ant [pattern='/assets/**'], []
+2019-10-30 13:55:55 [INFO ] [DefaultSecurityFilterChain.java] <init>(43) : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4cb702ce, org.springframework.security.web.context.SecurityContextPersistenceFilter@6d0be7ab, org.springframework.security.web.header.HeaderWriterFilter@4da39ca9, org.springframework.security.web.csrf.CsrfFilter@76fe6cdc, org.springframework.security.web.authentication.logout.LogoutFilter@1668919e, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@642857e0, org.springframework.web.filter.CompositeFilter@383caf89, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6ef60295, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2bfaba70, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@64c781a9, org.springframework.security.web.session.SessionManagementFilter@5584d9c6, org.springframework.security.web.access.ExceptionTranslationFilter@682af059, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7e351d7]
+2019-10-30 13:55:55 [INFO ] [ExecutorConfigurationSupport.java] initialize(171) : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-30 13:55:56 [INFO ] [WelcomePageHandlerMapping.java] <init>(61) : Adding welcome page template: index
+2019-10-30 13:55:56 [INFO ] [TomcatWebServer.java] start(204) : Tomcat started on port(s): 80 (http) with context path ''
+2019-10-30 13:55:56 [INFO ] [StartupInfoLogger.java] logStarted(59) : Started VioletWebApplication in 3.229 seconds (JVM running for 3.702)
+2019-10-30 13:59:15 [INFO ] [DirectJDKLog.java] log(173) : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-10-30 13:59:15 [INFO ] [FrameworkServlet.java] initServletBean(524) : Initializing Servlet 'dispatcherServlet'
+2019-10-30 13:59:15 [INFO ] [FrameworkServlet.java] initServletBean(546) : Completed initialization in 14 ms
+2019-10-30 13:59:15 [WARN ] [HikariConfig.java] validateNumerics(1008) : {} - idleTimeout has been set but has no effect because the pool is operating as a fixed size pool.
+2019-10-30 13:59:15 [INFO ] [HikariDataSource.java] getConnection(110) : hikari-cp - Starting...
+2019-10-30 13:59:15 [WARN ] [DriverDataSource.java] <init>(68) : Registered driver with driverClassName=oracle.jdbc.driver.OracleDriver was not found, trying direct instantiation.
+2019-10-30 13:59:16 [ERROR] [HikariPool.java] throwPoolInitializationException(574) : hikari-cp - Exception during pool initialization.
 java.sql.SQLRecoverableException: IO 오류: The Network Adapter could not establish the connection
-	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:673)
-	at oracle.jdbc.driver.PhysicalConnection.<init>(PhysicalConnection.java:711)
-	at oracle.jdbc.driver.T4CConnection.<init>(T4CConnection.java:385)
-	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:30)
-	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:558)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:458)
+	at oracle.jdbc.driver.PhysicalConnection.<init>(PhysicalConnection.java:546)
+	at oracle.jdbc.driver.T4CConnection.<init>(T4CConnection.java:236)
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:32)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:521)
 	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:136)
 	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:369)
 	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:198)
@@ -62,7 +62,7 @@ java.sql.SQLRecoverableException: IO 오류: The Network Adapter could not estab
 	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:433)
 	at com.sun.proxy.$Proxy80.selectOne(Unknown Source)
 	at org.mybatis.spring.SqlSessionTemplate.selectOne(SqlSessionTemplate.java:158)
-	at com.violet.web.index.IndexRepository.paperListCount(IndexRepository.java:25)
+	at com.violet.web.index.IndexRepository.paperListCount(IndexRepository.java:26)
 	at com.violet.web.index.IndexRepository$$FastClassBySpringCGLIB$$8a00c784.invoke(<generated>)
 	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
 	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:749)
@@ -70,9 +70,9 @@ java.sql.SQLRecoverableException: IO 오류: The Network Adapter could not estab
 	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:139)
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
 	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:688)
-	at com.violet.web.index.IndexRepository$$EnhancerBySpringCGLIB$$2d26b265.paperListCount(<generated>)
-	at com.violet.web.index.IndexController.doPaperListAll(IndexController.java:46)
-	at com.violet.web.index.IndexController.index(IndexController.java:27)
+	at com.violet.web.index.IndexRepository$$EnhancerBySpringCGLIB$$e7f08b7f.paperListCount(<generated>)
+	at com.violet.web.index.IndexController.doPaperListAll(IndexController.java:51)
+	at com.violet.web.index.IndexController.index(IndexController.java:30)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -175,12 +175,12 @@ java.sql.SQLRecoverableException: IO 오류: The Network Adapter could not estab
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.lang.Thread.run(Thread.java:748)
 Caused by: oracle.net.ns.NetException: The Network Adapter could not establish the connection
-	at oracle.net.nt.ConnStrategy.execute(ConnStrategy.java:445)
-	at oracle.net.resolver.AddrResolution.resolveAndExecute(AddrResolution.java:464)
-	at oracle.net.ns.NSProtocol.establishConnection(NSProtocol.java:594)
-	at oracle.net.ns.NSProtocol.connect(NSProtocol.java:229)
-	at oracle.jdbc.driver.T4CConnection.connect(T4CConnection.java:1360)
-	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:486)
+	at oracle.net.nt.ConnStrategy.execute(ConnStrategy.java:392)
+	at oracle.net.resolver.AddrResolution.resolveAndExecute(AddrResolution.java:434)
+	at oracle.net.ns.NSProtocol.establishConnection(NSProtocol.java:687)
+	at oracle.net.ns.NSProtocol.connect(NSProtocol.java:247)
+	at oracle.jdbc.driver.T4CConnection.connect(T4CConnection.java:1102)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:320)
 	... 145 common frames omitted
 Caused by: java.net.ConnectException: Connection refused (Connection refused)
 	at java.net.PlainSocketImpl.socketConnect(Native Method)
@@ -189,26 +189,26 @@ Caused by: java.net.ConnectException: Connection refused (Connection refused)
 	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
 	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
 	at java.net.Socket.connect(Socket.java:589)
-	at oracle.net.nt.TcpNTAdapter.connect(TcpNTAdapter.java:162)
+	at oracle.net.nt.TcpNTAdapter.connect(TcpNTAdapter.java:150)
 	at oracle.net.nt.ConnOption.connect(ConnOption.java:133)
-	at oracle.net.nt.ConnStrategy.execute(ConnStrategy.java:411)
+	at oracle.net.nt.ConnStrategy.execute(ConnStrategy.java:370)
 	... 150 common frames omitted
-2019-02-28 13:06:11 [ERROR] [IndexRepository.java] paperListCount(28) : org.mybatis.spring.MyBatisSystemException: nested exception is org.apache.ibatis.exceptions.PersistenceException: 
+2019-10-30 13:59:16 [ERROR] [IndexRepository.java] paperListCount(29) : org.mybatis.spring.MyBatisSystemException: nested exception is org.apache.ibatis.exceptions.PersistenceException: 
 ### Error querying database.  Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLRecoverableException: IO 오류: The Network Adapter could not establish the connection
-### The error may exist in file [/Users/minsungkim/eclipse-workspace/VioletWeb/target/classes/mybatis/mapper/index/Index-Mapper.xml]
+### The error may exist in file [/Users/minsungkim/git/Violet/VioletWeb/target/classes/mybatis/mapper/index/Index-Mapper.xml]
 ### The error may involve indexMapper.paperListCount
 ### The error occurred while executing a query
 ### Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLRecoverableException: IO 오류: The Network Adapter could not establish the connection
-2019-02-28 13:06:11 [WARN ] [HikariConfig.java] validateNumerics(1008) : {} - idleTimeout has been set but has no effect because the pool is operating as a fixed size pool.
-2019-02-28 13:06:11 [INFO ] [HikariDataSource.java] getConnection(110) : hikari-cp - Starting...
-2019-02-28 13:06:11 [WARN ] [DriverDataSource.java] <init>(68) : Registered driver with driverClassName=oracle.jdbc.driver.OracleDriver was not found, trying direct instantiation.
-2019-02-28 13:06:12 [ERROR] [HikariPool.java] throwPoolInitializationException(574) : hikari-cp - Exception during pool initialization.
+2019-10-30 13:59:16 [WARN ] [HikariConfig.java] validateNumerics(1008) : {} - idleTimeout has been set but has no effect because the pool is operating as a fixed size pool.
+2019-10-30 13:59:16 [INFO ] [HikariDataSource.java] getConnection(110) : hikari-cp - Starting...
+2019-10-30 13:59:16 [WARN ] [DriverDataSource.java] <init>(68) : Registered driver with driverClassName=oracle.jdbc.driver.OracleDriver was not found, trying direct instantiation.
+2019-10-30 13:59:17 [ERROR] [HikariPool.java] throwPoolInitializationException(574) : hikari-cp - Exception during pool initialization.
 java.sql.SQLRecoverableException: IO 오류: The Network Adapter could not establish the connection
-	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:673)
-	at oracle.jdbc.driver.PhysicalConnection.<init>(PhysicalConnection.java:711)
-	at oracle.jdbc.driver.T4CConnection.<init>(T4CConnection.java:385)
-	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:30)
-	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:558)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:458)
+	at oracle.jdbc.driver.PhysicalConnection.<init>(PhysicalConnection.java:546)
+	at oracle.jdbc.driver.T4CConnection.<init>(T4CConnection.java:236)
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:32)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:521)
 	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:136)
 	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:369)
 	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:198)
@@ -238,7 +238,7 @@ java.sql.SQLRecoverableException: IO 오류: The Network Adapter could not estab
 	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:433)
 	at com.sun.proxy.$Proxy80.selectOne(Unknown Source)
 	at org.mybatis.spring.SqlSessionTemplate.selectOne(SqlSessionTemplate.java:158)
-	at com.violet.web.index.IndexRepository.newListCount(IndexRepository.java:53)
+	at com.violet.web.index.IndexRepository.newListCount(IndexRepository.java:54)
 	at com.violet.web.index.IndexRepository$$FastClassBySpringCGLIB$$8a00c784.invoke(<generated>)
 	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
 	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:749)
@@ -246,9 +246,9 @@ java.sql.SQLRecoverableException: IO 오류: The Network Adapter could not estab
 	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:139)
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
 	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:688)
-	at com.violet.web.index.IndexRepository$$EnhancerBySpringCGLIB$$2d26b265.newListCount(<generated>)
-	at com.violet.web.index.IndexController.doNewListAll(IndexController.java:70)
-	at com.violet.web.index.IndexController.index(IndexController.java:31)
+	at com.violet.web.index.IndexRepository$$EnhancerBySpringCGLIB$$e7f08b7f.newListCount(<generated>)
+	at com.violet.web.index.IndexController.doNewListAll(IndexController.java:75)
+	at com.violet.web.index.IndexController.index(IndexController.java:34)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -351,12 +351,12 @@ java.sql.SQLRecoverableException: IO 오류: The Network Adapter could not estab
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.lang.Thread.run(Thread.java:748)
 Caused by: oracle.net.ns.NetException: The Network Adapter could not establish the connection
-	at oracle.net.nt.ConnStrategy.execute(ConnStrategy.java:445)
-	at oracle.net.resolver.AddrResolution.resolveAndExecute(AddrResolution.java:464)
-	at oracle.net.ns.NSProtocol.establishConnection(NSProtocol.java:594)
-	at oracle.net.ns.NSProtocol.connect(NSProtocol.java:229)
-	at oracle.jdbc.driver.T4CConnection.connect(T4CConnection.java:1360)
-	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:486)
+	at oracle.net.nt.ConnStrategy.execute(ConnStrategy.java:392)
+	at oracle.net.resolver.AddrResolution.resolveAndExecute(AddrResolution.java:434)
+	at oracle.net.ns.NSProtocol.establishConnection(NSProtocol.java:687)
+	at oracle.net.ns.NSProtocol.connect(NSProtocol.java:247)
+	at oracle.jdbc.driver.T4CConnection.connect(T4CConnection.java:1102)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:320)
 	... 145 common frames omitted
 Caused by: java.net.ConnectException: Connection refused (Connection refused)
 	at java.net.PlainSocketImpl.socketConnect(Native Method)
@@ -365,27 +365,29 @@ Caused by: java.net.ConnectException: Connection refused (Connection refused)
 	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
 	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
 	at java.net.Socket.connect(Socket.java:589)
-	at oracle.net.nt.TcpNTAdapter.connect(TcpNTAdapter.java:162)
+	at oracle.net.nt.TcpNTAdapter.connect(TcpNTAdapter.java:150)
 	at oracle.net.nt.ConnOption.connect(ConnOption.java:133)
-	at oracle.net.nt.ConnStrategy.execute(ConnStrategy.java:411)
+	at oracle.net.nt.ConnStrategy.execute(ConnStrategy.java:370)
 	... 150 common frames omitted
-2019-02-28 13:06:12 [ERROR] [IndexRepository.java] newListCount(56) : org.mybatis.spring.MyBatisSystemException: nested exception is org.apache.ibatis.exceptions.PersistenceException: 
+2019-10-30 13:59:17 [ERROR] [IndexRepository.java] newListCount(57) : org.mybatis.spring.MyBatisSystemException: nested exception is org.apache.ibatis.exceptions.PersistenceException: 
 ### Error querying database.  Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLRecoverableException: IO 오류: The Network Adapter could not establish the connection
-### The error may exist in file [/Users/minsungkim/eclipse-workspace/VioletWeb/target/classes/mybatis/mapper/index/Index-Mapper.xml]
+### The error may exist in file [/Users/minsungkim/git/Violet/VioletWeb/target/classes/mybatis/mapper/index/Index-Mapper.xml]
 ### The error may involve indexMapper.newListCount
 ### The error occurred while executing a query
 ### Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLRecoverableException: IO 오류: The Network Adapter could not establish the connection
-2019-02-28 13:06:13 [WARN ] [FragmentProcessor.groovy] doProcess(75) : You don't need to put the layout:fragment/data-layout-fragment attribute into the <head> section - the decoration process will automatically copy the <head> section of your content templates into your layout page.
-2019-02-28 13:06:13 [WARN ] [HikariConfig.java] validateNumerics(1008) : {} - idleTimeout has been set but has no effect because the pool is operating as a fixed size pool.
-2019-02-28 13:06:13 [INFO ] [HikariDataSource.java] getConnection(110) : hikari-cp - Starting...
-2019-02-28 13:06:13 [WARN ] [DriverDataSource.java] <init>(68) : Registered driver with driverClassName=oracle.jdbc.driver.OracleDriver was not found, trying direct instantiation.
-2019-02-28 13:06:14 [ERROR] [HikariPool.java] throwPoolInitializationException(574) : hikari-cp - Exception during pool initialization.
-java.sql.SQLRecoverableException: IO 오류: The Network Adapter could not establish the connection
-	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:673)
-	at oracle.jdbc.driver.PhysicalConnection.<init>(PhysicalConnection.java:711)
-	at oracle.jdbc.driver.T4CConnection.<init>(T4CConnection.java:385)
-	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:30)
-	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:558)
+2019-10-30 13:59:18 [WARN ] [FragmentProcessor.groovy] doProcess(75) : You don't need to put the layout:fragment/data-layout-fragment attribute into the <head> section - the decoration process will automatically copy the <head> section of your content templates into your layout page.
+2019-10-30 13:59:47 [WARN ] [HikariConfig.java] validateNumerics(1008) : {} - idleTimeout has been set but has no effect because the pool is operating as a fixed size pool.
+2019-10-30 13:59:47 [INFO ] [HikariDataSource.java] getConnection(110) : hikari-cp - Starting...
+2019-10-30 13:59:47 [WARN ] [DriverDataSource.java] <init>(68) : Registered driver with driverClassName=oracle.jdbc.driver.OracleDriver was not found, trying direct instantiation.
+2019-10-30 13:59:48 [ERROR] [HikariPool.java] throwPoolInitializationException(574) : hikari-cp - Exception during pool initialization.
+java.sql.SQLException: Listener refused the connection with the following error:
+ORA-12528, TNS:listener: all appropriate instances are blocking new connections
+ 
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:458)
+	at oracle.jdbc.driver.PhysicalConnection.<init>(PhysicalConnection.java:546)
+	at oracle.jdbc.driver.T4CConnection.<init>(T4CConnection.java:236)
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:32)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:521)
 	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:136)
 	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:369)
 	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:198)
@@ -415,7 +417,7 @@ java.sql.SQLRecoverableException: IO 오류: The Network Adapter could not estab
 	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:433)
 	at com.sun.proxy.$Proxy80.selectOne(Unknown Source)
 	at org.mybatis.spring.SqlSessionTemplate.selectOne(SqlSessionTemplate.java:158)
-	at com.violet.web.index.IndexRepository.paperListCount(IndexRepository.java:25)
+	at com.violet.web.index.IndexRepository.paperListCount(IndexRepository.java:26)
 	at com.violet.web.index.IndexRepository$$FastClassBySpringCGLIB$$8a00c784.invoke(<generated>)
 	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
 	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:749)
@@ -423,9 +425,9 @@ java.sql.SQLRecoverableException: IO 오류: The Network Adapter could not estab
 	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:139)
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
 	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:688)
-	at com.violet.web.index.IndexRepository$$EnhancerBySpringCGLIB$$2d26b265.paperListCount(<generated>)
-	at com.violet.web.index.IndexController.doPaperListAll(IndexController.java:46)
-	at com.violet.web.index.IndexController.index(IndexController.java:27)
+	at com.violet.web.index.IndexRepository$$EnhancerBySpringCGLIB$$e7f08b7f.paperListCount(<generated>)
+	at com.violet.web.index.IndexController.doPaperListAll(IndexController.java:51)
+	at com.violet.web.index.IndexController.index(IndexController.java:30)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -527,41 +529,35 @@ java.sql.SQLRecoverableException: IO 오류: The Network Adapter could not estab
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.lang.Thread.run(Thread.java:748)
-Caused by: oracle.net.ns.NetException: The Network Adapter could not establish the connection
-	at oracle.net.nt.ConnStrategy.execute(ConnStrategy.java:445)
-	at oracle.net.resolver.AddrResolution.resolveAndExecute(AddrResolution.java:464)
-	at oracle.net.ns.NSProtocol.establishConnection(NSProtocol.java:594)
-	at oracle.net.ns.NSProtocol.connect(NSProtocol.java:229)
-	at oracle.jdbc.driver.T4CConnection.connect(T4CConnection.java:1360)
-	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:486)
+Caused by: oracle.net.ns.NetException: Listener refused the connection with the following error:
+ORA-12528, TNS:listener: all appropriate instances are blocking new connections
+ 
+	at oracle.net.ns.NSProtocol.connect(NSProtocol.java:395)
+	at oracle.jdbc.driver.T4CConnection.connect(T4CConnection.java:1102)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:320)
 	... 145 common frames omitted
-Caused by: java.net.ConnectException: Connection refused (Connection refused)
-	at java.net.PlainSocketImpl.socketConnect(Native Method)
-	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
-	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
-	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
-	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
-	at java.net.Socket.connect(Socket.java:589)
-	at oracle.net.nt.TcpNTAdapter.connect(TcpNTAdapter.java:162)
-	at oracle.net.nt.ConnOption.connect(ConnOption.java:133)
-	at oracle.net.nt.ConnStrategy.execute(ConnStrategy.java:411)
-	... 150 common frames omitted
-2019-02-28 13:06:14 [ERROR] [IndexRepository.java] paperListCount(28) : org.mybatis.spring.MyBatisSystemException: nested exception is org.apache.ibatis.exceptions.PersistenceException: 
-### Error querying database.  Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLRecoverableException: IO 오류: The Network Adapter could not establish the connection
-### The error may exist in file [/Users/minsungkim/eclipse-workspace/VioletWeb/target/classes/mybatis/mapper/index/Index-Mapper.xml]
+2019-10-30 13:59:48 [ERROR] [IndexRepository.java] paperListCount(29) : org.mybatis.spring.MyBatisSystemException: nested exception is org.apache.ibatis.exceptions.PersistenceException: 
+### Error querying database.  Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Listener refused the connection with the following error:
+ORA-12528, TNS:listener: all appropriate instances are blocking new connections
+ 
+### The error may exist in file [/Users/minsungkim/git/Violet/VioletWeb/target/classes/mybatis/mapper/index/Index-Mapper.xml]
 ### The error may involve indexMapper.paperListCount
 ### The error occurred while executing a query
-### Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLRecoverableException: IO 오류: The Network Adapter could not establish the connection
-2019-02-28 13:06:14 [WARN ] [HikariConfig.java] validateNumerics(1008) : {} - idleTimeout has been set but has no effect because the pool is operating as a fixed size pool.
-2019-02-28 13:06:14 [INFO ] [HikariDataSource.java] getConnection(110) : hikari-cp - Starting...
-2019-02-28 13:06:14 [WARN ] [DriverDataSource.java] <init>(68) : Registered driver with driverClassName=oracle.jdbc.driver.OracleDriver was not found, trying direct instantiation.
-2019-02-28 13:06:15 [ERROR] [HikariPool.java] throwPoolInitializationException(574) : hikari-cp - Exception during pool initialization.
-java.sql.SQLRecoverableException: IO 오류: The Network Adapter could not establish the connection
-	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:673)
-	at oracle.jdbc.driver.PhysicalConnection.<init>(PhysicalConnection.java:711)
-	at oracle.jdbc.driver.T4CConnection.<init>(T4CConnection.java:385)
-	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:30)
-	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:558)
+### Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Listener refused the connection with the following error:
+ORA-12528, TNS:listener: all appropriate instances are blocking new connections
+ 
+2019-10-30 13:59:48 [WARN ] [HikariConfig.java] validateNumerics(1008) : {} - idleTimeout has been set but has no effect because the pool is operating as a fixed size pool.
+2019-10-30 13:59:48 [INFO ] [HikariDataSource.java] getConnection(110) : hikari-cp - Starting...
+2019-10-30 13:59:48 [WARN ] [DriverDataSource.java] <init>(68) : Registered driver with driverClassName=oracle.jdbc.driver.OracleDriver was not found, trying direct instantiation.
+2019-10-30 13:59:49 [ERROR] [HikariPool.java] throwPoolInitializationException(574) : hikari-cp - Exception during pool initialization.
+java.sql.SQLException: Listener refused the connection with the following error:
+ORA-12528, TNS:listener: all appropriate instances are blocking new connections
+ 
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:458)
+	at oracle.jdbc.driver.PhysicalConnection.<init>(PhysicalConnection.java:546)
+	at oracle.jdbc.driver.T4CConnection.<init>(T4CConnection.java:236)
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:32)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:521)
 	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:136)
 	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:369)
 	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:198)
@@ -591,7 +587,7 @@ java.sql.SQLRecoverableException: IO 오류: The Network Adapter could not estab
 	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:433)
 	at com.sun.proxy.$Proxy80.selectOne(Unknown Source)
 	at org.mybatis.spring.SqlSessionTemplate.selectOne(SqlSessionTemplate.java:158)
-	at com.violet.web.index.IndexRepository.newListCount(IndexRepository.java:53)
+	at com.violet.web.index.IndexRepository.newListCount(IndexRepository.java:54)
 	at com.violet.web.index.IndexRepository$$FastClassBySpringCGLIB$$8a00c784.invoke(<generated>)
 	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
 	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:749)
@@ -599,9 +595,9 @@ java.sql.SQLRecoverableException: IO 오류: The Network Adapter could not estab
 	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:139)
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
 	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:688)
-	at com.violet.web.index.IndexRepository$$EnhancerBySpringCGLIB$$2d26b265.newListCount(<generated>)
-	at com.violet.web.index.IndexController.doNewListAll(IndexController.java:70)
-	at com.violet.web.index.IndexController.index(IndexController.java:31)
+	at com.violet.web.index.IndexRepository$$EnhancerBySpringCGLIB$$e7f08b7f.newListCount(<generated>)
+	at com.violet.web.index.IndexController.doNewListAll(IndexController.java:75)
+	at com.violet.web.index.IndexController.index(IndexController.java:34)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -703,450 +699,27 @@ java.sql.SQLRecoverableException: IO 오류: The Network Adapter could not estab
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.lang.Thread.run(Thread.java:748)
-Caused by: oracle.net.ns.NetException: The Network Adapter could not establish the connection
-	at oracle.net.nt.ConnStrategy.execute(ConnStrategy.java:445)
-	at oracle.net.resolver.AddrResolution.resolveAndExecute(AddrResolution.java:464)
-	at oracle.net.ns.NSProtocol.establishConnection(NSProtocol.java:594)
-	at oracle.net.ns.NSProtocol.connect(NSProtocol.java:229)
-	at oracle.jdbc.driver.T4CConnection.connect(T4CConnection.java:1360)
-	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:486)
+Caused by: oracle.net.ns.NetException: Listener refused the connection with the following error:
+ORA-12528, TNS:listener: all appropriate instances are blocking new connections
+ 
+	at oracle.net.ns.NSProtocol.connect(NSProtocol.java:395)
+	at oracle.jdbc.driver.T4CConnection.connect(T4CConnection.java:1102)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:320)
 	... 145 common frames omitted
-Caused by: java.net.ConnectException: Connection refused (Connection refused)
-	at java.net.PlainSocketImpl.socketConnect(Native Method)
-	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
-	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
-	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
-	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
-	at java.net.Socket.connect(Socket.java:589)
-	at oracle.net.nt.TcpNTAdapter.connect(TcpNTAdapter.java:162)
-	at oracle.net.nt.ConnOption.connect(ConnOption.java:133)
-	at oracle.net.nt.ConnStrategy.execute(ConnStrategy.java:411)
-	... 150 common frames omitted
-2019-02-28 13:06:15 [ERROR] [IndexRepository.java] newListCount(56) : org.mybatis.spring.MyBatisSystemException: nested exception is org.apache.ibatis.exceptions.PersistenceException: 
-### Error querying database.  Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLRecoverableException: IO 오류: The Network Adapter could not establish the connection
-### The error may exist in file [/Users/minsungkim/eclipse-workspace/VioletWeb/target/classes/mybatis/mapper/index/Index-Mapper.xml]
+2019-10-30 13:59:49 [ERROR] [IndexRepository.java] newListCount(57) : org.mybatis.spring.MyBatisSystemException: nested exception is org.apache.ibatis.exceptions.PersistenceException: 
+### Error querying database.  Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Listener refused the connection with the following error:
+ORA-12528, TNS:listener: all appropriate instances are blocking new connections
+ 
+### The error may exist in file [/Users/minsungkim/git/Violet/VioletWeb/target/classes/mybatis/mapper/index/Index-Mapper.xml]
 ### The error may involve indexMapper.newListCount
 ### The error occurred while executing a query
-### Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLRecoverableException: IO 오류: The Network Adapter could not establish the connection
-2019-02-28 13:06:24 [WARN ] [HikariConfig.java] validateNumerics(1008) : {} - idleTimeout has been set but has no effect because the pool is operating as a fixed size pool.
-2019-02-28 13:06:24 [INFO ] [HikariDataSource.java] getConnection(110) : hikari-cp - Starting...
-2019-02-28 13:06:24 [WARN ] [DriverDataSource.java] <init>(68) : Registered driver with driverClassName=oracle.jdbc.driver.OracleDriver was not found, trying direct instantiation.
-2019-02-28 13:06:25 [ERROR] [HikariPool.java] throwPoolInitializationException(574) : hikari-cp - Exception during pool initialization.
-java.sql.SQLRecoverableException: IO 오류: The Network Adapter could not establish the connection
-	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:673)
-	at oracle.jdbc.driver.PhysicalConnection.<init>(PhysicalConnection.java:711)
-	at oracle.jdbc.driver.T4CConnection.<init>(T4CConnection.java:385)
-	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:30)
-	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:558)
-	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:136)
-	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:369)
-	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:198)
-	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:467)
-	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:541)
-	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115)
-	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
-	at org.springframework.jdbc.datasource.DataSourceUtils.fetchConnection(DataSourceUtils.java:151)
-	at org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:115)
-	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:78)
-	at org.mybatis.spring.transaction.SpringManagedTransaction.openConnection(SpringManagedTransaction.java:82)
-	at org.mybatis.spring.transaction.SpringManagedTransaction.getConnection(SpringManagedTransaction.java:68)
-	at org.apache.ibatis.executor.BaseExecutor.getConnection(BaseExecutor.java:338)
-	at org.apache.ibatis.executor.SimpleExecutor.prepareStatement(SimpleExecutor.java:84)
-	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:62)
-	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:326)
-	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:156)
-	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:136)
-	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:148)
-	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:141)
-	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectOne(DefaultSqlSession.java:77)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:433)
-	at com.sun.proxy.$Proxy80.selectOne(Unknown Source)
-	at org.mybatis.spring.SqlSessionTemplate.selectOne(SqlSessionTemplate.java:166)
-	at com.violet.web.user.UserRepository.findByUserNameCount(UserRepository.java:79)
-	at com.violet.web.user.UserRepository$$FastClassBySpringCGLIB$$d413861c.invoke(<generated>)
-	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
-	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:749)
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
-	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:139)
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
-	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:688)
-	at com.violet.web.user.UserRepository$$EnhancerBySpringCGLIB$$670f14bd.findByUserNameCount(<generated>)
-	at com.violet.web.config.AuthProvider.authenticate(AuthProvider.java:40)
-	at org.springframework.security.authentication.ProviderManager.authenticate(ProviderManager.java:174)
-	at org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter.attemptAuthentication(UsernamePasswordAuthenticationFilter.java:94)
-	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:212)
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
-	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116)
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
-	at org.springframework.security.web.csrf.CsrfFilter.doFilterInternal(CsrfFilter.java:124)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
-	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:74)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
-	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105)
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
-	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
-	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215)
-	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178)
-	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:357)
-	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:270)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.springframework.security.oauth2.client.filter.OAuth2ClientContextFilter.doFilter(OAuth2ClientContextFilter.java:60)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:791)
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1417)
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
-	at java.lang.Thread.run(Thread.java:748)
-Caused by: oracle.net.ns.NetException: The Network Adapter could not establish the connection
-	at oracle.net.nt.ConnStrategy.execute(ConnStrategy.java:445)
-	at oracle.net.resolver.AddrResolution.resolveAndExecute(AddrResolution.java:464)
-	at oracle.net.ns.NSProtocol.establishConnection(NSProtocol.java:594)
-	at oracle.net.ns.NSProtocol.connect(NSProtocol.java:229)
-	at oracle.jdbc.driver.T4CConnection.connect(T4CConnection.java:1360)
-	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:486)
-	... 100 common frames omitted
-Caused by: java.net.ConnectException: Connection refused (Connection refused)
-	at java.net.PlainSocketImpl.socketConnect(Native Method)
-	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
-	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
-	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
-	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
-	at java.net.Socket.connect(Socket.java:589)
-	at oracle.net.nt.TcpNTAdapter.connect(TcpNTAdapter.java:162)
-	at oracle.net.nt.ConnOption.connect(ConnOption.java:133)
-	at oracle.net.nt.ConnStrategy.execute(ConnStrategy.java:411)
-	... 105 common frames omitted
-2019-02-28 13:06:26 [ERROR] [UserRepository.java] findByUserNameCount(82) : User Count Error : org.mybatis.spring.MyBatisSystemException: nested exception is org.apache.ibatis.exceptions.PersistenceException: 
-### Error querying database.  Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLRecoverableException: IO 오류: The Network Adapter could not establish the connection
-### The error may exist in file [/Users/minsungkim/eclipse-workspace/VioletWeb/target/classes/mybatis/mapper/user/User-Mapper.xml]
-### The error may involve userMapper.findByUserNameCount
-### The error occurred while executing a query
-### Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLRecoverableException: IO 오류: The Network Adapter could not establish the connection
-2019-02-28 13:06:26 [WARN ] [HikariConfig.java] validateNumerics(1008) : {} - idleTimeout has been set but has no effect because the pool is operating as a fixed size pool.
-2019-02-28 13:06:26 [INFO ] [HikariDataSource.java] getConnection(110) : hikari-cp - Starting...
-2019-02-28 13:06:26 [WARN ] [DriverDataSource.java] <init>(68) : Registered driver with driverClassName=oracle.jdbc.driver.OracleDriver was not found, trying direct instantiation.
-2019-02-28 13:06:27 [ERROR] [HikariPool.java] throwPoolInitializationException(574) : hikari-cp - Exception during pool initialization.
-java.sql.SQLRecoverableException: IO 오류: The Network Adapter could not establish the connection
-	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:673)
-	at oracle.jdbc.driver.PhysicalConnection.<init>(PhysicalConnection.java:711)
-	at oracle.jdbc.driver.T4CConnection.<init>(T4CConnection.java:385)
-	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:30)
-	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:558)
-	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:136)
-	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:369)
-	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:198)
-	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:467)
-	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:541)
-	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115)
-	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
-	at org.springframework.jdbc.datasource.DataSourceUtils.fetchConnection(DataSourceUtils.java:151)
-	at org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:115)
-	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:78)
-	at org.mybatis.spring.transaction.SpringManagedTransaction.openConnection(SpringManagedTransaction.java:82)
-	at org.mybatis.spring.transaction.SpringManagedTransaction.getConnection(SpringManagedTransaction.java:68)
-	at org.apache.ibatis.executor.BaseExecutor.getConnection(BaseExecutor.java:338)
-	at org.apache.ibatis.executor.SimpleExecutor.prepareStatement(SimpleExecutor.java:84)
-	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:62)
-	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:326)
-	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:156)
-	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:136)
-	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:148)
-	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:141)
-	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectOne(DefaultSqlSession.java:77)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:433)
-	at com.sun.proxy.$Proxy80.selectOne(Unknown Source)
-	at org.mybatis.spring.SqlSessionTemplate.selectOne(SqlSessionTemplate.java:166)
-	at com.violet.web.user.UserRepository.findByUserNameCount(UserRepository.java:79)
-	at com.violet.web.user.UserRepository$$FastClassBySpringCGLIB$$d413861c.invoke(<generated>)
-	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
-	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:749)
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
-	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:139)
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
-	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:688)
-	at com.violet.web.user.UserRepository$$EnhancerBySpringCGLIB$$670f14bd.findByUserNameCount(<generated>)
-	at com.violet.web.config.AuthProvider.authenticate(AuthProvider.java:40)
-	at org.springframework.security.authentication.ProviderManager.authenticate(ProviderManager.java:174)
-	at org.springframework.security.authentication.ProviderManager.authenticate(ProviderManager.java:199)
-	at org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter.attemptAuthentication(UsernamePasswordAuthenticationFilter.java:94)
-	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:212)
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
-	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116)
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
-	at org.springframework.security.web.csrf.CsrfFilter.doFilterInternal(CsrfFilter.java:124)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
-	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:74)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
-	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105)
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
-	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
-	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215)
-	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178)
-	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:357)
-	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:270)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.springframework.security.oauth2.client.filter.OAuth2ClientContextFilter.doFilter(OAuth2ClientContextFilter.java:60)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:791)
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1417)
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
-	at java.lang.Thread.run(Thread.java:748)
-Caused by: oracle.net.ns.NetException: The Network Adapter could not establish the connection
-	at oracle.net.nt.ConnStrategy.execute(ConnStrategy.java:445)
-	at oracle.net.resolver.AddrResolution.resolveAndExecute(AddrResolution.java:464)
-	at oracle.net.ns.NSProtocol.establishConnection(NSProtocol.java:594)
-	at oracle.net.ns.NSProtocol.connect(NSProtocol.java:229)
-	at oracle.jdbc.driver.T4CConnection.connect(T4CConnection.java:1360)
-	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:486)
-	... 101 common frames omitted
-Caused by: java.net.ConnectException: Connection refused (Connection refused)
-	at java.net.PlainSocketImpl.socketConnect(Native Method)
-	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
-	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
-	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
-	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
-	at java.net.Socket.connect(Socket.java:589)
-	at oracle.net.nt.TcpNTAdapter.connect(TcpNTAdapter.java:162)
-	at oracle.net.nt.ConnOption.connect(ConnOption.java:133)
-	at oracle.net.nt.ConnStrategy.execute(ConnStrategy.java:411)
-	... 106 common frames omitted
-2019-02-28 13:06:27 [ERROR] [UserRepository.java] findByUserNameCount(82) : User Count Error : org.mybatis.spring.MyBatisSystemException: nested exception is org.apache.ibatis.exceptions.PersistenceException: 
-### Error querying database.  Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLRecoverableException: IO 오류: The Network Adapter could not establish the connection
-### The error may exist in file [/Users/minsungkim/eclipse-workspace/VioletWeb/target/classes/mybatis/mapper/user/User-Mapper.xml]
-### The error may involve userMapper.findByUserNameCount
-### The error occurred while executing a query
-### Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLRecoverableException: IO 오류: The Network Adapter could not establish the connection
-2019-02-28 13:06:27 [ERROR] [AuthFailureHandler.java] onAuthenticationFailure(32) : Nonexistent or unauthenticated email.org.springframework.security.core.userdetails.UsernameNotFoundException: Authentication failed : [ test@test.com ]  Not Found Exception.
-2019-02-28 13:08:06 [WARN ] [HikariConfig.java] validateNumerics(1008) : {} - idleTimeout has been set but has no effect because the pool is operating as a fixed size pool.
-2019-02-28 13:08:06 [INFO ] [HikariDataSource.java] getConnection(110) : hikari-cp - Starting...
-2019-02-28 13:08:06 [WARN ] [DriverDataSource.java] <init>(68) : Registered driver with driverClassName=oracle.jdbc.driver.OracleDriver was not found, trying direct instantiation.
-2019-02-28 13:08:06 [INFO ] [PoolBase.java] getAndSetNetworkTimeout(525) : hikari-cp - Driver does not support get/set network timeout for connections. (oracle.jdbc.driver.T4CConnection.getNetworkTimeout()I)
-2019-02-28 13:08:06 [INFO ] [HikariDataSource.java] getConnection(123) : hikari-cp - Start completed.
-2019-02-28 13:08:06 [INFO ] [AuthSuccessHandler.java] onAuthenticationSuccess(154) : Login AuthSuccess : [ <local> test@test.com / 0:0:0:0:0:0:0:1 ]
-2019-02-28 13:16:28 [INFO ] [SpringApplicationAdminMXBeanRegistrar.java] shutdown(164) : Application shutdown requested.
-2019-02-28 13:16:28 [INFO ] [ExecutorConfigurationSupport.java] shutdown(208) : Shutting down ExecutorService 'applicationTaskExecutor'
-2019-02-28 13:16:28 [INFO ] [HikariDataSource.java] close(350) : hikari-cp - Shutdown initiated...
-2019-02-28 13:16:28 [INFO ] [HikariDataSource.java] close(352) : hikari-cp - Shutdown completed.
-2019-02-28 13:16:32 [INFO ] [StartupInfoLogger.java] logStarting(50) : Starting VioletWebApplication on Minui-MacBook-Pro.local with PID 2415 (/Users/minsungkim/eclipse-workspace/VioletWeb/target/classes started by minsungkim in /Users/minsungkim/eclipse-workspace/VioletWeb)
-2019-02-28 13:16:32 [INFO ] [SpringApplication.java] logStartupProfileInfo(679) : The following profiles are active: local
-2019-02-28 13:16:33 [WARN ] [ClassPathMapperScanner.java] doScan(166) : No MyBatis mapper was found in '[com.violet.web]' package. Please check your configuration.
-2019-02-28 13:16:33 [INFO ] [PostProcessorRegistrationDelegate.java] postProcessAfterInitialization(330) : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$94164c77] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-02-28 13:16:33 [INFO ] [AbstractAddressingEndpointMapping.java] afterPropertiesSet(236) : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
-2019-02-28 13:16:33 [INFO ] [PostProcessorRegistrationDelegate.java] postProcessAfterInitialization(330) : Bean 'org.springframework.hateoas.config.HateoasConfiguration' of type [org.springframework.hateoas.config.HateoasConfiguration$$EnhancerBySpringCGLIB$$6efed4aa] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-02-28 13:16:33 [INFO ] [PostProcessorRegistrationDelegate.java] postProcessAfterInitialization(330) : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$ef7e8778] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-02-28 13:16:33 [INFO ] [TomcatWebServer.java] initialize(90) : Tomcat initialized with port(s): 80 (http)
-2019-02-28 13:16:33 [INFO ] [DirectJDKLog.java] log(173) : Starting service [Tomcat]
-2019-02-28 13:16:33 [INFO ] [DirectJDKLog.java] log(173) : Starting Servlet Engine: Apache Tomcat/9.0.13
-2019-02-28 13:16:33 [INFO ] [DirectJDKLog.java] log(173) : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/minsungkim/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
-2019-02-28 13:16:33 [INFO ] [DirectJDKLog.java] log(173) : Initializing Spring embedded WebApplicationContext
-2019-02-28 13:16:33 [INFO ] [ServletWebServerApplicationContext.java] prepareWebApplicationContext(296) : Root WebApplicationContext: initialization completed in 894 ms
-2019-02-28 13:16:34 [INFO ] [DefaultSecurityFilterChain.java] <init>(43) : Creating filter chain: Ant [pattern='/js/**'], []
-2019-02-28 13:16:34 [INFO ] [DefaultSecurityFilterChain.java] <init>(43) : Creating filter chain: Ant [pattern='/css/**'], []
-2019-02-28 13:16:34 [INFO ] [DefaultSecurityFilterChain.java] <init>(43) : Creating filter chain: Ant [pattern='/img/**'], []
-2019-02-28 13:16:34 [INFO ] [DefaultSecurityFilterChain.java] <init>(43) : Creating filter chain: Ant [pattern='/assets/**'], []
-2019-02-28 13:16:34 [INFO ] [DefaultSecurityFilterChain.java] <init>(43) : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@124dac75, org.springframework.security.web.context.SecurityContextPersistenceFilter@17e9bc9e, org.springframework.security.web.header.HeaderWriterFilter@3d20e575, org.springframework.security.web.csrf.CsrfFilter@6a9344f5, org.springframework.security.web.authentication.logout.LogoutFilter@7d97e06c, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@5b88b8e, org.springframework.web.filter.CompositeFilter@315105f, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4130955c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3a6045c6, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7b61bf11, org.springframework.security.web.session.SessionManagementFilter@2b4b96a4, org.springframework.security.web.access.ExceptionTranslationFilter@3234474, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@642857e0]
-2019-02-28 13:16:34 [INFO ] [ExecutorConfigurationSupport.java] initialize(171) : Initializing ExecutorService 'applicationTaskExecutor'
-2019-02-28 13:16:34 [INFO ] [WelcomePageHandlerMapping.java] <init>(61) : Adding welcome page template: index
-2019-02-28 13:16:35 [INFO ] [TomcatWebServer.java] start(204) : Tomcat started on port(s): 80 (http) with context path ''
-2019-02-28 13:16:35 [INFO ] [StartupInfoLogger.java] logStarted(59) : Started VioletWebApplication in 2.649 seconds (JVM running for 3.132)
-2019-02-28 13:16:40 [INFO ] [DirectJDKLog.java] log(173) : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2019-02-28 13:16:40 [INFO ] [FrameworkServlet.java] initServletBean(524) : Initializing Servlet 'dispatcherServlet'
-2019-02-28 13:16:40 [INFO ] [FrameworkServlet.java] initServletBean(546) : Completed initialization in 10 ms
-2019-02-28 13:16:40 [WARN ] [FragmentProcessor.groovy] doProcess(75) : You don't need to put the layout:fragment/data-layout-fragment attribute into the <head> section - the decoration process will automatically copy the <head> section of your content templates into your layout page.
-2019-02-28 13:16:49 [WARN ] [HikariConfig.java] validateNumerics(1008) : {} - idleTimeout has been set but has no effect because the pool is operating as a fixed size pool.
-2019-02-28 13:16:49 [INFO ] [HikariDataSource.java] getConnection(110) : hikari-cp - Starting...
-2019-02-28 13:16:49 [WARN ] [DriverDataSource.java] <init>(68) : Registered driver with driverClassName=oracle.jdbc.driver.OracleDriver was not found, trying direct instantiation.
-2019-02-28 13:16:49 [INFO ] [PoolBase.java] getAndSetNetworkTimeout(525) : hikari-cp - Driver does not support get/set network timeout for connections. (oracle.jdbc.driver.T4CConnection.getNetworkTimeout()I)
-2019-02-28 13:16:49 [INFO ] [HikariDataSource.java] getConnection(123) : hikari-cp - Start completed.
-2019-02-28 13:33:33 [INFO ] [AuthSuccessHandler.java] onAuthenticationSuccess(154) : Login AuthSuccess : [ <kakao> kaver00@nate.com / 0:0:0:0:0:0:0:1 ]
-2019-02-28 13:34:50 [INFO ] [AuthSuccessHandler.java] onAuthenticationSuccess(154) : Login AuthSuccess : [ <kakao> kaver00@nate.com / 0:0:0:0:0:0:0:1 ]
-2019-02-28 13:44:37 [INFO ] [SpringApplicationAdminMXBeanRegistrar.java] shutdown(164) : Application shutdown requested.
-2019-02-28 13:44:37 [INFO ] [ExecutorConfigurationSupport.java] shutdown(208) : Shutting down ExecutorService 'applicationTaskExecutor'
-2019-02-28 13:44:37 [INFO ] [HikariDataSource.java] close(350) : hikari-cp - Shutdown initiated...
-2019-02-28 13:44:37 [INFO ] [HikariDataSource.java] close(352) : hikari-cp - Shutdown completed.
-2019-02-28 13:44:43 [INFO ] [StartupInfoLogger.java] logStarting(50) : Starting VioletWebApplication on Minui-MacBook-Pro.local with PID 2555 (/Users/minsungkim/eclipse-workspace/VioletWeb/target/classes started by minsungkim in /Users/minsungkim/eclipse-workspace/VioletWeb)
-2019-02-28 13:44:43 [INFO ] [SpringApplication.java] logStartupProfileInfo(679) : The following profiles are active: local
-2019-02-28 13:44:43 [WARN ] [ClassPathMapperScanner.java] doScan(166) : No MyBatis mapper was found in '[com.violet.web]' package. Please check your configuration.
-2019-02-28 13:44:44 [INFO ] [PostProcessorRegistrationDelegate.java] postProcessAfterInitialization(330) : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$4e1d16ac] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-02-28 13:44:44 [INFO ] [AbstractAddressingEndpointMapping.java] afterPropertiesSet(236) : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
-2019-02-28 13:44:44 [INFO ] [PostProcessorRegistrationDelegate.java] postProcessAfterInitialization(330) : Bean 'org.springframework.hateoas.config.HateoasConfiguration' of type [org.springframework.hateoas.config.HateoasConfiguration$$EnhancerBySpringCGLIB$$29059edf] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-02-28 13:44:44 [INFO ] [PostProcessorRegistrationDelegate.java] postProcessAfterInitialization(330) : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$a98551ad] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-02-28 13:44:44 [INFO ] [TomcatWebServer.java] initialize(90) : Tomcat initialized with port(s): 80 (http)
-2019-02-28 13:44:44 [INFO ] [DirectJDKLog.java] log(173) : Starting service [Tomcat]
-2019-02-28 13:44:44 [INFO ] [DirectJDKLog.java] log(173) : Starting Servlet Engine: Apache Tomcat/9.0.13
-2019-02-28 13:44:44 [INFO ] [DirectJDKLog.java] log(173) : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/minsungkim/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
-2019-02-28 13:44:44 [INFO ] [DirectJDKLog.java] log(173) : Initializing Spring embedded WebApplicationContext
-2019-02-28 13:44:44 [INFO ] [ServletWebServerApplicationContext.java] prepareWebApplicationContext(296) : Root WebApplicationContext: initialization completed in 908 ms
-2019-02-28 13:44:45 [INFO ] [DefaultSecurityFilterChain.java] <init>(43) : Creating filter chain: Ant [pattern='/js/**'], []
-2019-02-28 13:44:45 [INFO ] [DefaultSecurityFilterChain.java] <init>(43) : Creating filter chain: Ant [pattern='/css/**'], []
-2019-02-28 13:44:45 [INFO ] [DefaultSecurityFilterChain.java] <init>(43) : Creating filter chain: Ant [pattern='/img/**'], []
-2019-02-28 13:44:45 [INFO ] [DefaultSecurityFilterChain.java] <init>(43) : Creating filter chain: Ant [pattern='/assets/**'], []
-2019-02-28 13:44:45 [INFO ] [DefaultSecurityFilterChain.java] <init>(43) : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3472947a, org.springframework.security.web.context.SecurityContextPersistenceFilter@64c781a9, org.springframework.security.web.header.HeaderWriterFilter@4a92c6a9, org.springframework.security.web.csrf.CsrfFilter@58658f63, org.springframework.security.web.authentication.logout.LogoutFilter@430b2699, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@50eb4a2c, org.springframework.web.filter.CompositeFilter@69d3cf7e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5b88b8e, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@14c93774, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3a3ed300, org.springframework.security.web.session.SessionManagementFilter@4cb702ce, org.springframework.security.web.access.ExceptionTranslationFilter@21263314, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4cad79bc]
-2019-02-28 13:44:45 [INFO ] [ExecutorConfigurationSupport.java] initialize(171) : Initializing ExecutorService 'applicationTaskExecutor'
-2019-02-28 13:44:45 [INFO ] [WelcomePageHandlerMapping.java] <init>(61) : Adding welcome page template: index
-2019-02-28 13:44:45 [INFO ] [TomcatWebServer.java] start(204) : Tomcat started on port(s): 80 (http) with context path ''
-2019-02-28 13:44:45 [INFO ] [StartupInfoLogger.java] logStarted(59) : Started VioletWebApplication in 2.643 seconds (JVM running for 3.039)
-2019-02-28 13:44:54 [INFO ] [DirectJDKLog.java] log(173) : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2019-02-28 13:44:54 [INFO ] [FrameworkServlet.java] initServletBean(524) : Initializing Servlet 'dispatcherServlet'
-2019-02-28 13:44:54 [INFO ] [FrameworkServlet.java] initServletBean(546) : Completed initialization in 12 ms
-2019-02-28 13:44:54 [WARN ] [HikariConfig.java] validateNumerics(1008) : {} - idleTimeout has been set but has no effect because the pool is operating as a fixed size pool.
-2019-02-28 13:44:54 [INFO ] [HikariDataSource.java] getConnection(110) : hikari-cp - Starting...
-2019-02-28 13:44:54 [WARN ] [DriverDataSource.java] <init>(68) : Registered driver with driverClassName=oracle.jdbc.driver.OracleDriver was not found, trying direct instantiation.
-2019-02-28 13:44:54 [INFO ] [PoolBase.java] getAndSetNetworkTimeout(525) : hikari-cp - Driver does not support get/set network timeout for connections. (oracle.jdbc.driver.T4CConnection.getNetworkTimeout()I)
-2019-02-28 13:44:54 [INFO ] [HikariDataSource.java] getConnection(123) : hikari-cp - Start completed.
-2019-02-28 13:44:55 [WARN ] [FragmentProcessor.groovy] doProcess(75) : You don't need to put the layout:fragment/data-layout-fragment attribute into the <head> section - the decoration process will automatically copy the <head> section of your content templates into your layout page.
-2019-02-28 14:29:12 [WARN ] [HikariPool.java] run(766) : hikari-cp - Thread starvation or clock leap detected (housekeeper delta=46s975ms).
-2019-02-28 14:38:53 [WARN ] [HikariPool.java] run(766) : hikari-cp - Thread starvation or clock leap detected (housekeeper delta=1m11s539ms).
-2019-02-28 14:53:29 [INFO ] [SpringApplicationAdminMXBeanRegistrar.java] shutdown(164) : Application shutdown requested.
-2019-02-28 14:53:29 [INFO ] [ExecutorConfigurationSupport.java] shutdown(208) : Shutting down ExecutorService 'applicationTaskExecutor'
-2019-02-28 14:53:29 [INFO ] [HikariDataSource.java] close(350) : hikari-cp - Shutdown initiated...
-2019-02-28 14:53:29 [INFO ] [HikariDataSource.java] close(352) : hikari-cp - Shutdown completed.
-2019-02-28 14:53:31 [INFO ] [StartupInfoLogger.java] logStarting(50) : Starting VioletWebApplication on Minui-MacBook-Pro.local with PID 2818 (/Users/minsungkim/eclipse-workspace/VioletWeb/target/classes started by minsungkim in /Users/minsungkim/eclipse-workspace/VioletWeb)
-2019-02-28 14:53:31 [INFO ] [SpringApplication.java] logStartupProfileInfo(679) : The following profiles are active: local
-2019-02-28 14:53:32 [WARN ] [ClassPathMapperScanner.java] doScan(166) : No MyBatis mapper was found in '[com.violet.web]' package. Please check your configuration.
-2019-02-28 14:53:32 [INFO ] [PostProcessorRegistrationDelegate.java] postProcessAfterInitialization(330) : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$2fbe2d91] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-02-28 14:53:32 [INFO ] [AbstractAddressingEndpointMapping.java] afterPropertiesSet(236) : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
-2019-02-28 14:53:32 [INFO ] [PostProcessorRegistrationDelegate.java] postProcessAfterInitialization(330) : Bean 'org.springframework.hateoas.config.HateoasConfiguration' of type [org.springframework.hateoas.config.HateoasConfiguration$$EnhancerBySpringCGLIB$$aa6b5c4] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-02-28 14:53:32 [INFO ] [PostProcessorRegistrationDelegate.java] postProcessAfterInitialization(330) : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$8b266892] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-02-28 14:53:32 [INFO ] [TomcatWebServer.java] initialize(90) : Tomcat initialized with port(s): 80 (http)
-2019-02-28 14:53:32 [INFO ] [DirectJDKLog.java] log(173) : Starting service [Tomcat]
-2019-02-28 14:53:32 [INFO ] [DirectJDKLog.java] log(173) : Starting Servlet Engine: Apache Tomcat/9.0.13
-2019-02-28 14:53:32 [INFO ] [DirectJDKLog.java] log(173) : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/minsungkim/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
-2019-02-28 14:53:32 [INFO ] [DirectJDKLog.java] log(173) : Initializing Spring embedded WebApplicationContext
-2019-02-28 14:53:32 [INFO ] [ServletWebServerApplicationContext.java] prepareWebApplicationContext(296) : Root WebApplicationContext: initialization completed in 896 ms
-2019-02-28 14:53:33 [INFO ] [DefaultSecurityFilterChain.java] <init>(43) : Creating filter chain: Ant [pattern='/js/**'], []
-2019-02-28 14:53:33 [INFO ] [DefaultSecurityFilterChain.java] <init>(43) : Creating filter chain: Ant [pattern='/css/**'], []
-2019-02-28 14:53:33 [INFO ] [DefaultSecurityFilterChain.java] <init>(43) : Creating filter chain: Ant [pattern='/img/**'], []
-2019-02-28 14:53:33 [INFO ] [DefaultSecurityFilterChain.java] <init>(43) : Creating filter chain: Ant [pattern='/assets/**'], []
-2019-02-28 14:53:33 [INFO ] [DefaultSecurityFilterChain.java] <init>(43) : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6bcb12e6, org.springframework.security.web.context.SecurityContextPersistenceFilter@38b3f208, org.springframework.security.web.header.HeaderWriterFilter@3a6045c6, org.springframework.security.web.csrf.CsrfFilter@71adfedd, org.springframework.security.web.authentication.logout.LogoutFilter@d675f9f, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@45658133, org.springframework.web.filter.CompositeFilter@111d5c97, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@53b1a3f8, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5e99b9c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@29c17c3d, org.springframework.security.web.session.SessionManagementFilter@b67cc70, org.springframework.security.web.access.ExceptionTranslationFilter@63300c4b, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@315105f]
-2019-02-28 14:53:33 [INFO ] [ExecutorConfigurationSupport.java] initialize(171) : Initializing ExecutorService 'applicationTaskExecutor'
-2019-02-28 14:53:34 [INFO ] [WelcomePageHandlerMapping.java] <init>(61) : Adding welcome page template: index
-2019-02-28 14:53:34 [INFO ] [TomcatWebServer.java] start(204) : Tomcat started on port(s): 80 (http) with context path ''
-2019-02-28 14:53:34 [INFO ] [StartupInfoLogger.java] logStarted(59) : Started VioletWebApplication in 2.624 seconds (JVM running for 3.136)
-2019-02-28 14:53:38 [INFO ] [DirectJDKLog.java] log(173) : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2019-02-28 14:53:38 [INFO ] [FrameworkServlet.java] initServletBean(524) : Initializing Servlet 'dispatcherServlet'
-2019-02-28 14:53:38 [INFO ] [FrameworkServlet.java] initServletBean(546) : Completed initialization in 9 ms
-2019-02-28 14:53:39 [WARN ] [FragmentProcessor.groovy] doProcess(75) : You don't need to put the layout:fragment/data-layout-fragment attribute into the <head> section - the decoration process will automatically copy the <head> section of your content templates into your layout page.
-2019-02-28 14:53:46 [WARN ] [HikariConfig.java] validateNumerics(1008) : {} - idleTimeout has been set but has no effect because the pool is operating as a fixed size pool.
-2019-02-28 14:53:46 [INFO ] [HikariDataSource.java] getConnection(110) : hikari-cp - Starting...
-2019-02-28 14:53:46 [WARN ] [DriverDataSource.java] <init>(68) : Registered driver with driverClassName=oracle.jdbc.driver.OracleDriver was not found, trying direct instantiation.
-2019-02-28 14:53:46 [INFO ] [PoolBase.java] getAndSetNetworkTimeout(525) : hikari-cp - Driver does not support get/set network timeout for connections. (oracle.jdbc.driver.T4CConnection.getNetworkTimeout()I)
-2019-02-28 14:53:46 [INFO ] [HikariDataSource.java] getConnection(123) : hikari-cp - Start completed.
-2019-02-28 14:53:46 [INFO ] [AuthSuccessHandler.java] onAuthenticationSuccess(154) : Login AuthSuccess : [ <local> test@test.com / 0:0:0:0:0:0:0:1 ]
-2019-02-28 14:59:58 [INFO ] [SpringApplicationAdminMXBeanRegistrar.java] shutdown(164) : Application shutdown requested.
-2019-02-28 14:59:58 [INFO ] [ExecutorConfigurationSupport.java] shutdown(208) : Shutting down ExecutorService 'applicationTaskExecutor'
-2019-02-28 14:59:58 [INFO ] [HikariDataSource.java] close(350) : hikari-cp - Shutdown initiated...
-2019-02-28 14:59:58 [INFO ] [HikariDataSource.java] close(352) : hikari-cp - Shutdown completed.
-2019-02-28 15:00:01 [INFO ] [StartupInfoLogger.java] logStarting(50) : Starting VioletWebApplication on Minui-MacBook-Pro.local with PID 2834 (/Users/minsungkim/eclipse-workspace/VioletWeb/target/classes started by minsungkim in /Users/minsungkim/eclipse-workspace/VioletWeb)
-2019-02-28 15:00:01 [INFO ] [SpringApplication.java] logStartupProfileInfo(679) : The following profiles are active: local
-2019-02-28 15:00:02 [WARN ] [ClassPathMapperScanner.java] doScan(166) : No MyBatis mapper was found in '[com.violet.web]' package. Please check your configuration.
-2019-02-28 15:00:02 [INFO ] [PostProcessorRegistrationDelegate.java] postProcessAfterInitialization(330) : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$90080819] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-02-28 15:00:02 [INFO ] [AbstractAddressingEndpointMapping.java] afterPropertiesSet(236) : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
-2019-02-28 15:00:02 [INFO ] [PostProcessorRegistrationDelegate.java] postProcessAfterInitialization(330) : Bean 'org.springframework.hateoas.config.HateoasConfiguration' of type [org.springframework.hateoas.config.HateoasConfiguration$$EnhancerBySpringCGLIB$$6af0904c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-02-28 15:00:02 [INFO ] [PostProcessorRegistrationDelegate.java] postProcessAfterInitialization(330) : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$eb70431a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-02-28 15:00:02 [INFO ] [TomcatWebServer.java] initialize(90) : Tomcat initialized with port(s): 80 (http)
-2019-02-28 15:00:02 [INFO ] [DirectJDKLog.java] log(173) : Starting service [Tomcat]
-2019-02-28 15:00:02 [INFO ] [DirectJDKLog.java] log(173) : Starting Servlet Engine: Apache Tomcat/9.0.13
-2019-02-28 15:00:02 [INFO ] [DirectJDKLog.java] log(173) : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/minsungkim/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
-2019-02-28 15:00:02 [INFO ] [DirectJDKLog.java] log(173) : Initializing Spring embedded WebApplicationContext
-2019-02-28 15:00:02 [INFO ] [ServletWebServerApplicationContext.java] prepareWebApplicationContext(296) : Root WebApplicationContext: initialization completed in 921 ms
-2019-02-28 15:00:03 [INFO ] [DefaultSecurityFilterChain.java] <init>(43) : Creating filter chain: Ant [pattern='/js/**'], []
-2019-02-28 15:00:03 [INFO ] [DefaultSecurityFilterChain.java] <init>(43) : Creating filter chain: Ant [pattern='/css/**'], []
-2019-02-28 15:00:03 [INFO ] [DefaultSecurityFilterChain.java] <init>(43) : Creating filter chain: Ant [pattern='/img/**'], []
-2019-02-28 15:00:03 [INFO ] [DefaultSecurityFilterChain.java] <init>(43) : Creating filter chain: Ant [pattern='/assets/**'], []
-2019-02-28 15:00:03 [INFO ] [DefaultSecurityFilterChain.java] <init>(43) : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@a09303, org.springframework.security.web.context.SecurityContextPersistenceFilter@7327a447, org.springframework.security.web.header.HeaderWriterFilter@7a3b7122, org.springframework.security.web.csrf.CsrfFilter@1c3259fa, org.springframework.security.web.authentication.logout.LogoutFilter@6fff46bf, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@6088451e, org.springframework.web.filter.CompositeFilter@1163a27, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2954f6ab, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1d8b0500, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@322ba549, org.springframework.security.web.session.SessionManagementFilter@25f15f50, org.springframework.security.web.access.ExceptionTranslationFilter@49469ffa, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7efa3f63]
-2019-02-28 15:00:03 [INFO ] [ExecutorConfigurationSupport.java] initialize(171) : Initializing ExecutorService 'applicationTaskExecutor'
-2019-02-28 15:00:04 [INFO ] [WelcomePageHandlerMapping.java] <init>(61) : Adding welcome page template: index
-2019-02-28 15:00:04 [INFO ] [TomcatWebServer.java] start(204) : Tomcat started on port(s): 80 (http) with context path ''
-2019-02-28 15:00:04 [INFO ] [StartupInfoLogger.java] logStarted(59) : Started VioletWebApplication in 2.653 seconds (JVM running for 3.132)
-2019-02-28 15:00:09 [INFO ] [DirectJDKLog.java] log(173) : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2019-02-28 15:00:09 [INFO ] [FrameworkServlet.java] initServletBean(524) : Initializing Servlet 'dispatcherServlet'
-2019-02-28 15:00:09 [INFO ] [FrameworkServlet.java] initServletBean(546) : Completed initialization in 9 ms
-2019-02-28 15:00:10 [WARN ] [FragmentProcessor.groovy] doProcess(75) : You don't need to put the layout:fragment/data-layout-fragment attribute into the <head> section - the decoration process will automatically copy the <head> section of your content templates into your layout page.
-2019-02-28 15:00:25 [WARN ] [HikariConfig.java] validateNumerics(1008) : {} - idleTimeout has been set but has no effect because the pool is operating as a fixed size pool.
-2019-02-28 15:00:25 [INFO ] [HikariDataSource.java] getConnection(110) : hikari-cp - Starting...
-2019-02-28 15:00:25 [WARN ] [DriverDataSource.java] <init>(68) : Registered driver with driverClassName=oracle.jdbc.driver.OracleDriver was not found, trying direct instantiation.
-2019-02-28 15:00:26 [INFO ] [PoolBase.java] getAndSetNetworkTimeout(525) : hikari-cp - Driver does not support get/set network timeout for connections. (oracle.jdbc.driver.T4CConnection.getNetworkTimeout()I)
-2019-02-28 15:00:26 [INFO ] [HikariDataSource.java] getConnection(123) : hikari-cp - Start completed.
-2019-02-28 15:06:06 [WARN ] [HikariPool.java] run(766) : hikari-cp - Thread starvation or clock leap detected (housekeeper delta=1m10s655ms).
-2019-02-28 15:49:52 [WARN ] [HikariPool.java] run(766) : hikari-cp - Thread starvation or clock leap detected (housekeeper delta=45s721ms).
-2019-02-28 17:00:19 [INFO ] [AuthSuccessHandler.java] onAuthenticationSuccess(154) : Login AuthSuccess : [ <local> test@test.co.kr / 0:0:0:0:0:0:0:1 ]
-2019-02-28 17:08:45 [INFO ] [SpringApplicationAdminMXBeanRegistrar.java] shutdown(164) : Application shutdown requested.
-2019-02-28 17:08:45 [INFO ] [ExecutorConfigurationSupport.java] shutdown(208) : Shutting down ExecutorService 'applicationTaskExecutor'
-2019-02-28 17:08:45 [INFO ] [HikariDataSource.java] close(350) : hikari-cp - Shutdown initiated...
-2019-02-28 17:08:45 [INFO ] [HikariDataSource.java] close(352) : hikari-cp - Shutdown completed.
+### Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Listener refused the connection with the following error:
+ORA-12528, TNS:listener: all appropriate instances are blocking new connections
+ 
+2019-10-30 14:00:02 [WARN ] [HikariConfig.java] validateNumerics(1008) : {} - idleTimeout has been set but has no effect because the pool is operating as a fixed size pool.
+2019-10-30 14:00:02 [INFO ] [HikariDataSource.java] getConnection(110) : hikari-cp - Starting...
+2019-10-30 14:00:02 [WARN ] [DriverDataSource.java] <init>(68) : Registered driver with driverClassName=oracle.jdbc.driver.OracleDriver was not found, trying direct instantiation.
+2019-10-30 14:00:02 [INFO ] [PoolBase.java] getAndSetNetworkTimeout(525) : hikari-cp - Driver does not support get/set network timeout for connections. (oracle.jdbc.driver.T4CConnection.getNetworkTimeout()I)
+2019-10-30 14:00:02 [INFO ] [HikariDataSource.java] getConnection(123) : hikari-cp - Start completed.
+2019-10-30 14:09:32 [WARN ] [HikariPool.java] run(758) : hikari-cp - Retrograde clock change detected (housekeeper delta=29s214ms), soft-evicting connections from pool.
+2019-10-30 15:30:09 [WARN ] [HikariPool.java] run(766) : hikari-cp - Thread starvation or clock leap detected (housekeeper delta=1m37s83ms).

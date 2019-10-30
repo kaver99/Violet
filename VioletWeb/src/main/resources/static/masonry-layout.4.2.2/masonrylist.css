@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+.grid {
+	width: 100%;
+}
+/* fluid 5 columns */
+.grid-item {
+	border-radius : 10px;
+	float : left;
+}
+/* 2 columns wide */
+.grid-item--width2 {
+	border-radius : 10px;
+	float : left; 
+}

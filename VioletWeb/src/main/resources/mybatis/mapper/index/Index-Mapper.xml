@@ -27,20 +27,25 @@
 		ORDER BY opening_date DESC
     </select>
 
-    <select id="newListAll" resultType="com.violet.web.item.ItemEntity">
-		SELECT item_id
-			, class_item
-			, stylist_name
-			, img_path1
-			, title
-			, description 
-			, price
-		FROM violet_item
-		WHERE 1=1
-		AND ROWNUM &lt;= 8
-		AND opening_yn = 'Y'
-		AND opening_date IS NOT NULL
-		ORDER BY opening_date DESC
+    <select id="newListAll" parameterType="com.violet.web.util.paging.PagingEntity" resultType="com.violet.web.item.ItemEntity">
+    	SELECT * 
+		FROM (
+			SELECT ROWNUM AS RNUM
+				, item_id
+				, class_item
+				, stylist_name
+				, img_path1
+				, title
+				, description 
+				, price
+			FROM violet_item
+			WHERE 1=1
+			AND ROWNUM &lt;= #{startList} + #{listSize}
+			AND opening_yn = 'Y'
+			AND opening_date IS NOT NULL
+			ORDER BY RNUM, opening_date DESC
+		) A
+		WHERE A.RNUM > #{startList}
     </select>
 
 

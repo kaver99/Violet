@@ -2,7 +2,8 @@
 
 .card-login {
 	top: 5%;
-	padding: 0 20px 20px 20px;
+	height: 580px !important;
+	padding: 0 20px 20px 20px !important;
 }
 
 .page-header {
@@ -28,7 +29,7 @@
 	padding: 0 !important;
 }
 
-.footer {
+.card-footer {
 	margin: 5px 0 5px 0;
 }
 

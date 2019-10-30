@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"> 
+<head>
+</head>
+<body>
+	<div th:fragment="4layer2" id="4layer2" th:remove="tag">
+		<!--/* CARD LIST 4 ITEM START */-->
+		<div class="card card-layout">
+			<div class="card-header-image">
+				<div class="category-title">
+					<h6>[ category title ]</h6>
+				</div>
+				<hr/>
+				<div class="card-list">
+					<a href="#">
+						<div class="card-list-img" th:style="'background-image: url(&quot;./img/item/' + 'studio-1.jpg' + '&quot;); background-position: center;'"></div>
+						<div class="colored-shadow" th:style="'background-image: url(&quot;./img/item/' + 'studio-1.jpg' + '&quot;); opacity: 1;'"></div>
+						<div class="card-body">
+							<div class="card-titlt card-title-label-primary card-list-title">
+								<h6 class="font-weight-bold" style="margin-left: 5px; color: #000000;">TITLE</h6>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="card-list">
+					<a href="#">
+						<div class="card-list-img" th:style="'background-image: url(&quot;./img/item/' + 'studio-2.jpg' + '&quot;); background-position: center;'"></div>
+						<div class="colored-shadow" th:style="'background-image: url(&quot;./img/item/' + 'studio-2.jpg' + '&quot;); opacity: 1;'"></div>
+						<div class="card-body">
+							<div class="card-titlt card-title-label-primary card-list-title">
+								<h6 class="font-weight-bold" style="margin-left: 5px; color: #000000;">TITLE</h6>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="card-list">
+					<a href="#">
+						<div class="card-list-img" th:style="'background-image: url(&quot;./img/item/' + 'studio-3.jpg' + '&quot;); background-position: center;'"></div>
+						<div class="colored-shadow" th:style="'background-image: url(&quot;./img/item/' + 'studio-3.jpg' + '&quot;); opacity: 1;'"></div>
+						<div class="card-body">
+							<div class="card-titlt card-title-label-primary card-list-title">
+								<h6 class="font-weight-bold" style="margin-left: 5px; color: #000000;">TITLE</h6>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="card-list">
+					<a href="#">
+						<div class="card-list-img" th:style="'background-image: url(&quot;./img/item/' + 'studio-4.jpg' + '&quot;); background-position: center;'"></div>
+						<div class="colored-shadow" th:style="'background-image: url(&quot;./img/item/' + 'studio-4.jpg' + '&quot;); opacity: 1;'"></div>
+						<div class="card-body">
+							<div class="card-titlt card-title-label-primary card-list-title">
+								<h6 class="font-weight-bold" style="margin-left: 5px; color: #000000;">TITLE</h6>
+							</div>
+						</div>
+					</a>
+				</div>
+			</div>
+			<div class="card-footer card-footer-layout">
+				<h6 class="text-muted">stylist by<font class="text-primary">&nbsp;&nbsp;Coco Chanel</font></h6>
+			</div>
+		</div>
+		<!--/* CARD LIST 4 ITEM END */-->
+	</div>
+</body>
+</html>

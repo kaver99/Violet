@@ -9,7 +9,7 @@
         <div class="menu-container">
             <div class="navbar-translate">
                 <a class="navbar-brand" th:href="@{/}">
-                	<span class="">VIOLET</span>
+                	VIOLET
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="sr-only">Toggle navigation</span>
@@ -95,7 +95,7 @@
 		                            	<h4 class="navmenu-item-name dropdown-header font-weight-bold">[[${session.username}]]</h4>
 		                            </li>
 		                            <li class="navmenu-item-body">
-		                            	<h4 class="navmenu-item-name font-weight-bold">[[${session.name}]]&nbsp;[[${session.userRole == 'ROLE_MANAGER'} ? '매니저' : '고객']]님</h4>
+		                            	<h4 class="navmenu-item-name font-weight-bold">[[${session.name}]]</h4>
 		                            </li>
 		                            <li class="navmenu-item-footer">
 		                            	<h6 class="navmenu-item-name">V-Point: <font class="text-danger">100P</font></h6>

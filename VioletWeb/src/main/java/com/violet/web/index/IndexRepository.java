@@ -9,6 +9,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
 import com.violet.web.item.ItemEntity;
+import com.violet.web.util.paging.PagingEntity;
 
 @Repository
 public class IndexRepository implements IndexService {
@@ -61,11 +62,11 @@ public class IndexRepository implements IndexService {
 	}
 
 	@Override
-	public List<ItemEntity> newListAll() {
+	public List<ItemEntity> newListAll(PagingEntity pagingEntity) {
 		List<ItemEntity> newList = null;
 		
 		try {
-			newList = sqlSession.selectList("indexMapper.newListAll");
+			newList = sqlSession.selectList("indexMapper.newListAll", pagingEntity);
 			
 		} catch(Exception e) {
 			log.error(e.toString());

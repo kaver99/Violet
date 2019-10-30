@@ -19,20 +19,11 @@
             </div>
             <!--/*  Paper End  */-->
 
-            <!--/*  Event Start  */-->
-            <div class="cd-section" id="new">
-                <div th:replace="main/new :: new"></div>
-            </div>
-            <!--/*  Event End  */-->
-
-            <!--/*  Trend Start  */-->
-            <div class="cd-section" id="trend">
-                <div th:replace="main/trend :: trend"></div>
-            </div>
-            <!--/*  Trend End  */-->
-
+            <!--/*  Category Start  */-->
+			<div th:replace="main/categorylist :: categorylist"></div>
+            <!--/*  Category End  */-->
             <!--/*  BookMark Start  */-->
-            <div th:replace="menu/menu-bookmark :: menu-bookmark"></div>
+            <!--/* <div th:replace="menu/menu-bookmark :: menu-bookmark"></div> */-->
             <!--/*  BookMark End  */-->
         </div>
         <!--/*  Main End  */-->

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"> 
+<head>
+</head>
+<body>
+	<div th:fragment="5layer" id="5layer" th:remove="tag">
+		<!--/* CARD LIST 5 ITEM START */-->
+		<div class="card card-layout">
+			<div class="row" style="margin: 0px;">
+				<div class="card-list" style="width: 50%; float: left;">
+					<div class="card-header-image">
+						<div class="card-img" th:style="'background-image: url(&quot;./img/item/' + 'studio-4.jpg' + '&quot;); background-position: center; height: 140px;'"></div>
+						<div class="colored-shadow" th:style="'background-image: url(&quot;./img/item/' + 'studio-4.jpg' + '&quot;); opacity: 1;'"></div>
+						<div class="card-tag-titlt">
+							<a href=""><h5 class="font-weight-bold card-tag-bg">#페리가모</h5></a>
+						</div>
+					</div>
+				</div>
+				<div class="card-list" style="width: 50%; float:right">
+					<div class="card-header-image">
+						<div class="card-img" th:style="'background-image: url(&quot;./img/item/' + 'trans3.png' + '&quot;); background-position: center; height: 140px;'"></div>
+						<div class="colored-shadow" th:style="'background-image: url(&quot;./img/item/' + 'trans3.png' + '&quot;); opacity: 1;'"></div>
+						<div class="card-tag-titlt">
+							<a href=""><h5 class="font-weight-bold card-tag-bg">#마리끌레르</h5></a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row" style="margin: 0px;">
+				<div class="card-list" style="width: 50%; float: left;">
+					<div class="card-header-image">
+						<div class="card-img" th:style="'background-image: url(&quot;./img/item/' + 'trans4.png' + '&quot;); background-position: center; height: 140px;'"></div>
+						<div class="colored-shadow" th:style="'background-image: url(&quot;./img/item/' + 'trans4.png' + '&quot;); opacity: 1;'"></div>
+						<div class="card-tag-titlt">
+							<a href=""><h5 class="font-weight-bold card-tag-bg">#밍크 퍼</h5></a>
+						</div>
+					</div>
+				</div>
+				<div class="card-list" style="width: 50%; float:right">
+					<div class="card-header-image">
+						<div class="card-img" th:style="'background-image: url(&quot;./img/item/' + 'trans5.jpeg' + '&quot;); background-position: center; height: 140px;'"></div>
+						<div class="colored-shadow" th:style="'background-image: url(&quot;./img/item/' + 'trans5.jpeg' + '&quot;); opacity: 1;'"></div>
+						<div class="card-tag-titlt">
+							<a href=""><h5 class="font-weight-bold card-tag-bg">#레노마</h5></a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--/* slide-show start */-->
+			<div class="row" style="margin: 0px;">
+				<div class="card-list" style="width: 100%;">
+					<div class="card-header-image">
+						<div class="card-img" th:style="'background-image: url(&quot;./img/item/' + 'trans6.png' + '&quot;); background-position: center; height: 150px;'"></div>
+						<div class="colored-shadow" th:style="'background-image: url(&quot;./img/item/' + 'trans6.png' + '&quot;); opacity: 1;'"></div>
+						<div class="card-tag-titlt">
+							<a href=""><h5 class="font-weight-bold card-tag-bg">#듀퐁</h5></a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--/* slide-show end */-->
+			<div class="card-footer card-footer-layout">
+				<h6 class="text-muted">stylist by<font class="text-primary">&nbsp;&nbsp;CC</font></h6>
+			</div>
+		</div>
+		<!--/* CARD LIST 5 ITEM END */-->
+	</div>
+</body>
+</html>

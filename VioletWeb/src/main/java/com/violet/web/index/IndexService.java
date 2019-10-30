@@ -3,6 +3,7 @@ package com.violet.web.index;
 import java.util.List;
 
 import com.violet.web.item.ItemEntity;
+import com.violet.web.util.paging.PagingEntity;
 
 public interface IndexService {
 
@@ -12,6 +13,6 @@ public interface IndexService {
 
 	public int newListCount();
 
-	public List<ItemEntity> newListAll();
+	public List<ItemEntity> newListAll(PagingEntity pagingEntity);
 
 }

@@ -1,0 +1,19 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<head></head>
+<body>
+	<nav th:fragment="paginationBox" id="paginationBox" aria-label="Page navigation">
+	<script type="text/javascript" th:src="@{/js/util/paging.js}"></script>
+		<ul class="pagination pagination-primary" th:if="${pagination.listCnt > 0}">
+			<li class="page-item" th:classappend="${pagination.prev eq false} ? 'disable'">
+				<a class="page-link" th:href="@{__${#httpServletRequest.requestURI}__(page=${pagination.page-1})}" tabindex="-1">Previous</a>
+			</li>
+			<li class="page-item" th:each="page : ${#numbers.sequence(pagination.startPage, pagination.endPage)}" th:classappend="${pagination.page == page} ? 'active'">
+				<a class="page-link" th:href="@{__${#httpServletRequest.requestURI}__(page=${page})}"> [[${page}]] </a>
+			</li>
+			<li class="page-item" th:classappend="${pagination.next eq false} ? 'disable'">
+				<a class="page-link" th:href="@{__${#httpServletRequest.requestURI}__(page=${pagination.page+1})}">Next</a>
+			</li>
+		</ul>
+	</nav>
+</body>
+</html>

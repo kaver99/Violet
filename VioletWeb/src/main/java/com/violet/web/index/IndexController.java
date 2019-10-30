@@ -1,6 +1,8 @@
 package com.violet.web.index;
 
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 import javax.servlet.http.HttpServletRequest;
 
@@ -9,8 +11,10 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 
 import com.violet.web.item.ItemEntity;
+import com.violet.web.util.paging.PagingEntity;
 
 @Controller
 public class IndexController {
@@ -20,16 +24,16 @@ public class IndexController {
 	private IndexService indexService;
 	
 	@RequestMapping(value = {"/", "/main.violet"})
-	public String index(HttpServletRequest request) {
-		
+	public String index(HttpServletRequest request, @RequestParam(defaultValue="1") int page) {
 		/* Other way : model.addAttribute("Test", "Shop"); */
-		// Main Slide Data 
+		// Main Slide Data
 		List<PaperEntity> paperListAll = doPaperListAll();
 		request.setAttribute("paperListAll", paperListAll);
 		
 		// List Data
-		List<ItemEntity> newListAll = doNewListAll();
-		request.setAttribute("newListAll", newListAll);
+		Map<String, Object> newListMap = doNewListAll(page);
+		request.setAttribute("pagination", newListMap.get("pagination"));
+		request.setAttribute("newListAll", newListMap.get("newListAll"));
 		
 		return "index";
 	}
@@ -43,8 +47,8 @@ public class IndexController {
 		List<PaperEntity> paperList = null;
 		
 		try {
+			//전체 게시글 개수
 			dataCnt = indexService.paperListCount();
-			
 			if(dataCnt != 0) {
 				paperList = indexService.paperListAll();
 			}
@@ -59,25 +63,35 @@ public class IndexController {
 	
 	
 	/**
-	 * Event List
-	 * @return eventList
+	 * New Item List
+	 * @return returnMap
 	 */
-	public List<ItemEntity> doNewListAll() {
+	public Map<String, Object> doNewListAll(int page) {
 		int dataCnt = 0;
 		List<ItemEntity> newList = null;
-
+		Map<String, Object> returnMap = null;
 		try {
+			returnMap = new HashMap<String, Object>();
 			dataCnt = indexService.newListCount();
 			
+			/** Paging START **/
+			//Paging 객체생성
+			PagingEntity pagingEntity = new PagingEntity();
+			//Paging 설정
+			pagingEntity.pageInfo(page, dataCnt);
+			returnMap.put("pagination", pagingEntity);
+			/** Paging END **/
+			
 			if(dataCnt != 0) {
-				newList = indexService.newListAll();
+				newList = indexService.newListAll(pagingEntity);
 			}
+			returnMap.put("newListAll", newList);
 			
 		} catch (Exception e) {
 			log.error(e.toString());
 		}
 		
-		return newList;
+		return returnMap;
 		
 	}
 	/*

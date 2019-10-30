@@ -1,0 +1,121 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org"> 
+<head>
+</head>
+<body>
+	<div th:fragment="categorylist" id="categorylist" class="section section-blog bg-dark">
+	    <div class="container" style="max-width: 1440px;">
+			<div class="row" style="padding-left: 50px; padding-right: 50px;">
+				<!--/* CARD LIST 4 ITEM START */-->
+				<div class="card-shadow col-md-3">
+					<div th:replace="main/layer/4layer :: 4layer"></div>
+				</div>
+				<!--/* CARD LIST 4 ITEM END */-->
+				
+				<!--/* CARD LIST 1 ITEM START */-->
+				<div class="card-shadow col-md-3">
+					<div th:replace="main/layer/slide-layer :: slide-layer"></div>
+				</div>
+				<!--/* CARD LIST 1 ITEM END */-->
+				
+				<!--/* CARD LIST 1 By 1 ITEM START */-->
+				<div class="card-shadow col-md-3">
+					<div th:replace="main/layer/1by1-layer :: 1by1-layer"></div>
+				</div>	
+				<!--/* CARD LIST 1 By 1 ITEM END */-->
+				
+				<!--/* CARD LIST 5 ITEM START */-->
+				<div class="card-shadow col-md-3">
+					<div th:replace="main/layer/5layer :: 5layer"></div>
+				</div>
+				<!--/* CARD LIST 5 ITEM END */-->
+				
+				<div class="card-shadow col-md-6">
+					<div class="card card-layout">
+						<div class="card-header-image">
+							<div class="card-img" th:style="'background-image: url(&quot;./img/item/' + 'studio-5.jpg' + '&quot;); background-position: center;'"></div>
+							<div class="colored-shadow" th:style="'background-image: url(&quot;./img/item/' + 'studio-5.jpg' + '&quot;); opacity: 1;'"></div>
+						</div>
+						<div class="card-body">
+							<div class="card-titlt card-title-label-primary">
+								<h4 class="font-weight-bold" style="margin-left: 5px;">TITLE</h4>
+							</div>
+							<p class="card-description">card-description</p>
+						</div>
+						<div class="card-footer card-footer-layout">
+							<h6 class="text-muted">stylist by<font class="text-primary">&nbsp;&nbsp;CC</font></h6>
+						</div>
+					</div>
+				</div>
+				
+				<!--/* CARD LIST 1 ITEM START */-->
+				<div class="card-shadow col-md-3">
+					<div th:replace="main/layer/slide-layer2 :: slide-layer2"></div>
+				</div>
+				<!--/* CARD LIST 1 ITEM END */-->
+				
+				<!--/* CARD LIST 4 ITEM2 START */-->
+				<div class="card-shadow col-md-3">
+					<div th:replace="main/layer/4layer2 :: 4layer2"></div>
+				</div>
+				<!--/* CARD LIST 4 ITEM2 END */-->
+				
+				<div class="card-shadow col-md-3">
+					<div class="card card-layout">
+						<div class="card-header-image">
+							<div class="card-img" th:style="'background-image: url(&quot;./img/item/' + 'clem-onojegaw.jpg' + '&quot;); background-position: center;'"></div>
+							<div class="colored-shadow" th:style="'background-image: url(&quot;./img/item/' + 'clem-onojegaw.jpg' + '&quot;); opacity: 1;'"></div>
+						</div>
+						<div class="card-body">
+							<div class="card-titlt card-title-label-primary">
+								<h4 class="font-weight-bold" style="margin-left: 5px;">TITLE</h4>
+							</div>
+							<p class="card-description">card-description</p>
+						</div>
+						<div class="card-footer card-footer-layout">
+							<h6 class="text-muted">stylist by<font class="text-primary">&nbsp;&nbsp;CC</font></h6>
+						</div>
+					</div>
+				</div>
+				
+				<div class="card-shadow col-md-3">
+					<div class="card card-layout">
+						<div class="card-header-image">
+							<div class="card-img" th:style="'background-image: url(&quot;./img/item/' + 'clem-onojegaw.jpg' + '&quot;); background-position: center;'"></div>
+							<div class="colored-shadow" th:style="'background-image: url(&quot;./img/item/' + 'clem-onojegaw.jpg' + '&quot;); opacity: 1;'"></div>
+						</div>
+						<div class="card-body">
+							<div class="card-titlt card-title-label-primary">
+								<h4 class="font-weight-bold" style="margin-left: 5px;">TITLE</h4>
+							</div>
+							<p class="card-description">card-description</p>
+						</div>
+						<div class="card-footer card-footer-layout">
+							<h6 class="text-muted">stylist by<font class="text-primary">&nbsp;&nbsp;CC</font></h6>
+						</div>
+					</div>
+				</div>
+				
+				<div class="card-shadow col-md-6">
+					<div class="card card-layout">
+						<div class="card-header-image">
+							<div class="card-img" th:style="'background-image: url(&quot;./img/item/' + 'clem-onojegaw.jpg' + '&quot;); background-position: center;'"></div>
+							<div class="colored-shadow" th:style="'background-image: url(&quot;./img/item/' + 'clem-onojegaw.jpg' + '&quot;); opacity: 1;'"></div>
+						</div>
+						<div class="card-body">
+							<div class="card-titlt card-title-label-primary">
+								<h4 class="font-weight-bold" style="margin-left: 5px;">TITLE</h4>
+							</div>
+							<p class="card-description">card-description</p>
+						</div>
+						<div class="card-footer card-footer-layout">
+							<h6 class="text-muted">stylist by<font class="text-primary">&nbsp;&nbsp;CC</font></h6>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+	    </div>
+	</div>
+</body>
+</html>

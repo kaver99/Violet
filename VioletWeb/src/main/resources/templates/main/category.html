@@ -1,0 +1,228 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+</head>
+<body>
+	<div th:fragment="category" id="categoryList" class="section section-blog bg-dark">
+		<div class="container">
+			<div class="row">
+				<h2 class="title menu-title"><a th:href="@{/category.violet}">&nbsp;CATEGORY</a></h2>
+		    </div>
+		    <div class="row" style="margin-top: 30px;">
+				<div id="carouseCategoryIndicators" class="carousel slide carousel-side" data-ride="carousel">
+		  			<ol class="carousel-indicators">
+		    			<li data-target="#carouseCategoryIndicators" data-slide-to="0" class="active"></li>
+		    			<li data-target="#carouseCategoryIndicators" data-slide-to="1"></li>
+		    			<li data-target="#carouseCategoryIndicators" data-slide-to="2"></li>
+		  			</ol>
+		  			<div class="carousel-inner">
+		    			<div class="carousel-item active">
+		    				<div class="row" style="margin: 30px 0px 30px 0px;">
+		    					<a class="avoid-clicks float-left" href="#">
+									<i class="material-icons text-white" style="padding-bottom: 3px;">label_important</i><h4 class="text-white title" style="float: right; vertical-align: middle; display: contents;">OUTER</h4>
+								</a>
+		    				</div>
+		    				<div class="row" style="margin: 30px 0px 30px 0px;">
+		    					<div class="col-md-3">
+			                        <div class="card card-plain">
+			                            <div class="card-header card-header-image">
+			                                <!--/* categoryList item URL */-->
+			                                <a th:href="@{'/category.violet?categoryId='+'1'}">
+												<div class="card-img2" th:style="'background-image: url(&quot;./img/item/' + 'studio-1.jpg' + '&quot;); background-position: center;'"></div>
+			                                    <div class="colored-shadow" th:style="'background-image: url(&quot;./img/item/' + 'studio-1.jpg' + '&quot;); opacity: 1;'"></div>
+			                                </a>
+			                            </div>
+			                            <div class="card-body">
+			                                <div class="card-title card-title-label-primary">
+			                                    <h4 class="font-weight-bold">
+			                                        <!--/* new Item URL */-->
+			                                        <a th:href="@{'/category.violet?categoryId='+'1'}" class="text-white">&nbsp;아이템1</a>
+			                                    </h4>
+			                                </div>
+			                                <!--/* 
+			                                <div class="card-description font-weight-normal">
+			                                    <p>[[${newList.description}]]</p>
+			                                </div>
+			                                 */-->
+			                                <div class="card-footer">
+			                                    <h6 class="text-muted">stylist by<font class="text-white">&nbsp;&nbsp;CODY</font></h6>
+			                                   	<h5 class="title text-white">40,000원</h5>
+			                                </div>
+			                            </div>
+			                        </div>
+			                    </div>
+			                    <div class="col-md-3">
+			                        <div class="card card-plain">
+			                            <div class="card-header card-header-image">
+			                                <!--/* categoryList item URL */-->
+			                                <a th:href="@{'/category.violet?categoryId='+'1'}">
+												<div class="card-img2" th:style="'background-image: url(&quot;./img/item/' + 'studio-1.jpg' + '&quot;); background-position: center;'"></div>
+			                                    <div class="colored-shadow" th:style="'background-image: url(&quot;./img/item/' + 'studio-1.jpg' + '&quot;); opacity: 1;'"></div>
+			                                </a>
+			                            </div>
+			                            <div class="card-body">
+			                                <div class="card-title card-title-label-primary">
+			                                    <h4 class="font-weight-bold">
+			                                        <!--/* new Item URL */-->
+			                                        <a th:href="@{'/category.violet?categoryId='+'1'}" class="text-white">&nbsp;아이템1</a>
+			                                    </h4>
+			                                </div>
+			                                <!--/* 
+			                                <div class="card-description font-weight-normal">
+			                                    <p>[[${newList.description}]]</p>
+			                                </div>
+			                                 */-->
+			                                <div class="card-footer">
+			                                    <h6 class="text-muted">stylist by<font class="text-white">&nbsp;&nbsp;CODY</font></h6>
+			                                   	<h5 class="title text-white">40,000원</h5>
+			                                </div>
+			                            </div>
+			                        </div>
+			                    </div>
+			                    <div class="col-md-3">
+			                        <div class="card card-plain">
+			                            <div class="card-header card-header-image">
+			                                <!--/* categoryList item URL */-->
+			                                <a th:href="@{'/category.violet?categoryId='+'1'}">
+												<div class="card-img2" th:style="'background-image: url(&quot;./img/item/' + 'studio-1.jpg' + '&quot;); background-position: center;'"></div>
+			                                    <div class="colored-shadow" th:style="'background-image: url(&quot;./img/item/' + 'studio-1.jpg' + '&quot;); opacity: 1;'"></div>
+			                                </a>
+			                            </div>
+			                            <div class="card-body">
+			                                <div class="card-title card-title-label-primary">
+			                                    <h4 class="font-weight-bold">
+			                                        <!--/* new Item URL */-->
+			                                        <a th:href="@{'/category.violet?categoryId='+'1'}" class="text-white">&nbsp;아이템1</a>
+			                                    </h4>
+			                                </div>
+			                                <!--/* 
+			                                <div class="card-description font-weight-normal">
+			                                    <p>[[${newList.description}]]</p>
+			                                </div>
+			                                 */-->
+			                                <div class="card-footer">
+			                                    <h6 class="text-muted">stylist by<font class="text-white">&nbsp;&nbsp;CODY</font></h6>
+			                                   	<h5 class="title text-white">40,000원</h5>
+			                                </div>
+			                            </div>
+			                        </div>
+			                    </div>
+			                    <div class="col-md-3">
+			                        <div class="card card-plain">
+			                            <div class="card-header card-header-image">
+			                                <!--/* categoryList item URL */-->
+			                                <a th:href="@{'/category.violet?categoryId='+'1'}">
+												<div class="card-img2" th:style="'background-image: url(&quot;./img/item/' + 'studio-1.jpg' + '&quot;); background-position: center;'"></div>
+			                                    <div class="colored-shadow" th:style="'background-image: url(&quot;./img/item/' + 'studio-1.jpg' + '&quot;); opacity: 1;'"></div>
+			                                </a>
+			                            </div>
+			                            <div class="card-body">
+			                                <div class="card-title card-title-label-primary">
+			                                    <h4 class="font-weight-bold">
+			                                        <!--/* new Item URL */-->
+			                                        <a th:href="@{'/category.violet?categoryId='+'1'}" class="text-white">&nbsp;아이템1</a>
+			                                    </h4>
+			                                </div>
+			                                <!--/* 
+			                                <div class="card-description font-weight-normal">
+			                                    <p>[[${newList.description}]]</p>
+			                                </div>
+			                                 */-->
+			                                <div class="card-footer">
+			                                    <h6 class="text-muted">stylist by<font class="text-white">&nbsp;&nbsp;CODY</font></h6>
+			                                   	<h5 class="title text-white">40,000원</h5>
+			                                </div>
+			                            </div>
+			                        </div>
+			                    </div>
+		    				</div>
+		    			</div>
+						<div class="carousel-item">
+		    				<div class="row" style="margin: 30px;">
+		    					<a class="avoid-clicks float-left" href="#">
+									<i class="material-icons text-white" style="padding-bottom: 3px;">label_important</i><h4 class="text-white title" style="float: right; vertical-align: middle; display: contents;">OUTER</h4>
+								</a>
+		    				</div>
+		    				<div class="row" style="margin: 30px;">
+		    					<div class="col-md-3">
+			                        <div class="card card-plain">
+			                            <div class="card-header card-header-image">
+			                                <!--/* categoryList item URL */-->
+			                                <a th:href="@{'/category.violet?categoryId='+'1'}">
+												<div class="card-img2" th:style="'background-image: url(&quot;./img/item/' + 'studio-1.jpg' + '&quot;); background-position: center;'"></div>
+			                                    <div class="colored-shadow" th:style="'background-image: url(&quot;./img/item/' + 'studio-1.jpg' + '&quot;); opacity: 1;'"></div>
+			                                </a>
+			                            </div>
+			                            <div class="card-body">
+			                                <div class="card-title card-title-label-primary">
+			                                    <h4 class="font-weight-bold">
+			                                        <!--/* new Item URL */-->
+			                                        <a th:href="@{'/category.violet?categoryId='+'1'}" class="text-white">&nbsp;아이템1</a>
+			                                    </h4>
+			                                </div>
+			                                <!--/* 
+			                                <div class="card-description font-weight-normal">
+			                                    <p>[[${newList.description}]]</p>
+			                                </div>
+			                                 */-->
+			                                <div class="card-footer">
+			                                    <h6 class="text-muted">stylist by<font class="text-white">&nbsp;&nbsp;CODY</font></h6>
+			                                   	<h5 class="title text-white">40,000원</h5>
+			                                </div>
+			                            </div>
+			                        </div>
+			                    </div>
+		    				</div>
+		    			</div>
+		    			<div class="carousel-item">
+		    				<div class="row" style="margin: 30px;">
+		    					<a class="avoid-clicks float-left" href="#">
+									<i class="material-icons text-white" style="padding-bottom: 3px;">label_important</i><h4 class="text-white title" style="float: right; vertical-align: middle; display: contents;">OUTER</h4>
+								</a>
+		    				</div>
+		    				<div class="row" style="margin: 30px;">
+		    					<div class="col-md-3">
+			                        <div class="card card-plain">
+			                            <div class="card-header card-header-image">
+			                                <!--/* categoryList item URL */-->
+			                                <a th:href="@{'/category.violet?categoryId='+'1'}">
+												<div class="card-img2" th:style="'background-image: url(&quot;./img/item/' + 'studio-1.jpg' + '&quot;); background-position: center;'"></div>
+			                                    <div class="colored-shadow" th:style="'background-image: url(&quot;./img/item/' + 'studio-1.jpg' + '&quot;); opacity: 1;'"></div>
+			                                </a>
+			                            </div>
+			                            <div class="card-body">
+			                                <div class="card-title card-title-label-primary">
+			                                    <h4 class="font-weight-bold">
+			                                        <!--/* new Item URL */-->
+			                                        <a th:href="@{'/category.violet?categoryId='+'1'}" class="text-white">&nbsp;아이템1</a>
+			                                    </h4>
+			                                </div>
+			                                <!--/* 
+			                                <div class="card-description font-weight-normal">
+			                                    <p>[[${newList.description}]]</p>
+			                                </div>
+			                                 */-->
+			                                <div class="card-footer">
+			                                    <h6 class="text-muted">stylist by<font class="text-white">&nbsp;&nbsp;CODY</font></h6>
+			                                   	<h5 class="title text-white">40,000원</h5>
+			                                </div>
+			                            </div>
+			                        </div>
+			                    </div>
+		    				</div>
+		    			</div>
+		  			</div>
+<!-- 					<a class="carousel-control-prev" href="#carouseCategoryIndicators" role="button" data-slide="prev"> -->
+<!-- 						<i class="material-icons">keyboard_arrow_left</i> -->
+<!-- 						<span class="sr-only">Previous</span> -->
+<!-- 					</a> -->
+<!-- 					<a class="carousel-control-next" href="#carouseCategoryIndicators" role="button" data-slide="next"> -->
+<!-- 						<i class="material-icons">keyboard_arrow_right</i> -->
+<!-- 						<span class="sr-only">Next</span> -->
+<!-- 					</a> -->
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

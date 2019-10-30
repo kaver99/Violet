@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"> 
+<head>
+</head>
+<body>
+	<div th:fragment="slide-layer" id="slide-layer" th:remove="tag">
+		<!--/* CARD LIST 1 ITEM START */-->
+		<div id="carouselcategoryIndicators1" class="carousel slide" data-ride="carousel">
+			<ol class="carousel-indicators">
+				<li data-target="#carouselcategoryIndicators1" th:attr="data-slide-to=0" class="card-slidebtn active"></li>
+				<li data-target="#carouselcategoryIndicators1" th:attr="data-slide-to=1" class="card-slidebtn"></li>
+				<li data-target="#carouselcategoryIndicators1" th:attr="data-slide-to=2" class="card-slidebtn"></li>
+			</ol>
+			<div class="carousel-inner">
+				<div class="carousel-item active">
+					<a href="#">
+						<div class="card card-layout">
+							<div class="card-header-image">
+								<div class="card-img" th:style="'background-image: url(&quot;./img/item/' + 'studio-2.jpg' + '&quot;); background-position: center;'"></div>
+								<div class="colored-shadow" th:style="'background-image: url(&quot;./img/item/' + 'studio-2.jpg' + '&quot;); opacity: 1;'"></div>
+							</div>
+							<div class="card-body">
+								<div class="card-titlt">
+									<h4 class="font-weight-bold text-center">TITLE</h4>
+								</div>
+								<p class="card-description text-center">card description</p>
+							</div>
+							<div class="card-footer card-footer-layout">
+								<h6 class="text-muted">stylist by<font class="text-primary">&nbsp;&nbsp;CC</font></h6>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="carousel-item">
+					<a href="#">
+						<div class="card card-layout">
+							<div class="card-header-image">
+								<div class="card-img" th:style="'background-image: url(&quot;./img/item/' + 'cynthia-del-rio.jpg' + '&quot;); background-position: center;'"></div>
+								<div class="colored-shadow" th:style="'background-image: url(&quot;./img/item/' + 'cynthia-del-rio.jpg' + '&quot;); opacity: 1;'"></div>
+							</div>
+							<div class="card-body">
+								<div class="card-titlt">
+									<h4 class="font-weight-bold text-center">TITLE</h4>
+								</div>
+								<p class="card-description text-center">card description</p>
+							</div>
+							<div class="card-footer card-footer-layout">
+								<h6 class="text-muted">stylist by<font class="text-primary">&nbsp;&nbsp;CC</font></h6>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="carousel-item">
+					<a href="#">
+						<div class="card card-layout">
+							<div class="card-header-image">
+								<div class="card-img" th:style="'background-image: url(&quot;./img/item/' + 'mariya-georgieva.jpg' + '&quot;); background-position: center;'"></div>
+								<div class="colored-shadow" th:style="'background-image: url(&quot;./img/item/' + 'mariya-georgieva.jpg' + '&quot;); opacity: 1;'"></div>
+							</div>
+							<div class="card-body">
+								<div class="card-titlt">
+									<h4 class="font-weight-bold text-center">TITLE</h4>
+								</div>
+								<p class="card-description text-center">card description</p>
+							</div>
+							<div class="card-footer card-footer-layout">
+								<h6 class="text-muted">stylist by<font class="text-primary">&nbsp;&nbsp;CC</font></h6>
+							</div>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+		<!--/* CARD LIST 1 ITEM END */-->
+	</div>
+</body>
+</html>
