@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"> 
+<head>
+</head>
+<body>
+	<div th:fragment="1by1-layer2" id="1by1-layer2" th:remove="tag">
+		<!--/* CARD LIST 1 By 1 ITEM START */-->
+		<div class="card card-layout" style="height: 235px;">
+			<a href="#">
+				<div class="card-header-image">
+					<div class="card-img" th:style="'background-image: url(&quot;./img/item/' + '2019090317363434473081711408_646.jpg' + '&quot;); background-position: center; height: 150px;'"></div>
+					<div class="colored-shadow" th:style="'background-image: url(&quot;./img/item/' + '2019090317363434473081711408_646.jpg' + '&quot;); opacity: 1;'"></div>
+				</div>
+				<div class="card-body">
+					<div class="card-titlt card-title-label-primary">
+						<h4 class="font-weight-bold" style="margin-left: 5px; color: #000;">TITLE</h4>
+					</div>
+				</div>
+			</a>
+			<div class="card-footer">
+				<h6 class="text-muted">stylist by<font class="text-primary">&nbsp;&nbsp;CC</font></h6>
+			</div>
+		</div>
+		<div class="card card-layout" style="height: 235px; margin-top: 10px;">
+			<a href="#">
+				<div class="card-header-image">
+					<div class="card-img" th:style="'background-image: url(&quot;./img/item/' + 'trans.png' + '&quot;); background-position: center; height: 150px;'"></div>
+					<div class="colored-shadow" th:style="'background-image: url(&quot;./img/item/' + 'trans.png' + '&quot;); opacity: 1;'"></div>
+				</div>
+				<div class="card-body">
+					<div class="card-titlt card-title-label-primary">
+						<h4 class="font-weight-bold" style="margin-left: 5px; color: #000;">TITLE</h4>
+					</div>
+				</div>
+			</a>
+			<div class="card-footer card-footer-layout">
+				<h6 class="text-muted">stylist by<font class="text-primary">&nbsp;&nbsp;CC</font></h6>
+			</div>
+		</div>
+		<!--/* CARD LIST 1 By 1 ITEM END */-->
+	</div>
+</body>
+</html>

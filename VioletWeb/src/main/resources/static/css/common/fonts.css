@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+@font-face{
+    font-family:'NanumGothic';
+    src:url('../../fonts/Nanum_Gothic/NanumGothic-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face{
+    font-family:'Italianno';
+    src:url('../../fonts/Italianno/Italianno-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}

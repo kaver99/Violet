@@ -45,7 +45,6 @@ public class UserController {
 	@RequestMapping("/login-error.violet")
 	public String loginError(HttpServletRequest request) {
 		return "login/login";
-	    
 	}
 	
 	

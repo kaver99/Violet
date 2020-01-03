@@ -1,0 +1,549 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org"> 
+<head>
+</head>
+<body>
+	<div th:fragment="newlist" id="newlist" class="new-layout bg-ripemalinkas">
+	    <div class="container">
+	    	<ul class="row-title">
+	    		<li class="paragraph-title"><span>New</span></li>
+	    		<li class="paragraph-title-text"><span>새로운 상품 소개</span></li>
+	    	</ul>
+	    	<ul class="row">
+	    		<li class="paragraph-list-more">
+<!-- 	    			<a href="#" class="nav-link"><span>FASHION</span></a> -->
+<!-- 	    			<a href="#" class="nav-link"><span>BEAUTY</span></a> -->
+<!-- 	    			<a href="#" class="nav-link"><span>LIFE</span></a> -->
+	    		</li>
+	    	</ul>
+	    	<ul class="row">
+		    	<!-- Swiper -->
+	  			<div class="swiper-container swiper-newlist">
+					<ul class="swiper-wrapper row">
+						<li id="card-brand" class="swiper-slide">
+							<div class="card">
+								<div class="row">
+									<span class="card-title">BRAND</span>
+								</div>
+								<div class="row" data-aos="zoom-in">
+									<div class="col-md-8">
+										<div class="card-header">
+											<a class="card-link" th:href="@{/}">
+												<div class="card-image image-size-left" th:style="'background-image: url(&quot;./img/item/' + 'studio-2.jpg' + '&quot;);'"></div>
+												<div class="colored-shadow" th:style="'background-image: url(&quot;./img/item/' + 'studio-2.jpg' + '&quot;); opacity: 1;'"></div>
+											</a>
+										</div>
+										<div class="card-body">
+											<div class="card-description">
+												<a class="card-link" th:href="@{/}">
+													<p class="desc-title">item1 title</p>
+												</a>
+												<a class="card-link" th:href="@{/}">
+													<span class="card-tag">#화려함</span>
+												</a>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-4">
+										<div class="">
+											<div class="card-header">
+												<a class="card-link" th:href="@{/}">
+													<div class="card-image image-size-right" th:style="'background-image: url(&quot;./img/item/' + 'studio-2.jpg' + '&quot;);'"></div>
+													<div class="colored-shadow" th:style="'background-image: url(&quot;./img/item/' + 'studio-2.jpg' + '&quot;); opacity: 1;'"></div>
+												</a>
+											</div>
+											<div class="card-body">
+												<div class="card-description">
+													<a class="card-link" th:href="@{/}">
+														<p class="desc-title">item1 title</p>
+													</a>
+													<a class="card-link" th:href="@{/}">
+														<span class="card-tag">#화려함</span>
+													</a>
+												</div>
+											</div>
+										</div>
+										<div class="">
+											<div class="card-header">
+												<a class="card-link" th:href="@{/}">
+													<div class="card-image image-size-right" th:style="'background-image: url(&quot;./img/item/' + 'studio-2.jpg' + '&quot;);'"></div>
+													<div class="colored-shadow" th:style="'background-image: url(&quot;./img/item/' + 'studio-2.jpg' + '&quot;); opacity: 1;'"></div>
+												</a>
+											</div>
+											<div class="card-body">
+												<div class="card-description">
+													<a class="card-link" th:href="@{/}">
+														<p class="desc-title">item1 title</p>
+													</a>
+													<a class="card-link" th:href="@{/}">
+														<span class="card-tag">#화려함</span>
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="row" data-aos="zoom-in">
+									<div class="col-md-4">
+										<div class="card-header">
+											<a class="card-link" th:href="@{/}">
+												<div class="card-image image-size" th:style="'background-image: url(&quot;./img/item/' + 'studio-2.jpg' + '&quot;);'"></div>
+												<div class="colored-shadow" th:style="'background-image: url(&quot;./img/item/' + 'studio-2.jpg' + '&quot;); opacity: 1;'"></div>
+											</a>
+										</div>
+										<div class="card-body">
+											<div class="card-description">
+												<a class="card-link" th:href="@{/}">
+													<p class="desc-title">item1 title</p>
+												</a>
+												<a class="card-link" th:href="@{/}">
+													<span class="card-tag">#화려함</span>
+												</a>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-4">
+										<div class="card-header">
+											<a class="card-link" th:href="@{/}">
+												<div class="card-image image-size" th:style="'background-image: url(&quot;./img/item/' + 'studio-2.jpg' + '&quot;);'"></div>
+												<div class="colored-shadow" th:style="'background-image: url(&quot;./img/item/' + 'studio-2.jpg' + '&quot;); opacity: 1;'"></div>
+											</a>
+										</div>
+										<div class="card-body">
+											<div class="card-description">
+												<a class="card-link" th:href="@{/}">
+													<p class="desc-title">item1 title</p>
+												</a>
+												<a class="card-link" th:href="@{/}">
+													<span class="card-tag">#화려함</span>
+												</a>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-4">
+										<div class="card-header">
+											<a class="card-link" th:href="@{/}">
+												<div class="card-image image-size" th:style="'background-image: url(&quot;./img/item/' + 'studio-2.jpg' + '&quot;);'"></div>
+												<div class="colored-shadow" th:style="'background-image: url(&quot;./img/item/' + 'studio-2.jpg' + '&quot;); opacity: 1;'"></div>
+											</a>
+										</div>
+										<div class="card-body">
+											<div class="card-description">
+												<a class="card-link" th:href="@{/}">
+													<p class="desc-title">item1 title</p>
+												</a>
+												<a class="card-link" th:href="@{/}">
+													<span class="card-tag">#화려함</span>
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li id="card-fashion" class="swiper-slide">
+							<div class="card">
+								<div class="row">
+									<span class="card-title">FASHION</span>
+								</div>
+								<div class="row" data-aos="zoom-in">
+									<div class="col-md-8">
+										<div class="card-header">
+											<a class="card-link" th:href="@{/}">
+												<div class="card-image image-size-left" th:style="'background-image: url(&quot;./img/item/' + 'studio-2.jpg' + '&quot;);'"></div>
+												<div class="colored-shadow" th:style="'background-image: url(&quot;./img/item/' + 'studio-2.jpg' + '&quot;); opacity: 1;'"></div>
+											</a>
+										</div>
+										<div class="card-body">
+											<div class="card-description">
+												<a class="card-link" th:href="@{/}">
+													<p class="desc-title">item1 title</p>
+												</a>
+												<a class="card-link" th:href="@{/}">
+													<span class="card-tag">#화려함</span>
+												</a>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-4">
+										<div class="">
+											<div class="card-header">
+												<a class="card-link" th:href="@{/}">
+													<div class="card-image image-size-right" th:style="'background-image: url(&quot;./img/item/' + 'studio-2.jpg' + '&quot;);'"></div>
+													<div class="colored-shadow" th:style="'background-image: url(&quot;./img/item/' + 'studio-2.jpg' + '&quot;); opacity: 1;'"></div>
+												</a>
+											</div>
+											<div class="card-body">
+												<div class="card-description">
+													<a class="card-link" th:href="@{/}">
+														<p class="desc-title">item1 title</p>
+													</a>
+													<a class="card-link" th:href="@{/}">
+														<span class="card-tag">#화려함</span>
+													</a>
+												</div>
+											</div>
+										</div>
+										<div class="">
+											<div class="card-header">
+												<a class="card-link" th:href="@{/}">
+													<div class="card-image image-size-right" th:style="'background-image: url(&quot;./img/item/' + 'studio-2.jpg' + '&quot;);'"></div>
+													<div class="colored-shadow" th:style="'background-image: url(&quot;./img/item/' + 'studio-2.jpg' + '&quot;); opacity: 1;'"></div>
+												</a>
+											</div>
+											<div class="card-body">
+												<div class="card-description">
+													<a class="card-link" th:href="@{/}">
+														<p class="desc-title">item1 title</p>
+													</a>
+													<a class="card-link" th:href="@{/}">
+														<span class="card-tag">#화려함</span>
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="row" data-aos="zoom-in">
+									<div class="col-md-4">
+										<div class="card-header">
+											<a class="card-link" th:href="@{/}">
+												<div class="card-image image-size" th:style="'background-image: url(&quot;./img/item/' + 'studio-2.jpg' + '&quot;);'"></div>
+												<div class="colored-shadow" th:style="'background-image: url(&quot;./img/item/' + 'studio-2.jpg' + '&quot;); opacity: 1;'"></div>
+											</a>
+										</div>
+										<div class="card-body">
+											<div class="card-description">
+												<a class="card-link" th:href="@{/}">
+													<p class="desc-title">item1 title</p>
+												</a>
+												<a class="card-link" th:href="@{/}">
+													<span class="card-tag">#화려함</span>
+												</a>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-4">
+										<div class="card-header">
+											<a class="card-link" th:href="@{/}">
+												<div class="card-image image-size" th:style="'background-image: url(&quot;./img/item/' + 'studio-2.jpg' + '&quot;);'"></div>
+												<div class="colored-shadow" th:style="'background-image: url(&quot;./img/item/' + 'studio-2.jpg' + '&quot;); opacity: 1;'"></div>
+											</a>
+										</div>
+										<div class="card-body">
+											<div class="card-description">
+												<a class="card-link" th:href="@{/}">
+													<p class="desc-title">item1 title</p>
+												</a>
+												<a class="card-link" th:href="@{/}">
+													<span class="card-tag">#화려함</span>
+												</a>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-4">
+										<div class="card-header">
+											<a class="card-link" th:href="@{/}">
+												<div class="card-image image-size" th:style="'background-image: url(&quot;./img/item/' + 'studio-2.jpg' + '&quot;);'"></div>
+												<div class="colored-shadow" th:style="'background-image: url(&quot;./img/item/' + 'studio-2.jpg' + '&quot;); opacity: 1;'"></div>
+											</a>
+										</div>
+										<div class="card-body">
+											<div class="card-description">
+												<a class="card-link" th:href="@{/}">
+													<p class="desc-title">item1 title</p>
+												</a>
+												<a class="card-link" th:href="@{/}">
+													<span class="card-tag">#화려함</span>
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li id="card-beauty" class="swiper-slide">
+							<div class="card">
+								<div class="row">
+									<span class="card-title">BEAUTY</span>
+								</div>
+								<div class="row" data-aos="zoom-in">
+									<div class="col-md-8">
+										<div class="card-header">
+											<a class="card-link" th:href="@{/}">
+												<div class="card-image image-size-left" th:style="'background-image: url(&quot;./img/item/' + 'studio-2.jpg' + '&quot;);'"></div>
+												<div class="colored-shadow" th:style="'background-image: url(&quot;./img/item/' + 'studio-2.jpg' + '&quot;); opacity: 1;'"></div>
+											</a>
+										</div>
+										<div class="card-body">
+											<div class="card-description">
+												<a class="card-link" th:href="@{/}">
+													<p class="desc-title">item1 title</p>
+												</a>
+												<a class="card-link" th:href="@{/}">
+													<span class="card-tag">#화려함</span>
+												</a>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-4">
+										<div class="">
+											<div class="card-header">
+												<a class="card-link" th:href="@{/}">
+													<div class="card-image image-size-right" th:style="'background-image: url(&quot;./img/item/' + 'studio-2.jpg' + '&quot;);'"></div>
+													<div class="colored-shadow" th:style="'background-image: url(&quot;./img/item/' + 'studio-2.jpg' + '&quot;); opacity: 1;'"></div>
+												</a>
+											</div>
+											<div class="card-body">
+												<div class="card-description">
+													<a class="card-link" th:href="@{/}">
+														<p class="desc-title">item1 title</p>
+													</a>
+													<a class="card-link" th:href="@{/}">
+														<span class="card-tag">#화려함</span>
+													</a>
+												</div>
+											</div>
+										</div>
+										<div class="">
+											<div class="card-header">
+												<a class="card-link" th:href="@{/}">
+													<div class="card-image image-size-right" th:style="'background-image: url(&quot;./img/item/' + 'studio-2.jpg' + '&quot;);'"></div>
+													<div class="colored-shadow" th:style="'background-image: url(&quot;./img/item/' + 'studio-2.jpg' + '&quot;); opacity: 1;'"></div>
+												</a>
+											</div>
+											<div class="card-body">
+												<div class="card-description">
+													<a class="card-link" th:href="@{/}">
+														<p class="desc-title">item1 title</p>
+													</a>
+													<a class="card-link" th:href="@{/}">
+														<span class="card-tag">#화려함</span>
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="row" data-aos="zoom-in">
+									<div class="col-md-4">
+										<div class="card-header">
+											<a class="card-link" th:href="@{/}">
+												<div class="card-image image-size" th:style="'background-image: url(&quot;./img/item/' + 'studio-2.jpg' + '&quot;);'"></div>
+												<div class="colored-shadow" th:style="'background-image: url(&quot;./img/item/' + 'studio-2.jpg' + '&quot;); opacity: 1;'"></div>
+											</a>
+										</div>
+										<div class="card-body">
+											<div class="card-description">
+												<a class="card-link" th:href="@{/}">
+													<p class="desc-title">item1 title</p>
+												</a>
+												<a class="card-link" th:href="@{/}">
+													<span class="card-tag">#화려함</span>
+												</a>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-4">
+										<div class="card-header">
+											<a class="card-link" th:href="@{/}">
+												<div class="card-image image-size" th:style="'background-image: url(&quot;./img/item/' + 'studio-2.jpg' + '&quot;);'"></div>
+												<div class="colored-shadow" th:style="'background-image: url(&quot;./img/item/' + 'studio-2.jpg' + '&quot;); opacity: 1;'"></div>
+											</a>
+										</div>
+										<div class="card-body">
+											<div class="card-description">
+												<a class="card-link" th:href="@{/}">
+													<p class="desc-title">item1 title</p>
+												</a>
+												<a class="card-link" th:href="@{/}">
+													<span class="card-tag">#화려함</span>
+												</a>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-4">
+										<div class="card-header">
+											<a class="card-link" th:href="@{/}">
+												<div class="card-image image-size" th:style="'background-image: url(&quot;./img/item/' + 'studio-2.jpg' + '&quot;);'"></div>
+												<div class="colored-shadow" th:style="'background-image: url(&quot;./img/item/' + 'studio-2.jpg' + '&quot;); opacity: 1;'"></div>
+											</a>
+										</div>
+										<div class="card-body">
+											<div class="card-description">
+												<a class="card-link" th:href="@{/}">
+													<p class="desc-title">item1 title</p>
+												</a>
+												<a class="card-link" th:href="@{/}">
+													<span class="card-tag">#화려함</span>
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li id="card-life" class="swiper-slide">
+							<div class="card">
+								<div class="row">
+									<span class="card-title">LIFE</span>
+								</div>
+								<div class="row" data-aos="zoom-in">
+									<div class="col-md-8">
+										<div class="card-header">
+											<a class="card-link" th:href="@{/}">
+												<div class="card-image image-size-left" th:style="'background-image: url(&quot;./img/item/' + 'studio-2.jpg' + '&quot;);'"></div>
+												<div class="colored-shadow" th:style="'background-image: url(&quot;./img/item/' + 'studio-2.jpg' + '&quot;); opacity: 1;'"></div>
+											</a>
+										</div>
+										<div class="card-body">
+											<div class="card-description">
+												<a class="card-link" th:href="@{/}">
+													<p class="desc-title">item1 title</p>
+												</a>
+												<a class="card-link" th:href="@{/}">
+													<span class="card-tag">#화려함</span>
+												</a>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-4">
+										<div class="">
+											<div class="card-header">
+												<a class="card-link" th:href="@{/}">
+													<div class="card-image image-size-right" th:style="'background-image: url(&quot;./img/item/' + 'studio-2.jpg' + '&quot;);'"></div>
+													<div class="colored-shadow" th:style="'background-image: url(&quot;./img/item/' + 'studio-2.jpg' + '&quot;); opacity: 1;'"></div>
+												</a>
+											</div>
+											<div class="card-body">
+												<div class="card-description">
+													<a class="card-link" th:href="@{/}">
+														<p class="desc-title">item1 title</p>
+													</a>
+													<a class="card-link" th:href="@{/}">
+														<span class="card-tag">#화려함</span>
+													</a>
+												</div>
+											</div>
+										</div>
+										<div class="">
+											<div class="card-header">
+												<a class="card-link" th:href="@{/}">
+													<div class="card-image image-size-right" th:style="'background-image: url(&quot;./img/item/' + 'studio-2.jpg' + '&quot;);'"></div>
+													<div class="colored-shadow" th:style="'background-image: url(&quot;./img/item/' + 'studio-2.jpg' + '&quot;); opacity: 1;'"></div>
+												</a>
+											</div>
+											<div class="card-body">
+												<div class="card-description">
+													<a class="card-link" th:href="@{/}">
+														<p class="desc-title">item1 title</p>
+													</a>
+													<a class="card-link" th:href="@{/}">
+														<span class="card-tag">#화려함</span>
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="row" data-aos="zoom-in">
+									<div class="col-md-4">
+										<div class="card-header">
+											<a class="card-link" th:href="@{/}">
+												<div class="card-image image-size" th:style="'background-image: url(&quot;./img/item/' + 'studio-2.jpg' + '&quot;);'"></div>
+												<div class="colored-shadow" th:style="'background-image: url(&quot;./img/item/' + 'studio-2.jpg' + '&quot;); opacity: 1;'"></div>
+											</a>
+										</div>
+										<div class="card-body">
+											<div class="card-description">
+												<a class="card-link" th:href="@{/}">
+													<p class="desc-title">item1 title</p>
+												</a>
+												<a class="card-link" th:href="@{/}">
+													<span class="card-tag">#화려함</span>
+												</a>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-4">
+										<div class="card-header">
+											<a class="card-link" th:href="@{/}">
+												<div class="card-image image-size" th:style="'background-image: url(&quot;./img/item/' + 'studio-2.jpg' + '&quot;);'"></div>
+												<div class="colored-shadow" th:style="'background-image: url(&quot;./img/item/' + 'studio-2.jpg' + '&quot;); opacity: 1;'"></div>
+											</a>
+										</div>
+										<div class="card-body">
+											<div class="card-description">
+												<a class="card-link" th:href="@{/}">
+													<p class="desc-title">item1 title</p>
+												</a>
+												<a class="card-link" th:href="@{/}">
+													<span class="card-tag">#화려함</span>
+												</a>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-4">
+										<div class="card-header">
+											<a class="card-link" th:href="@{/}">
+												<div class="card-image image-size" th:style="'background-image: url(&quot;./img/item/' + 'studio-2.jpg' + '&quot;);'"></div>
+												<div class="colored-shadow" th:style="'background-image: url(&quot;./img/item/' + 'studio-2.jpg' + '&quot;); opacity: 1;'"></div>
+											</a>
+										</div>
+										<div class="card-body">
+											<div class="card-description">
+												<a class="card-link" th:href="@{/}">
+													<p class="desc-title">item1 title</p>
+												</a>
+												<a class="card-link" th:href="@{/}">
+													<span class="card-tag">#화려함</span>
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</li>
+					</ul>
+					<ul class="swiper-pagination swiper-pagination-new"></ul>
+				</div>
+			</ul>
+	    </div>
+	    <!-- Initialize Swiper -->
+		<script>
+		document.addEventListener("DOMContentLoaded", function(){
+			var swiper3 = new Swiper('.swiper-newlist', {
+				// Optional parameters 
+				slidesPerView: 2, //한번에 보여지는 슬라이드 개수
+				spaceBetween: 15, //마진값
+				grabCursor: true,
+				//반응형 
+				breakpointsInverse: true, 
+				breakpoints: { 
+					// when window width is >= 320px 
+					320: { 
+						slidesPerView: 1, 
+						spaceBetween: 10 
+					}, 
+					// when window width is >= 768px 
+					768: { 
+						slidesPerView: 2, 
+						spaceBetween: 10 
+					},
+					// when window width is >= 1440px 
+					1440: {
+						slidesPerView: 2, 
+						spaceBetween: 15
+					}
+				},
+				pagination: {
+					el: '.swiper-pagination-new',
+					clickable: false,
+					dynamicBullets: true
+				},
+			});
+		});
+	  </script>
+	</div>
+</body>
+</html>

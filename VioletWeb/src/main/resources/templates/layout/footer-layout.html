@@ -2,24 +2,25 @@
 <head></head>
 <body>
 <th:block th:fragment="footer-layout">
-    <footer class="footer footer-default">
+    <footer class="footer bg-dark">
         <div class="container">
-            <nav class="float-left">
-                <ul>
-                    <li>
-                        <a th:href="@{/}">
-                            <span class="navbar-brand">Violet</span>
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-            <div class="copyright float-right">
-                &copy;
-                <script>
-                    document.write(new Date().getFullYear())
-                </script>, made with <i class="material-icons">copyright</i> by
-                <a th:href="@{/}" target="blank" style="color: #fff; font-family: Cursive !important; font-weight: bold;">KMS</a> for a better web.
-            </div>
+        	<ul class="row">
+        		<li class="col-md-6">
+		            <div class="f-left">
+						<a class="footer-link" title="Violet" th:href="@{/}">
+							<div class="footer-brand">Violet</div>
+						</a>
+		            </div>
+				</li>
+				<li class="col-md-6">
+		            <div class="copyright f-right">
+		                <script>
+		                    document.write(new Date().getFullYear())
+		                </script>, made&nbsp;with&nbsp;<i class="far fa-copyright">copyright</i>&nbsp;by
+		                <a class="footer-link" title="copyright" th:href="@{/}" target="blank">KMS</a> for a better web.
+		            </div>
+				</li>
+            </ul>
         </div>
     </footer>
 </th:block>

@@ -1,0 +1,47 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+</head>
+<body>
+	<div th:fragment="paper-swiper" id="paper" class="paper-layout">
+<!-- 		<div class="container"> -->
+			<!--/* Swiper */-->
+	  		<div class="swiper-container swiper-paper">
+	    		<div class="swiper-wrapper">
+	      			<div class="swiper-slide img-filter" th:style="'background-image: url(&quot;./img/main/paper/' + 'paper_bgImg1.png' + '&quot;);'" alt="1 slide">
+	      				<div class="swiper-text-layout">
+							<span class="swiper-title">슬라이드 타이틀</span>
+							<span class="swiper-subtitle">슬라이드 설명</span>
+						</div>
+	      			</div>
+	      			<div class="swiper-slide img-filter" th:style="'background-image: url(&quot;./img/main/paper/' + 'paper_bgImg2.jpg' + '&quot;);'" alt="2 slide">
+	      				<div class="swiper-text-layout">
+							<span class="swiper-title">슬라이드 타이틀</span>
+							<span class="swiper-subtitle">슬라이드 설명</span>
+						</div>
+	      			</div>
+	    		</div>
+	    		<!--/* Add Pagination */-->
+	    		<div class="swiper-pagination swiper-pagination-paper"></div>
+	  		</div>
+<!--   		</div> -->
+  		<!--/* Initialize Swiper Start */-->
+ 		<script>
+		document.addEventListener("DOMContentLoaded", function(){
+			var swiper = new Swiper('.swiper-paper', {
+				loop: true,
+				autoplay: {
+					delay: 5000,
+				},
+				grabCursor: true,
+				pagination: {
+					el: '.swiper-pagination-paper',
+					clickable: true
+				}
+			});
+		});
+ 		</script>
+ 		<!--/* Initialize Swiper End */-->
+	</div>
+</body>
+</html>

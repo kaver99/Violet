@@ -20,6 +20,7 @@ import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.builders.WebSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
+import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.oauth2.client.OAuth2ClientContext;
 import org.springframework.security.oauth2.client.OAuth2RestTemplate;
 import org.springframework.security.oauth2.client.filter.OAuth2ClientAuthenticationProcessingFilter;
@@ -120,7 +121,14 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
             .logoutSuccessUrl("/")
             .invalidateHttpSession(true)
             .clearAuthentication(true)
-            .deleteCookies("JSESSIONID")
+            .deleteCookies("JSESSIONID","remember-me")
+//        .and()
+//        	.rememberMe().key("uniqueAndSecret")
+//        	.rememberMeParameter("remember-me")
+//        	.rememberMeCookieName("violet-login-remember-me")
+//        	.tokenValiditySeconds(10000000)
+//        	.userDetailsService(userDetailsService())
+        	
         .and()
 	    	// csrf is used Setting
 	        // csrf 설정을 사용하면 모든 request에 csrf 값을 함께 전달해야한다.

@@ -1,0 +1,533 @@
+2019-12-16 14:38:55 [INFO ] [StartupInfoLogger.java] logStarting(50) : Starting VioletWebApplication on Minui-MacBook-Pro.local with PID 13123 (/Users/minsungkim/git/Violet/VioletWeb/target/classes started by minsungkim in /Users/minsungkim/git/Violet/VioletWeb)
+2019-12-16 14:38:55 [INFO ] [SpringApplication.java] logStartupProfileInfo(679) : The following profiles are active: local
+2019-12-16 14:38:56 [WARN ] [ClassPathMapperScanner.java] doScan(166) : No MyBatis mapper was found in '[com.violet.web]' package. Please check your configuration.
+2019-12-16 14:38:56 [INFO ] [PostProcessorRegistrationDelegate.java] postProcessAfterInitialization(330) : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$59dca3e0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-16 14:38:56 [INFO ] [AbstractAddressingEndpointMapping.java] afterPropertiesSet(236) : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2019-12-16 14:38:56 [INFO ] [PostProcessorRegistrationDelegate.java] postProcessAfterInitialization(330) : Bean 'org.springframework.hateoas.config.HateoasConfiguration' of type [org.springframework.hateoas.config.HateoasConfiguration$$EnhancerBySpringCGLIB$$34c52c13] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-16 14:38:56 [INFO ] [PostProcessorRegistrationDelegate.java] postProcessAfterInitialization(330) : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$b544dee1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-16 14:38:57 [INFO ] [TomcatWebServer.java] initialize(90) : Tomcat initialized with port(s): 80 (http)
+2019-12-16 14:38:57 [INFO ] [DirectJDKLog.java] log(173) : Starting service [Tomcat]
+2019-12-16 14:38:57 [INFO ] [DirectJDKLog.java] log(173) : Starting Servlet Engine: Apache Tomcat/9.0.13
+2019-12-16 14:38:57 [INFO ] [DirectJDKLog.java] log(173) : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/minsungkim/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2019-12-16 14:38:57 [INFO ] [DirectJDKLog.java] log(173) : Initializing Spring embedded WebApplicationContext
+2019-12-16 14:38:57 [INFO ] [ServletWebServerApplicationContext.java] prepareWebApplicationContext(296) : Root WebApplicationContext: initialization completed in 1198 ms
+2019-12-16 14:38:58 [INFO ] [DefaultSecurityFilterChain.java] <init>(43) : Creating filter chain: Ant [pattern='/js/**'], []
+2019-12-16 14:38:58 [INFO ] [DefaultSecurityFilterChain.java] <init>(43) : Creating filter chain: Ant [pattern='/css/**'], []
+2019-12-16 14:38:58 [INFO ] [DefaultSecurityFilterChain.java] <init>(43) : Creating filter chain: Ant [pattern='/img/**'], []
+2019-12-16 14:38:58 [INFO ] [DefaultSecurityFilterChain.java] <init>(43) : Creating filter chain: Ant [pattern='/assets/**'], []
+2019-12-16 14:38:58 [INFO ] [DefaultSecurityFilterChain.java] <init>(43) : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@51b77cdf, org.springframework.security.web.context.SecurityContextPersistenceFilter@d675f9f, org.springframework.security.web.header.HeaderWriterFilter@217bf99e, org.springframework.security.web.csrf.CsrfFilter@276cc8dc, org.springframework.security.web.authentication.logout.LogoutFilter@748a654a, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@2262d6d5, org.springframework.web.filter.CompositeFilter@441fbe89, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@49469ffa, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@11d045b4, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6088451e, org.springframework.security.web.session.SessionManagementFilter@7ddd84b5, org.springframework.security.web.access.ExceptionTranslationFilter@2fe74516, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1665fa54]
+2019-12-16 14:38:58 [INFO ] [ExecutorConfigurationSupport.java] initialize(171) : Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-16 14:38:58 [INFO ] [WelcomePageHandlerMapping.java] <init>(61) : Adding welcome page template: index
+2019-12-16 14:38:58 [INFO ] [TomcatWebServer.java] start(204) : Tomcat started on port(s): 80 (http) with context path ''
+2019-12-16 14:38:58 [INFO ] [StartupInfoLogger.java] logStarted(59) : Started VioletWebApplication in 3.383 seconds (JVM running for 3.858)
+2019-12-16 14:39:05 [INFO ] [DirectJDKLog.java] log(173) : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-12-16 14:39:05 [INFO ] [FrameworkServlet.java] initServletBean(524) : Initializing Servlet 'dispatcherServlet'
+2019-12-16 14:39:05 [INFO ] [FrameworkServlet.java] initServletBean(546) : Completed initialization in 13 ms
+2019-12-16 14:39:06 [WARN ] [FragmentProcessor.groovy] doProcess(75) : You don't need to put the layout:fragment/data-layout-fragment attribute into the <head> section - the decoration process will automatically copy the <head> section of your content templates into your layout page.
+2019-12-16 16:24:02 [WARN ] [HikariConfig.java] validateNumerics(1008) : {} - idleTimeout has been set but has no effect because the pool is operating as a fixed size pool.
+2019-12-16 16:24:02 [INFO ] [HikariDataSource.java] getConnection(110) : hikari-cp - Starting...
+2019-12-16 16:24:02 [WARN ] [DriverDataSource.java] <init>(68) : Registered driver with driverClassName=oracle.jdbc.driver.OracleDriver was not found, trying direct instantiation.
+2019-12-16 16:24:02 [INFO ] [PoolBase.java] getAndSetNetworkTimeout(525) : hikari-cp - Driver does not support get/set network timeout for connections. (oracle.jdbc.driver.T4CConnection.getNetworkTimeout()I)
+2019-12-16 16:24:02 [INFO ] [HikariDataSource.java] getConnection(123) : hikari-cp - Start completed.
+2019-12-16 16:27:33 [WARN ] [HikariPool.java] run(758) : hikari-cp - Retrograde clock change detected (housekeeper delta=29s866ms), soft-evicting connections from pool.
+2019-12-16 16:28:21 [INFO ] [AuthSuccessHandler.java] onAuthenticationSuccess(154) : Login AuthSuccess : [ <local> test@test.com / 0:0:0:0:0:0:0:1 ]
+2019-12-16 16:28:34 [INFO ] [AuthSuccessHandler.java] onAuthenticationSuccess(154) : Login AuthSuccess : [ <local> test@test.com / 0:0:0:0:0:0:0:1 ]
+2019-12-16 17:42:01 [INFO ] [AuthSuccessHandler.java] onAuthenticationSuccess(154) : Login AuthSuccess : [ <local> test@test.com / 0:0:0:0:0:0:0:1 ]
+2019-12-16 17:44:04 [INFO ] [AuthSuccessHandler.java] onAuthenticationSuccess(154) : Login AuthSuccess : [ <local> test@test.com / 0:0:0:0:0:0:0:1 ]
+2019-12-16 17:52:16 [WARN ] [HikariPool.java] run(766) : hikari-cp - Thread starvation or clock leap detected (housekeeper delta=1m41s705ms).
+2019-12-16 18:16:19 [INFO ] [SpringApplicationAdminMXBeanRegistrar.java] shutdown(164) : Application shutdown requested.
+2019-12-16 18:16:19 [INFO ] [ExecutorConfigurationSupport.java] shutdown(208) : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-12-16 18:16:19 [INFO ] [HikariDataSource.java] close(350) : hikari-cp - Shutdown initiated...
+2019-12-16 18:16:19 [INFO ] [HikariDataSource.java] close(352) : hikari-cp - Shutdown completed.
+2019-12-16 18:16:21 [INFO ] [StartupInfoLogger.java] logStarting(50) : Starting VioletWebApplication on Minui-MacBook-Pro.local with PID 14198 (/Users/minsungkim/git/Violet/VioletWeb/target/classes started by minsungkim in /Users/minsungkim/git/Violet/VioletWeb)
+2019-12-16 18:16:21 [INFO ] [SpringApplication.java] logStartupProfileInfo(679) : The following profiles are active: local
+2019-12-16 18:16:21 [WARN ] [ClassPathMapperScanner.java] doScan(166) : No MyBatis mapper was found in '[com.violet.web]' package. Please check your configuration.
+2019-12-16 18:16:21 [INFO ] [PostProcessorRegistrationDelegate.java] postProcessAfterInitialization(330) : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$f7166372] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-16 18:16:21 [INFO ] [AbstractAddressingEndpointMapping.java] afterPropertiesSet(236) : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2019-12-16 18:16:21 [INFO ] [PostProcessorRegistrationDelegate.java] postProcessAfterInitialization(330) : Bean 'org.springframework.hateoas.config.HateoasConfiguration' of type [org.springframework.hateoas.config.HateoasConfiguration$$EnhancerBySpringCGLIB$$d1feeba5] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-16 18:16:21 [INFO ] [PostProcessorRegistrationDelegate.java] postProcessAfterInitialization(330) : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$527e9e73] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-16 18:16:21 [INFO ] [TomcatWebServer.java] initialize(90) : Tomcat initialized with port(s): 80 (http)
+2019-12-16 18:16:21 [INFO ] [DirectJDKLog.java] log(173) : Starting service [Tomcat]
+2019-12-16 18:16:21 [INFO ] [DirectJDKLog.java] log(173) : Starting Servlet Engine: Apache Tomcat/9.0.13
+2019-12-16 18:16:21 [INFO ] [DirectJDKLog.java] log(173) : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/minsungkim/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2019-12-16 18:16:22 [INFO ] [DirectJDKLog.java] log(173) : Initializing Spring embedded WebApplicationContext
+2019-12-16 18:16:22 [INFO ] [ServletWebServerApplicationContext.java] prepareWebApplicationContext(296) : Root WebApplicationContext: initialization completed in 900 ms
+2019-12-16 18:16:22 [INFO ] [DefaultSecurityFilterChain.java] <init>(43) : Creating filter chain: Ant [pattern='/js/**'], []
+2019-12-16 18:16:22 [INFO ] [DefaultSecurityFilterChain.java] <init>(43) : Creating filter chain: Ant [pattern='/css/**'], []
+2019-12-16 18:16:22 [INFO ] [DefaultSecurityFilterChain.java] <init>(43) : Creating filter chain: Ant [pattern='/img/**'], []
+2019-12-16 18:16:22 [INFO ] [DefaultSecurityFilterChain.java] <init>(43) : Creating filter chain: Ant [pattern='/assets/**'], []
+2019-12-16 18:16:22 [INFO ] [DefaultSecurityFilterChain.java] <init>(43) : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6413d7e7, org.springframework.security.web.context.SecurityContextPersistenceFilter@3a6045c6, org.springframework.security.web.header.HeaderWriterFilter@2577a95d, org.springframework.security.web.csrf.CsrfFilter@17e9bc9e, org.springframework.security.web.authentication.logout.LogoutFilter@217bf99e, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@62a68bcb, org.springframework.web.filter.CompositeFilter@d16be4f, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@b67cc70, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@d3f4505, org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter@430b2699, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@17b37e9a, org.springframework.security.web.session.SessionManagementFilter@63300c4b, org.springframework.security.web.access.ExceptionTranslationFilter@3238e2aa, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1bf14704]
+2019-12-16 18:16:23 [INFO ] [ExecutorConfigurationSupport.java] initialize(171) : Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-16 18:16:23 [INFO ] [WelcomePageHandlerMapping.java] <init>(61) : Adding welcome page template: index
+2019-12-16 18:16:23 [INFO ] [TomcatWebServer.java] start(204) : Tomcat started on port(s): 80 (http) with context path ''
+2019-12-16 18:16:23 [INFO ] [StartupInfoLogger.java] logStarted(59) : Started VioletWebApplication in 2.632 seconds (JVM running for 2.982)
+2019-12-16 18:16:26 [INFO ] [DirectJDKLog.java] log(173) : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-12-16 18:16:26 [INFO ] [FrameworkServlet.java] initServletBean(524) : Initializing Servlet 'dispatcherServlet'
+2019-12-16 18:16:26 [INFO ] [FrameworkServlet.java] initServletBean(546) : Completed initialization in 13 ms
+2019-12-16 18:16:26 [WARN ] [FragmentProcessor.groovy] doProcess(75) : You don't need to put the layout:fragment/data-layout-fragment attribute into the <head> section - the decoration process will automatically copy the <head> section of your content templates into your layout page.
+2019-12-16 18:16:34 [WARN ] [HikariConfig.java] validateNumerics(1008) : {} - idleTimeout has been set but has no effect because the pool is operating as a fixed size pool.
+2019-12-16 18:16:34 [INFO ] [HikariDataSource.java] getConnection(110) : hikari-cp - Starting...
+2019-12-16 18:16:34 [WARN ] [DriverDataSource.java] <init>(68) : Registered driver with driverClassName=oracle.jdbc.driver.OracleDriver was not found, trying direct instantiation.
+2019-12-16 18:16:34 [INFO ] [PoolBase.java] getAndSetNetworkTimeout(525) : hikari-cp - Driver does not support get/set network timeout for connections. (oracle.jdbc.driver.T4CConnection.getNetworkTimeout()I)
+2019-12-16 18:16:34 [INFO ] [HikariDataSource.java] getConnection(123) : hikari-cp - Start completed.
+2019-12-16 18:16:34 [ERROR] [DirectJDKLog.java] log(175) : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+java.lang.IllegalStateException: UserDetailsService is required.
+	at org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter$UserDetailsServiceDelegator.loadUserByUsername(WebSecurityConfigurerAdapter.java:464)
+	at org.springframework.security.web.authentication.rememberme.TokenBasedRememberMeServices.onLoginSuccess(TokenBasedRememberMeServices.java:182)
+	at org.springframework.security.web.authentication.rememberme.AbstractRememberMeServices.loginSuccess(AbstractRememberMeServices.java:315)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.successfulAuthentication(AbstractAuthenticationProcessingFilter.java:318)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:240)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.csrf.CsrfFilter.doFilterInternal(CsrfFilter.java:124)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:74)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:357)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:270)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.security.oauth2.client.filter.OAuth2ClientContextFilter.doFilter(OAuth2ClientContextFilter.java:60)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:791)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1417)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2019-12-16 18:23:56 [INFO ] [SpringApplicationAdminMXBeanRegistrar.java] shutdown(164) : Application shutdown requested.
+2019-12-16 18:23:56 [INFO ] [ExecutorConfigurationSupport.java] shutdown(208) : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-12-16 18:23:56 [INFO ] [HikariDataSource.java] close(350) : hikari-cp - Shutdown initiated...
+2019-12-16 18:23:56 [INFO ] [HikariDataSource.java] close(352) : hikari-cp - Shutdown completed.
+2019-12-16 18:23:58 [INFO ] [StartupInfoLogger.java] logStarting(50) : Starting VioletWebApplication on Minui-MacBook-Pro.local with PID 14236 (/Users/minsungkim/git/Violet/VioletWeb/target/classes started by minsungkim in /Users/minsungkim/git/Violet/VioletWeb)
+2019-12-16 18:23:58 [INFO ] [SpringApplication.java] logStartupProfileInfo(679) : The following profiles are active: local
+2019-12-16 18:23:58 [WARN ] [ClassPathMapperScanner.java] doScan(166) : No MyBatis mapper was found in '[com.violet.web]' package. Please check your configuration.
+2019-12-16 18:23:58 [INFO ] [PostProcessorRegistrationDelegate.java] postProcessAfterInitialization(330) : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$3d1ddb2f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-16 18:23:58 [INFO ] [AbstractAddressingEndpointMapping.java] afterPropertiesSet(236) : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2019-12-16 18:23:58 [INFO ] [PostProcessorRegistrationDelegate.java] postProcessAfterInitialization(330) : Bean 'org.springframework.hateoas.config.HateoasConfiguration' of type [org.springframework.hateoas.config.HateoasConfiguration$$EnhancerBySpringCGLIB$$18066362] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-16 18:23:58 [INFO ] [PostProcessorRegistrationDelegate.java] postProcessAfterInitialization(330) : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$98861630] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-16 18:23:59 [INFO ] [TomcatWebServer.java] initialize(90) : Tomcat initialized with port(s): 80 (http)
+2019-12-16 18:23:59 [INFO ] [DirectJDKLog.java] log(173) : Starting service [Tomcat]
+2019-12-16 18:23:59 [INFO ] [DirectJDKLog.java] log(173) : Starting Servlet Engine: Apache Tomcat/9.0.13
+2019-12-16 18:23:59 [INFO ] [DirectJDKLog.java] log(173) : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/minsungkim/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2019-12-16 18:23:59 [INFO ] [DirectJDKLog.java] log(173) : Initializing Spring embedded WebApplicationContext
+2019-12-16 18:23:59 [INFO ] [ServletWebServerApplicationContext.java] prepareWebApplicationContext(296) : Root WebApplicationContext: initialization completed in 897 ms
+2019-12-16 18:24:00 [INFO ] [DefaultSecurityFilterChain.java] <init>(43) : Creating filter chain: Ant [pattern='/js/**'], []
+2019-12-16 18:24:00 [INFO ] [DefaultSecurityFilterChain.java] <init>(43) : Creating filter chain: Ant [pattern='/css/**'], []
+2019-12-16 18:24:00 [INFO ] [DefaultSecurityFilterChain.java] <init>(43) : Creating filter chain: Ant [pattern='/img/**'], []
+2019-12-16 18:24:00 [INFO ] [DefaultSecurityFilterChain.java] <init>(43) : Creating filter chain: Ant [pattern='/assets/**'], []
+2019-12-16 18:24:00 [INFO ] [DefaultSecurityFilterChain.java] <init>(43) : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6af90849, org.springframework.security.web.context.SecurityContextPersistenceFilter@493da830, org.springframework.security.web.header.HeaderWriterFilter@14c93774, org.springframework.security.web.csrf.CsrfFilter@b73433, org.springframework.security.web.authentication.logout.LogoutFilter@7efa3f63, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@31b82e0f, org.springframework.web.filter.CompositeFilter@1d06f16f, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@45658133, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6d67f5eb, org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter@5ec1963c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4fa4f485, org.springframework.security.web.session.SessionManagementFilter@18b74ea, org.springframework.security.web.access.ExceptionTranslationFilter@40247d48, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@69d3cf7e]
+2019-12-16 18:24:00 [INFO ] [ExecutorConfigurationSupport.java] initialize(171) : Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-16 18:24:00 [INFO ] [WelcomePageHandlerMapping.java] <init>(61) : Adding welcome page template: index
+2019-12-16 18:24:00 [INFO ] [TomcatWebServer.java] start(204) : Tomcat started on port(s): 80 (http) with context path ''
+2019-12-16 18:24:00 [INFO ] [StartupInfoLogger.java] logStarted(59) : Started VioletWebApplication in 2.644 seconds (JVM running for 2.986)
+2019-12-16 18:25:04 [INFO ] [DirectJDKLog.java] log(173) : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-12-16 18:25:04 [INFO ] [FrameworkServlet.java] initServletBean(524) : Initializing Servlet 'dispatcherServlet'
+2019-12-16 18:25:04 [INFO ] [FrameworkServlet.java] initServletBean(546) : Completed initialization in 11 ms
+2019-12-16 18:25:07 [WARN ] [FragmentProcessor.groovy] doProcess(75) : You don't need to put the layout:fragment/data-layout-fragment attribute into the <head> section - the decoration process will automatically copy the <head> section of your content templates into your layout page.
+2019-12-16 18:25:20 [WARN ] [HikariConfig.java] validateNumerics(1008) : {} - idleTimeout has been set but has no effect because the pool is operating as a fixed size pool.
+2019-12-16 18:25:20 [INFO ] [HikariDataSource.java] getConnection(110) : hikari-cp - Starting...
+2019-12-16 18:25:20 [WARN ] [DriverDataSource.java] <init>(68) : Registered driver with driverClassName=oracle.jdbc.driver.OracleDriver was not found, trying direct instantiation.
+2019-12-16 18:25:20 [INFO ] [PoolBase.java] getAndSetNetworkTimeout(525) : hikari-cp - Driver does not support get/set network timeout for connections. (oracle.jdbc.driver.T4CConnection.getNetworkTimeout()I)
+2019-12-16 18:25:20 [INFO ] [HikariDataSource.java] getConnection(123) : hikari-cp - Start completed.
+2019-12-16 18:25:20 [ERROR] [DirectJDKLog.java] log(175) : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+java.lang.IllegalStateException: UserDetailsService is required.
+	at org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter$UserDetailsServiceDelegator.loadUserByUsername(WebSecurityConfigurerAdapter.java:464)
+	at org.springframework.security.web.authentication.rememberme.TokenBasedRememberMeServices.onLoginSuccess(TokenBasedRememberMeServices.java:182)
+	at org.springframework.security.web.authentication.rememberme.AbstractRememberMeServices.loginSuccess(AbstractRememberMeServices.java:315)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.successfulAuthentication(AbstractAuthenticationProcessingFilter.java:318)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:240)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.csrf.CsrfFilter.doFilterInternal(CsrfFilter.java:124)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:74)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:357)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:270)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.security.oauth2.client.filter.OAuth2ClientContextFilter.doFilter(OAuth2ClientContextFilter.java:60)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:791)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1417)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2019-12-16 18:31:28 [INFO ] [SpringApplicationAdminMXBeanRegistrar.java] shutdown(164) : Application shutdown requested.
+2019-12-16 18:31:28 [INFO ] [ExecutorConfigurationSupport.java] shutdown(208) : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-12-16 18:31:28 [INFO ] [HikariDataSource.java] close(350) : hikari-cp - Shutdown initiated...
+2019-12-16 18:31:28 [INFO ] [HikariDataSource.java] close(352) : hikari-cp - Shutdown completed.
+2019-12-16 18:31:29 [INFO ] [StartupInfoLogger.java] logStarting(50) : Starting VioletWebApplication on Minui-MacBook-Pro.local with PID 14263 (/Users/minsungkim/git/Violet/VioletWeb/target/classes started by minsungkim in /Users/minsungkim/git/Violet/VioletWeb)
+2019-12-16 18:31:29 [INFO ] [SpringApplication.java] logStartupProfileInfo(679) : The following profiles are active: local
+2019-12-16 18:31:30 [WARN ] [ClassPathMapperScanner.java] doScan(166) : No MyBatis mapper was found in '[com.violet.web]' package. Please check your configuration.
+2019-12-16 18:31:30 [INFO ] [PostProcessorRegistrationDelegate.java] postProcessAfterInitialization(330) : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$3c70ec21] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-16 18:31:30 [INFO ] [AbstractAddressingEndpointMapping.java] afterPropertiesSet(236) : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2019-12-16 18:31:30 [INFO ] [PostProcessorRegistrationDelegate.java] postProcessAfterInitialization(330) : Bean 'org.springframework.hateoas.config.HateoasConfiguration' of type [org.springframework.hateoas.config.HateoasConfiguration$$EnhancerBySpringCGLIB$$17597454] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-16 18:31:30 [INFO ] [PostProcessorRegistrationDelegate.java] postProcessAfterInitialization(330) : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$97d92722] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-16 18:31:30 [INFO ] [TomcatWebServer.java] initialize(90) : Tomcat initialized with port(s): 80 (http)
+2019-12-16 18:31:30 [INFO ] [DirectJDKLog.java] log(173) : Starting service [Tomcat]
+2019-12-16 18:31:30 [INFO ] [DirectJDKLog.java] log(173) : Starting Servlet Engine: Apache Tomcat/9.0.13
+2019-12-16 18:31:30 [INFO ] [DirectJDKLog.java] log(173) : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/minsungkim/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2019-12-16 18:31:30 [INFO ] [DirectJDKLog.java] log(173) : Initializing Spring embedded WebApplicationContext
+2019-12-16 18:31:30 [INFO ] [ServletWebServerApplicationContext.java] prepareWebApplicationContext(296) : Root WebApplicationContext: initialization completed in 906 ms
+2019-12-16 18:31:31 [INFO ] [DefaultSecurityFilterChain.java] <init>(43) : Creating filter chain: Ant [pattern='/js/**'], []
+2019-12-16 18:31:31 [INFO ] [DefaultSecurityFilterChain.java] <init>(43) : Creating filter chain: Ant [pattern='/css/**'], []
+2019-12-16 18:31:31 [INFO ] [DefaultSecurityFilterChain.java] <init>(43) : Creating filter chain: Ant [pattern='/img/**'], []
+2019-12-16 18:31:31 [INFO ] [DefaultSecurityFilterChain.java] <init>(43) : Creating filter chain: Ant [pattern='/assets/**'], []
+2019-12-16 18:31:31 [INFO ] [DefaultSecurityFilterChain.java] <init>(43) : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1163a27, org.springframework.security.web.context.SecurityContextPersistenceFilter@7327a447, org.springframework.security.web.header.HeaderWriterFilter@7a3b7122, org.springframework.security.web.csrf.CsrfFilter@1c3259fa, org.springframework.security.web.authentication.logout.LogoutFilter@6fff46bf, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@441fbe89, org.springframework.web.filter.CompositeFilter@322ba549, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2954f6ab, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1d8b0500, org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter@28a9494b, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@502a4156, org.springframework.security.web.session.SessionManagementFilter@25f15f50, org.springframework.security.web.access.ExceptionTranslationFilter@49469ffa, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7efa3f63]
+2019-12-16 18:31:31 [INFO ] [ExecutorConfigurationSupport.java] initialize(171) : Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-16 18:31:31 [INFO ] [WelcomePageHandlerMapping.java] <init>(61) : Adding welcome page template: index
+2019-12-16 18:31:32 [INFO ] [TomcatWebServer.java] start(204) : Tomcat started on port(s): 80 (http) with context path ''
+2019-12-16 18:31:32 [INFO ] [StartupInfoLogger.java] logStarted(59) : Started VioletWebApplication in 2.688 seconds (JVM running for 3.193)
+2019-12-16 18:31:37 [INFO ] [DirectJDKLog.java] log(173) : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-12-16 18:31:37 [INFO ] [FrameworkServlet.java] initServletBean(524) : Initializing Servlet 'dispatcherServlet'
+2019-12-16 18:31:37 [INFO ] [FrameworkServlet.java] initServletBean(546) : Completed initialization in 11 ms
+2019-12-16 18:31:37 [WARN ] [FragmentProcessor.groovy] doProcess(75) : You don't need to put the layout:fragment/data-layout-fragment attribute into the <head> section - the decoration process will automatically copy the <head> section of your content templates into your layout page.
+2019-12-16 18:31:48 [WARN ] [HikariConfig.java] validateNumerics(1008) : {} - idleTimeout has been set but has no effect because the pool is operating as a fixed size pool.
+2019-12-16 18:31:48 [INFO ] [HikariDataSource.java] getConnection(110) : hikari-cp - Starting...
+2019-12-16 18:31:48 [WARN ] [DriverDataSource.java] <init>(68) : Registered driver with driverClassName=oracle.jdbc.driver.OracleDriver was not found, trying direct instantiation.
+2019-12-16 18:31:48 [INFO ] [PoolBase.java] getAndSetNetworkTimeout(525) : hikari-cp - Driver does not support get/set network timeout for connections. (oracle.jdbc.driver.T4CConnection.getNetworkTimeout()I)
+2019-12-16 18:31:48 [INFO ] [HikariDataSource.java] getConnection(123) : hikari-cp - Start completed.
+2019-12-16 18:31:48 [ERROR] [DirectJDKLog.java] log(175) : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+java.lang.IllegalStateException: UserDetailsService is required.
+	at org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter$UserDetailsServiceDelegator.loadUserByUsername(WebSecurityConfigurerAdapter.java:464)
+	at org.springframework.security.web.authentication.rememberme.TokenBasedRememberMeServices.onLoginSuccess(TokenBasedRememberMeServices.java:182)
+	at org.springframework.security.web.authentication.rememberme.AbstractRememberMeServices.loginSuccess(AbstractRememberMeServices.java:315)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.successfulAuthentication(AbstractAuthenticationProcessingFilter.java:318)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:240)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.csrf.CsrfFilter.doFilterInternal(CsrfFilter.java:124)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:74)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:357)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:270)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.security.oauth2.client.filter.OAuth2ClientContextFilter.doFilter(OAuth2ClientContextFilter.java:60)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:791)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1417)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2019-12-16 18:51:36 [INFO ] [SpringApplicationAdminMXBeanRegistrar.java] shutdown(164) : Application shutdown requested.
+2019-12-16 18:51:36 [INFO ] [ExecutorConfigurationSupport.java] shutdown(208) : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-12-16 18:51:36 [INFO ] [HikariDataSource.java] close(350) : hikari-cp - Shutdown initiated...
+2019-12-16 18:51:36 [INFO ] [HikariDataSource.java] close(352) : hikari-cp - Shutdown completed.
+2019-12-16 18:51:37 [INFO ] [StartupInfoLogger.java] logStarting(50) : Starting VioletWebApplication on Minui-MacBook-Pro.local with PID 14390 (/Users/minsungkim/git/Violet/VioletWeb/target/classes started by minsungkim in /Users/minsungkim/git/Violet/VioletWeb)
+2019-12-16 18:51:37 [INFO ] [SpringApplication.java] logStartupProfileInfo(679) : The following profiles are active: local
+2019-12-16 18:51:38 [WARN ] [ClassPathMapperScanner.java] doScan(166) : No MyBatis mapper was found in '[com.violet.web]' package. Please check your configuration.
+2019-12-16 18:51:38 [INFO ] [PostProcessorRegistrationDelegate.java] postProcessAfterInitialization(330) : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$6053a25d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-16 18:51:38 [INFO ] [AbstractAddressingEndpointMapping.java] afterPropertiesSet(236) : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2019-12-16 18:51:38 [INFO ] [PostProcessorRegistrationDelegate.java] postProcessAfterInitialization(330) : Bean 'org.springframework.hateoas.config.HateoasConfiguration' of type [org.springframework.hateoas.config.HateoasConfiguration$$EnhancerBySpringCGLIB$$3b3c2a90] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-16 18:51:38 [INFO ] [PostProcessorRegistrationDelegate.java] postProcessAfterInitialization(330) : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$bbbbdd5e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-16 18:51:38 [INFO ] [TomcatWebServer.java] initialize(90) : Tomcat initialized with port(s): 80 (http)
+2019-12-16 18:51:38 [INFO ] [DirectJDKLog.java] log(173) : Starting service [Tomcat]
+2019-12-16 18:51:38 [INFO ] [DirectJDKLog.java] log(173) : Starting Servlet Engine: Apache Tomcat/9.0.13
+2019-12-16 18:51:38 [INFO ] [DirectJDKLog.java] log(173) : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/minsungkim/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2019-12-16 18:51:38 [INFO ] [DirectJDKLog.java] log(173) : Initializing Spring embedded WebApplicationContext
+2019-12-16 18:51:38 [INFO ] [ServletWebServerApplicationContext.java] prepareWebApplicationContext(296) : Root WebApplicationContext: initialization completed in 891 ms
+2019-12-16 18:51:39 [ERROR] [TomcatStarter.java] onStartup(62) : Error starting Tomcat context. Exception: org.springframework.beans.factory.UnsatisfiedDependencyException. Message: Error creating bean with name 'securityConfig': Unsatisfied dependency expressed through field 'userDetailsService'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.springframework.security.core.userdetails.UserDetailsService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2019-12-16 18:51:39 [INFO ] [DirectJDKLog.java] log(173) : Stopping service [Tomcat]
+2019-12-16 18:51:39 [WARN ] [AbstractApplicationContext.java] refresh(554) : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start web server; nested exception is org.springframework.boot.web.server.WebServerException: Unable to start embedded Tomcat
+2019-12-16 18:51:39 [INFO ] [ConditionEvaluationReportLoggingListener.java] logMessage(142) : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-12-16 18:51:39 [ERROR] [LoggingFailureAnalysisReporter.java] report(42) : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field userDetailsService in com.violet.web.config.SecurityConfig required a bean of type 'org.springframework.security.core.userdetails.UserDetailsService' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+The following candidates were found but could not be injected:
+	- Bean method 'inMemoryUserDetailsManager' in 'UserDetailsServiceAutoConfiguration' not loaded because @ConditionalOnMissingBean (types: org.springframework.security.authentication.AuthenticationManager,org.springframework.security.authentication.AuthenticationProvider,org.springframework.security.core.userdetails.UserDetailsService; SearchStrategy: all) found beans of type 'org.springframework.security.authentication.AuthenticationProvider' authProvider
+
+
+Action:
+
+Consider revisiting the entries above or defining a bean of type 'org.springframework.security.core.userdetails.UserDetailsService' in your configuration.
+
+2019-12-16 19:00:43 [INFO ] [StartupInfoLogger.java] logStarting(50) : Starting VioletWebApplication on Minui-MacBook-Pro.local with PID 14415 (/Users/minsungkim/git/Violet/VioletWeb/target/classes started by minsungkim in /Users/minsungkim/git/Violet/VioletWeb)
+2019-12-16 19:00:43 [INFO ] [SpringApplication.java] logStartupProfileInfo(679) : The following profiles are active: local
+2019-12-16 19:00:44 [WARN ] [ClassPathMapperScanner.java] doScan(166) : No MyBatis mapper was found in '[com.violet.web]' package. Please check your configuration.
+2019-12-16 19:00:44 [INFO ] [PostProcessorRegistrationDelegate.java] postProcessAfterInitialization(330) : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$6f83ff27] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-16 19:00:44 [INFO ] [AbstractAddressingEndpointMapping.java] afterPropertiesSet(236) : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2019-12-16 19:00:44 [INFO ] [PostProcessorRegistrationDelegate.java] postProcessAfterInitialization(330) : Bean 'org.springframework.hateoas.config.HateoasConfiguration' of type [org.springframework.hateoas.config.HateoasConfiguration$$EnhancerBySpringCGLIB$$4a6c875a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-16 19:00:44 [INFO ] [PostProcessorRegistrationDelegate.java] postProcessAfterInitialization(330) : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$caec3a28] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-16 19:00:44 [INFO ] [TomcatWebServer.java] initialize(90) : Tomcat initialized with port(s): 80 (http)
+2019-12-16 19:00:44 [INFO ] [DirectJDKLog.java] log(173) : Starting service [Tomcat]
+2019-12-16 19:00:44 [INFO ] [DirectJDKLog.java] log(173) : Starting Servlet Engine: Apache Tomcat/9.0.13
+2019-12-16 19:00:44 [INFO ] [DirectJDKLog.java] log(173) : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/minsungkim/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2019-12-16 19:00:45 [INFO ] [DirectJDKLog.java] log(173) : Initializing Spring embedded WebApplicationContext
+2019-12-16 19:00:45 [INFO ] [ServletWebServerApplicationContext.java] prepareWebApplicationContext(296) : Root WebApplicationContext: initialization completed in 899 ms
+2019-12-16 19:00:45 [INFO ] [DefaultSecurityFilterChain.java] <init>(43) : Creating filter chain: Ant [pattern='/js/**'], []
+2019-12-16 19:00:45 [INFO ] [DefaultSecurityFilterChain.java] <init>(43) : Creating filter chain: Ant [pattern='/css/**'], []
+2019-12-16 19:00:45 [INFO ] [DefaultSecurityFilterChain.java] <init>(43) : Creating filter chain: Ant [pattern='/img/**'], []
+2019-12-16 19:00:45 [INFO ] [DefaultSecurityFilterChain.java] <init>(43) : Creating filter chain: Ant [pattern='/assets/**'], []
+2019-12-16 19:00:45 [INFO ] [DefaultSecurityFilterChain.java] <init>(43) : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@b0fd744, org.springframework.security.web.context.SecurityContextPersistenceFilter@11d045b4, org.springframework.security.web.header.HeaderWriterFilter@67022ea, org.springframework.security.web.csrf.CsrfFilter@d675f9f, org.springframework.security.web.authentication.logout.LogoutFilter@46911148, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@3440e9cd, org.springframework.web.filter.CompositeFilter@92d1782, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1943c1f2, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@748ac6f3, org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter@5416f8db, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6a1ef65c, org.springframework.security.web.session.SessionManagementFilter@58fbd02e, org.springframework.security.web.access.ExceptionTranslationFilter@52b46d52, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3b55dd15]
+2019-12-16 19:00:46 [INFO ] [ExecutorConfigurationSupport.java] initialize(171) : Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-16 19:00:46 [INFO ] [WelcomePageHandlerMapping.java] <init>(61) : Adding welcome page template: index
+2019-12-16 19:00:46 [INFO ] [TomcatWebServer.java] start(204) : Tomcat started on port(s): 80 (http) with context path ''
+2019-12-16 19:00:46 [INFO ] [StartupInfoLogger.java] logStarted(59) : Started VioletWebApplication in 2.665 seconds (JVM running for 3.165)
+2019-12-16 19:00:51 [INFO ] [DirectJDKLog.java] log(173) : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-12-16 19:00:51 [INFO ] [FrameworkServlet.java] initServletBean(524) : Initializing Servlet 'dispatcherServlet'
+2019-12-16 19:00:51 [INFO ] [FrameworkServlet.java] initServletBean(546) : Completed initialization in 12 ms
+2019-12-16 19:00:52 [WARN ] [FragmentProcessor.groovy] doProcess(75) : You don't need to put the layout:fragment/data-layout-fragment attribute into the <head> section - the decoration process will automatically copy the <head> section of your content templates into your layout page.
+2019-12-16 19:01:01 [WARN ] [HikariConfig.java] validateNumerics(1008) : {} - idleTimeout has been set but has no effect because the pool is operating as a fixed size pool.
+2019-12-16 19:01:01 [INFO ] [HikariDataSource.java] getConnection(110) : hikari-cp - Starting...
+2019-12-16 19:01:01 [WARN ] [DriverDataSource.java] <init>(68) : Registered driver with driverClassName=oracle.jdbc.driver.OracleDriver was not found, trying direct instantiation.
+2019-12-16 19:01:01 [INFO ] [PoolBase.java] getAndSetNetworkTimeout(525) : hikari-cp - Driver does not support get/set network timeout for connections. (oracle.jdbc.driver.T4CConnection.getNetworkTimeout()I)
+2019-12-16 19:01:01 [INFO ] [HikariDataSource.java] getConnection(123) : hikari-cp - Start completed.
+2019-12-16 19:01:01 [ERROR] [DirectJDKLog.java] log(175) : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+java.lang.IllegalStateException: UserDetailsService is required.
+	at org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter$UserDetailsServiceDelegator.loadUserByUsername(WebSecurityConfigurerAdapter.java:464)
+	at org.springframework.security.web.authentication.rememberme.TokenBasedRememberMeServices.onLoginSuccess(TokenBasedRememberMeServices.java:182)
+	at org.springframework.security.web.authentication.rememberme.AbstractRememberMeServices.loginSuccess(AbstractRememberMeServices.java:315)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.successfulAuthentication(AbstractAuthenticationProcessingFilter.java:318)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:240)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.csrf.CsrfFilter.doFilterInternal(CsrfFilter.java:124)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:74)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:357)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:270)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.security.oauth2.client.filter.OAuth2ClientContextFilter.doFilter(OAuth2ClientContextFilter.java:60)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:791)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1417)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2019-12-16 19:03:34 [INFO ] [SpringApplicationAdminMXBeanRegistrar.java] shutdown(164) : Application shutdown requested.
+2019-12-16 19:03:34 [INFO ] [ExecutorConfigurationSupport.java] shutdown(208) : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-12-16 19:03:34 [INFO ] [HikariDataSource.java] close(350) : hikari-cp - Shutdown initiated...
+2019-12-16 19:03:34 [INFO ] [HikariDataSource.java] close(352) : hikari-cp - Shutdown completed.
+2019-12-16 19:03:35 [INFO ] [StartupInfoLogger.java] logStarting(50) : Starting VioletWebApplication on Minui-MacBook-Pro.local with PID 14418 (/Users/minsungkim/git/Violet/VioletWeb/target/classes started by minsungkim in /Users/minsungkim/git/Violet/VioletWeb)
+2019-12-16 19:03:35 [INFO ] [SpringApplication.java] logStartupProfileInfo(679) : The following profiles are active: local
+2019-12-16 19:03:36 [WARN ] [ClassPathMapperScanner.java] doScan(166) : No MyBatis mapper was found in '[com.violet.web]' package. Please check your configuration.
+2019-12-16 19:03:36 [INFO ] [PostProcessorRegistrationDelegate.java] postProcessAfterInitialization(330) : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$590fc27a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-16 19:03:36 [INFO ] [AbstractAddressingEndpointMapping.java] afterPropertiesSet(236) : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2019-12-16 19:03:36 [INFO ] [PostProcessorRegistrationDelegate.java] postProcessAfterInitialization(330) : Bean 'org.springframework.hateoas.config.HateoasConfiguration' of type [org.springframework.hateoas.config.HateoasConfiguration$$EnhancerBySpringCGLIB$$33f84aad] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-16 19:03:36 [INFO ] [PostProcessorRegistrationDelegate.java] postProcessAfterInitialization(330) : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$b477fd7b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-16 19:03:36 [INFO ] [TomcatWebServer.java] initialize(90) : Tomcat initialized with port(s): 80 (http)
+2019-12-16 19:03:36 [INFO ] [DirectJDKLog.java] log(173) : Starting service [Tomcat]
+2019-12-16 19:03:36 [INFO ] [DirectJDKLog.java] log(173) : Starting Servlet Engine: Apache Tomcat/9.0.13
+2019-12-16 19:03:36 [INFO ] [DirectJDKLog.java] log(173) : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/minsungkim/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2019-12-16 19:03:36 [INFO ] [DirectJDKLog.java] log(173) : Initializing Spring embedded WebApplicationContext
+2019-12-16 19:03:36 [INFO ] [ServletWebServerApplicationContext.java] prepareWebApplicationContext(296) : Root WebApplicationContext: initialization completed in 947 ms
+2019-12-16 19:03:37 [INFO ] [DefaultSecurityFilterChain.java] <init>(43) : Creating filter chain: Ant [pattern='/js/**'], []
+2019-12-16 19:03:37 [INFO ] [DefaultSecurityFilterChain.java] <init>(43) : Creating filter chain: Ant [pattern='/css/**'], []
+2019-12-16 19:03:37 [INFO ] [DefaultSecurityFilterChain.java] <init>(43) : Creating filter chain: Ant [pattern='/img/**'], []
+2019-12-16 19:03:37 [INFO ] [DefaultSecurityFilterChain.java] <init>(43) : Creating filter chain: Ant [pattern='/assets/**'], []
+2019-12-16 19:03:37 [INFO ] [DefaultSecurityFilterChain.java] <init>(43) : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7a9eccc4, org.springframework.security.web.context.SecurityContextPersistenceFilter@30c3ae63, org.springframework.security.web.header.HeaderWriterFilter@7e351d7, org.springframework.security.web.csrf.CsrfFilter@748ac6f3, org.springframework.security.web.authentication.logout.LogoutFilter@5a545b0f, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@e784320, org.springframework.web.filter.CompositeFilter@78422efb, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@54e12f4c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@383caf89, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5f05c8d6, org.springframework.security.web.session.SessionManagementFilter@d902300, org.springframework.security.web.access.ExceptionTranslationFilter@46911148, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@27abb6ca]
+2019-12-16 19:03:37 [INFO ] [ExecutorConfigurationSupport.java] initialize(171) : Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-16 19:03:38 [INFO ] [WelcomePageHandlerMapping.java] <init>(61) : Adding welcome page template: index
+2019-12-16 19:03:38 [INFO ] [TomcatWebServer.java] start(204) : Tomcat started on port(s): 80 (http) with context path ''
+2019-12-16 19:03:38 [INFO ] [StartupInfoLogger.java] logStarted(59) : Started VioletWebApplication in 2.77 seconds (JVM running for 3.342)
+2019-12-16 19:04:03 [INFO ] [DirectJDKLog.java] log(173) : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-12-16 19:04:03 [INFO ] [FrameworkServlet.java] initServletBean(524) : Initializing Servlet 'dispatcherServlet'
+2019-12-16 19:04:03 [INFO ] [FrameworkServlet.java] initServletBean(546) : Completed initialization in 11 ms
+2019-12-16 19:04:05 [WARN ] [FragmentProcessor.groovy] doProcess(75) : You don't need to put the layout:fragment/data-layout-fragment attribute into the <head> section - the decoration process will automatically copy the <head> section of your content templates into your layout page.
+2019-12-16 19:05:17 [INFO ] [SpringApplicationAdminMXBeanRegistrar.java] shutdown(164) : Application shutdown requested.
+2019-12-16 19:05:17 [INFO ] [ExecutorConfigurationSupport.java] shutdown(208) : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-12-16 19:06:54 [INFO ] [StartupInfoLogger.java] logStarting(50) : Starting VioletWebApplication on Minui-MacBook-Pro.local with PID 14541 (/Users/minsungkim/git/Violet/VioletWeb/target/classes started by minsungkim in /Users/minsungkim/git/Violet/VioletWeb)
+2019-12-16 19:06:54 [INFO ] [SpringApplication.java] logStartupProfileInfo(679) : The following profiles are active: local
+2019-12-16 19:06:55 [WARN ] [ClassPathMapperScanner.java] doScan(166) : No MyBatis mapper was found in '[com.violet.web]' package. Please check your configuration.
+2019-12-16 19:06:55 [INFO ] [PostProcessorRegistrationDelegate.java] postProcessAfterInitialization(330) : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$6c6f9171] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-16 19:06:55 [INFO ] [AbstractAddressingEndpointMapping.java] afterPropertiesSet(236) : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2019-12-16 19:06:55 [INFO ] [PostProcessorRegistrationDelegate.java] postProcessAfterInitialization(330) : Bean 'org.springframework.hateoas.config.HateoasConfiguration' of type [org.springframework.hateoas.config.HateoasConfiguration$$EnhancerBySpringCGLIB$$475819a4] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-16 19:06:55 [INFO ] [PostProcessorRegistrationDelegate.java] postProcessAfterInitialization(330) : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$c7d7cc72] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-16 19:06:55 [INFO ] [TomcatWebServer.java] initialize(90) : Tomcat initialized with port(s): 80 (http)
+2019-12-16 19:06:55 [INFO ] [DirectJDKLog.java] log(173) : Starting service [Tomcat]
+2019-12-16 19:06:55 [INFO ] [DirectJDKLog.java] log(173) : Starting Servlet Engine: Apache Tomcat/9.0.13
+2019-12-16 19:06:55 [INFO ] [DirectJDKLog.java] log(173) : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/minsungkim/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2019-12-16 19:06:55 [INFO ] [DirectJDKLog.java] log(173) : Initializing Spring embedded WebApplicationContext
+2019-12-16 19:06:55 [INFO ] [ServletWebServerApplicationContext.java] prepareWebApplicationContext(296) : Root WebApplicationContext: initialization completed in 926 ms
+2019-12-16 19:06:56 [INFO ] [DefaultSecurityFilterChain.java] <init>(43) : Creating filter chain: Ant [pattern='/js/**'], []
+2019-12-16 19:06:56 [INFO ] [DefaultSecurityFilterChain.java] <init>(43) : Creating filter chain: Ant [pattern='/css/**'], []
+2019-12-16 19:06:56 [INFO ] [DefaultSecurityFilterChain.java] <init>(43) : Creating filter chain: Ant [pattern='/img/**'], []
+2019-12-16 19:06:56 [INFO ] [DefaultSecurityFilterChain.java] <init>(43) : Creating filter chain: Ant [pattern='/assets/**'], []
+2019-12-16 19:06:56 [INFO ] [DefaultSecurityFilterChain.java] <init>(43) : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@78422efb, org.springframework.security.web.context.SecurityContextPersistenceFilter@58658f63, org.springframework.security.web.header.HeaderWriterFilter@43c57161, org.springframework.security.web.csrf.CsrfFilter@68f6e55d, org.springframework.security.web.authentication.logout.LogoutFilter@2be21396, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@3f6bf8aa, org.springframework.web.filter.CompositeFilter@5f05c8d6, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@60990e5c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@64c781a9, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@68e02f33, org.springframework.security.web.session.SessionManagementFilter@2db33feb, org.springframework.security.web.access.ExceptionTranslationFilter@2db1b657, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@696db620]
+2019-12-16 19:06:56 [INFO ] [ExecutorConfigurationSupport.java] initialize(171) : Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-16 19:06:56 [INFO ] [WelcomePageHandlerMapping.java] <init>(61) : Adding welcome page template: index
+2019-12-16 19:06:57 [INFO ] [TomcatWebServer.java] start(204) : Tomcat started on port(s): 80 (http) with context path ''
+2019-12-16 19:06:57 [INFO ] [StartupInfoLogger.java] logStarted(59) : Started VioletWebApplication in 2.761 seconds (JVM running for 3.261)
+2019-12-16 19:07:02 [INFO ] [DirectJDKLog.java] log(173) : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-12-16 19:07:02 [INFO ] [FrameworkServlet.java] initServletBean(524) : Initializing Servlet 'dispatcherServlet'
+2019-12-16 19:07:02 [INFO ] [FrameworkServlet.java] initServletBean(546) : Completed initialization in 14 ms
+2019-12-16 19:07:02 [WARN ] [FragmentProcessor.groovy] doProcess(75) : You don't need to put the layout:fragment/data-layout-fragment attribute into the <head> section - the decoration process will automatically copy the <head> section of your content templates into your layout page.
+2019-12-16 19:07:08 [WARN ] [HikariConfig.java] validateNumerics(1008) : {} - idleTimeout has been set but has no effect because the pool is operating as a fixed size pool.
+2019-12-16 19:07:08 [INFO ] [HikariDataSource.java] getConnection(110) : hikari-cp - Starting...
+2019-12-16 19:07:08 [WARN ] [DriverDataSource.java] <init>(68) : Registered driver with driverClassName=oracle.jdbc.driver.OracleDriver was not found, trying direct instantiation.
+2019-12-16 19:07:08 [INFO ] [PoolBase.java] getAndSetNetworkTimeout(525) : hikari-cp - Driver does not support get/set network timeout for connections. (oracle.jdbc.driver.T4CConnection.getNetworkTimeout()I)
+2019-12-16 19:07:08 [INFO ] [HikariDataSource.java] getConnection(123) : hikari-cp - Start completed.
+2019-12-16 19:07:08 [INFO ] [AuthSuccessHandler.java] onAuthenticationSuccess(154) : Login AuthSuccess : [ <local> test@test.com / 0:0:0:0:0:0:0:1 ]
+2019-12-16 19:25:39 [INFO ] [SpringApplicationAdminMXBeanRegistrar.java] shutdown(164) : Application shutdown requested.
+2019-12-16 19:25:39 [INFO ] [ExecutorConfigurationSupport.java] shutdown(208) : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-12-16 19:25:39 [INFO ] [HikariDataSource.java] close(350) : hikari-cp - Shutdown initiated...
+2019-12-16 19:25:39 [INFO ] [HikariDataSource.java] close(352) : hikari-cp - Shutdown completed.

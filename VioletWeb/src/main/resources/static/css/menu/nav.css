@@ -1,0 +1,277 @@
+@charset "UTF-8";
+
+@import url('../common/common.css');
+
+/* NAV */
+nav.navbar {
+	z-index: 200;
+	width: 100%;
+}
+
+.nav-shadow {
+	z-index: 1;
+    -webkit-box-shadow: 0px 6px 10px 0px rgba(50, 50, 50, 0.4);
+    -moz-box-shadow:    0px 6px 10px 0px rgba(50, 50, 50, 0.4);
+    box-shadow:         0px 6px 10px 0px rgba(50, 50, 50, 0.4);
+}
+
+nav.navbar .container {
+    display: block;
+    width: 100%;
+    transition: transform 0.6s;
+    box-sizing: border-box;
+    /* height: 30vh; toggler Active */
+}
+
+nav.navbar .container .menu-nav {
+	flex-direction: unset !important;
+}
+
+nav.navbar .container .navbar-nav .nav-item {
+    font-family: Nanumgothic;
+/*     border: 1px solid #000000; */
+}
+
+nav.navbar .container .navbar-nav .nav-item .nav-search {
+	font-size: 1.5rem;
+}
+
+nav.navbar .container .navbar-nav .nav-item .nav-login {
+    float: right;
+}
+
+nav.navbar .container .navbar-nav .nav-item .nav-login .nav-link .icon-login {
+    font-size: 2rem;
+}
+
+nav.navbar .container .navbar-nav .nav-item .nav-login .nav-link .text-login {
+	display: inline-flex;
+    font-family: Nanumgothic;
+    bottom: 0.4rem;
+    position: relative;
+}
+
+nav.navbar .container .navbar-nav .nav-item .nav-login .nav-link .nav-profile {
+	width: 2.5rem;
+	height: 2.5rem;
+}
+
+nav.navbar .container .navbar-nav .nav-item .navbar-brand {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+}
+
+nav.navbar .container .navbar-nav .nav-item .navbar-brand .nav-link {
+    font-size: 2.5rem;
+    font-family: Italianno;
+    color: #ffffff;
+    letter-spacing: 2px;
+    padding: 0rem .5rem;
+}
+
+/* NAV Thumbnail */
+nav.navbar .container .navbar-nav .nav-item .dropdown-menu {
+	position: absolute;
+	z-index: 1023;
+	background: #ffffff;
+	width : 18rem;
+	top: 2.7rem;
+}
+
+nav.navbar .container .navbar-nav .nav-item .dropdown-menu .dropdown-header {
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+}
+
+nav.navbar .container .navbar-nav .nav-item .dropdown-menu .dropdown-header .thumb-img {
+	width: 6rem;
+	height: 6rem;
+	border-radius: .5rem;
+	color: #050609;
+}
+
+nav.navbar .container .navbar-nav .nav-item .dropdown-menu .dropdown-header .thumb-img .thumb-img-profile {
+	background-position: center;
+    background-size: cover;
+    width: 6rem;
+    height: 6rem;
+}
+
+nav.navbar .container .navbar-nav .nav-item .dropdown-menu .dropdown-header .thumb-img-not {
+	font-size: 6rem;	
+}
+
+nav.navbar .container .navbar-nav .nav-item .dropdown-menu .dropdown-header .thumb-text {
+	display: block;
+	padding: .2rem;
+	margin-left: .5rem;
+}
+
+nav.navbar .container .navbar-nav .nav-item .dropdown-menu .dropdown-header .thumb-text .thumb-e {
+	padding: .25rem 0;
+	font-family: Nanumgothic;
+	font-size: .7rem;
+	color: #050609;
+	text-overflow:ellipsis;
+	white-space:nowrap;
+	word-wrap:normal;
+	overflow:hidden;
+	width: 8rem;
+}
+
+nav.navbar .container .navbar-nav .nav-item .dropdown-menu .dropdown-header .thumb-text .thumb-n {
+	padding: .5rem 0;
+	font-family: Nanumgothic;
+	font-size: 1rem;
+	color: #050609;
+	text-overflow:ellipsis;
+	white-space:nowrap;
+	word-wrap:normal;
+	overflow:hidden;
+	width: 8rem;
+}
+
+nav.navbar .container .navbar-nav .nav-item .dropdown-menu .dropdown-header .thumb-text .thumb-p {
+	padding: .25rem 0;
+	font-family: Nanumgothic;
+	font-size: .7rem;
+	color: #050609;
+	text-overflow:ellipsis;
+	white-space:nowrap;
+	word-wrap:normal;
+	overflow:hidden;
+	width: 8rem;
+}
+
+nav.navbar .container .navbar-nav .nav-item .dropdown-menu .dropdown-item {
+	display: grid;
+	grid-template-columns: .25fr 1fr .25fr;
+	font-family: Nanumgothic;
+	font-size: .9rem;
+	color: #050609;
+	padding: .7rem 1.5rem;
+}
+
+nav.navbar .container .navbar-nav .nav-item .dropdown-menu .dropdown-item svg {
+	font-size: 1.2rem;
+}
+
+nav.navbar .container .navbar-nav .nav-item .dropdown-menu .dropdown-item span {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+nav.navbar .container .navbar-nav .nav-item .dropdown-menu .dropdown-item .badge {
+	margin-left: .5rem;
+	font-size: .8rem;
+}
+
+nav.navbar .container .navbar-nav .nav-item .dropdown-menu .dropdown-item:hover {
+	background: linear-gradient(to right, #05A3E6, #9c27b0) !important;
+	color: #ffffff;
+}
+
+nav.navbar .container .navbar-nav .nav-item .dropdown-menu .thumb-logout {
+	color: #DE1A1A;
+}
+/* NAV Thumbnail */
+/* NAV */
+
+/* SUB NAV */
+nav.navbar .container .submenu-nav {
+	-ms-overflow-style: none;
+	overflow-y: hidden;
+	flex-direction: row;
+}
+
+nav.navbar .container .submenu-nav::-webkit-scrollbar {
+	display:none;
+}
+
+nav.navbar .container .submenu-nav .nav-item {
+	padding: .4rem .6rem;
+}
+
+nav.navbar .container .submenu-nav .nav-item .sub-menu {
+    justify-content: center;
+    display: table;
+}
+
+nav.navbar .container .submenu-nav .nav-item .sub-menu .nav-link {
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+}
+
+nav.navbar .container .submenu-nav .nav-item .sub-menu .nav-link span {
+/* 	position: absolute; */
+	font-family: Nanumgothic;
+    background-color: transparent;
+	color: #050609;
+    letter-spacing: 2px;
+	font-size: .8rem;
+	z-index: 2;
+	top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+nav.navbar .container .submenu-nav .nav-item .img-filter {
+	position: relative;
+}
+
+nav.navbar .container .submenu-nav .nav-item .img-filter:before {
+	position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    border-radius: 4rem;
+    display: block;
+    left: 0;
+    top: 0;
+    content: "";
+	background: rgba(0,0,0,.45);
+}
+
+nav.navbar .container .submenu-nav .nav-item .img-shadow {
+	z-index: 1;
+    -webkit-box-shadow: 0px 5px 4px 3px rgba(0,0,0,0.3);
+	-moz-box-shadow: 0px 5px 4px 3px rgba(0,0,0,0.3);
+	box-shadow: 0px 5px 4px 3px rgba(0,0,0,0.3);
+}
+
+.nav-link {
+	color: #050609;
+    padding: 0rem .5rem;
+    transform: scale(.9);
+    transition: .7s all;
+}
+
+.nav-link:hover {
+	transform: scale(1);
+}
+
+.submenu-nav .nav-link::after {
+	display: block;
+	content: '';
+	border: 2px solid #f4361e;
+	transform: scaleX(0);
+	transition: transform 250ms ease-in-out;
+}
+
+.submenu-nav .nav-link:hover::after {
+    cursor: pointer;
+    transform: scaleX(1);
+}
+
+
+/* SUB NAV */
+
+@media only screen and (max-width: 768px) {
+	nav.navbar .container .nav-item .nav-login .nav-link .text-login {
+		display: none !important;
+	}
+	
+}

@@ -1,0 +1,92 @@
+@charset "UTF-8";
+
+.paper-layout .container {
+	background-color: #ffffff;
+	padding: 0;
+}
+
+.swiper-paper {
+	width: 100%;
+	height: 100%;
+}
+
+.swiper-paper .swiper-wrapper .swiper-slide {
+	width: 100%;
+	height: 0;
+ 	padding-top: calc(768 / 1024 * 100%); /* calc(이미지 높이 ÷ 이미지 가로 × 100%) */
+	background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+	/* Center slide text vertically */
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	-webkit-justify-content: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	align-items: center;
+}
+
+.swiper-paper .swiper-wrapper .img-filter {
+	position: relative;	
+}
+
+.swiper-paper .swiper-wrapper .img-filter:before {
+	position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    display: block;
+    left: 0;
+    top: 0;
+    content: "";
+	background: rgba(0,0,0,.3);
+}
+
+.swiper-paper .swiper-wrapper .swiper-slide .swiper-text-layout {
+	display: grid;
+	position: absolute;
+    background-color: transparent;
+    bottom: 50%;
+    transform: translate(0, 50%);
+    z-index: 5;
+}
+
+.swiper-paper .swiper-wrapper .swiper-slide .swiper-text-layout .swiper-title {
+	color: #ffffff;
+	font-family: Nanumgothic;
+	font-size: 1.5rem;
+}
+
+.swiper-paper .swiper-wrapper .swiper-slide .swiper-text-layout .swiper-subtitle {
+	color: #ffffff;
+	font-family: Nanumgothic;
+	font-size: .8rem;
+}
+
+.swiper-paper .swiper-pagination-paper .swiper-pagination-bullet {
+	width: .7rem !important;
+	height: .7rem !important;
+	background-color: #050609;
+}
+
+.swiper-paper .swiper-pagination-paper .swiper-pagination-bullet-active {
+	background-color: #f4361e;
+}
+
+@media only screem and (min-width: 320px) {
+	.swiper-paper .swiper-wrapper .swiper-slide {
+		padding-top: calc(768 / 1024 * 100%); /* calc(이미지 높이 ÷ 이미지 가로 × 100%) */
+	}
+}
+
+@media only screen and (min-width: 768px) {
+	.swiper-paper .swiper-wrapper .swiper-slide {
+		padding-top: calc(480 / 1024 * 100%); /* calc(이미지 높이 ÷ 이미지 가로 × 100%) */
+	}
+}

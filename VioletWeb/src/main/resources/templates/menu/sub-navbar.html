@@ -1,0 +1,47 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+<head>
+</head>
+<body>
+<div th:fragment="sub-navbar" th:remove="tag">
+	<!-- this is header -->
+	<ul class="navbar-nav submenu-nav">
+		<li class="nav-item">
+			<div class="sub-menu">
+				<a href="#" class="nav-link" data-toggle="tooltip" title="PAPER"><span>PAPER</span></a>
+			</div>
+		</li>
+		<li class="nav-item">
+			<div class="sub-menu">
+				<a href="#" class="nav-link" data-toggle="tooltip" title="BRAND"><span>BRAND</span></a>
+			</div>
+		</li>
+		<li class="nav-item ">
+			<div class="sub-menu">
+				<a href="#" class="nav-link" data-toggle="tooltip" title="FASHION"><span>FASHION</span></a>
+			</div>
+		</li>
+		<li class="nav-item ">
+			<div class="sub-menu">
+				<a href="#" class="nav-link" data-toggle="tooltip" title="BEAUTY"><span>BEAUTY</span></a>
+			</div>
+		</li>
+		<li class="nav-item ">
+			<div class="sub-menu">
+				<a href="#" class="nav-link" data-toggle="tooltip" title="LIFE"><span>LIFE</span></a>
+			</div>
+		</li>
+		<li class="nav-item ">
+			<div class="sub-menu">
+				<a href="#" class="nav-link" data-toggle="tooltip" title="EVENT"><span>EVENT</span></a>
+			</div>
+		</li>
+<!--                 <li class="nav-item "> -->
+<!--                 	<div class="sub-menu"> -->
+<!--                 		<a href="#" class="nav-link" data-toggle="tooltip" title="SEARCH"><span>SEARCH</span></a> -->
+<!--                 	</div> -->
+<!--                 </li> -->
+	</ul>
+</div>
+</body>
+</html>

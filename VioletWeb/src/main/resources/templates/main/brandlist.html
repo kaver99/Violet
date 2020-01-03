@@ -1,0 +1,265 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" > 
+<head>
+</head>
+<body>
+	<div th:fragment="brandlist" id="brandlist" class="brand-layout">
+	    <div class="container">
+	    	<ul class="row-title">
+	    		<li class="paragraph-title"><span>Brand</span></li>
+	    		<li class="paragraph-title-text"><span>유명 디자이너 브랜드를 만나 보실수 있습니다.</span></li>
+	    	</ul>
+	    	<ul class="row">
+	    		<li class="paragraph-list-more">
+	    			<a href="#" class="nav-link"><span>FASHION</span></a>
+	    			<a href="#" class="nav-link"><span>BEAUTY</span></a>
+	    			<a href="#" class="nav-link"><span>LIFE</span></a>
+	    		</li>
+	    	</ul>
+			<ul class="row">
+				<!-- Swiper -->
+  				<div class="swiper-container swiper-brandlist">
+					<ul class="swiper-wrapper">
+						<li class="swiper-slide" data-aos="fade-left">
+							<!--/* CARD LIST ITEM START */-->
+							<div class="card card-shadow">
+								<div class="row">
+									<div class="card-header">
+										<a class="card-link" th:href="@{/}">
+											<div class="card-image" th:style="'background-image: url(&quot;./img/item/' + 'studio-1.jpg' + '&quot;); background-position: center;'"></div>
+											<div class="colored-shadow" th:style="'background-image: url(&quot;./img/item/' + 'studio-1.jpg' + '&quot;); opacity: 1;'"></div>
+										</a>
+									</div>
+									<div class="card-body">
+										<div class="card-description">
+											<a class="card-link" th:href="@{/}">
+												<span class="desc-title">item1 title</span>
+											</a>
+										</div>
+										<div class="card-footer">
+											<span>Creater By <a href="#" class="card-link"><font class="text-orange">COCO</font></a></span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!--/* CARD LIST ITEM END */-->
+						</li>
+						<li class="swiper-slide" data-aos="fade-left">
+							<!--/* CARD LIST ITEM START */-->
+							<div class="card card-shadow">
+								<div class="row">
+									<div class="card-header">
+										<a class="card-link" th:href="@{/}">
+											<div class="card-image" th:style="'background-image: url(&quot;./img/item/' + 'studio-2.jpg' + '&quot;); background-position: center;'"></div>
+											<div class="colored-shadow" th:style="'background-image: url(&quot;./img/item/' + 'studio-2.jpg' + '&quot;); opacity: 1;'"></div>
+										</a>
+									</div>
+									<div class="card-body">
+										<div class="card-description">
+											<a class="card-link" th:href="@{/}">
+												<span class="desc-title">item2 title</span>
+											</a>
+										</div>
+										<div class="card-footer">
+											<span>Creater By <a href="#" class="card-link"><font class="text-orange">COCO</font></a></span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!--/* CARD LIST ITEM END */-->
+						</li>
+						<li class="swiper-slide" data-aos="fade-left">
+							<!--/* CARD LIST ITEM START */-->
+							<div class="card card-shadow">
+								<div class="row">
+									<div class="card-header">
+										<a class="card-link" th:href="@{/}">
+											<div class="card-image" th:style="'background-image: url(&quot;./img/item/' + 'studio-3.jpg' + '&quot;); background-position: center;'"></div>
+											<div class="colored-shadow" th:style="'background-image: url(&quot;./img/item/' + 'studio-3.jpg' + '&quot;); opacity: 1;'"></div>
+										</a>
+									</div>
+									<div class="card-body">
+										<div class="card-description">
+											<a class="card-link" th:href="@{/}">
+												<span class="desc-title">item3 title</span>
+											</a>
+										</div>
+										<div class="card-footer">
+											<span>Creater By <a href="#" class="card-link"><font class="text-orange">COCO</font></a></span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!--/* CARD LIST ITEM END */-->
+						</li>
+						<li class="swiper-slide" data-aos="fade-left">
+							<!--/* CARD LIST ITEM START */-->
+							<div class="card card-shadow">
+								<div class="row">
+									<div class="card-header">
+										<a class="card-link" th:href="@{/}">
+											<div class="card-image" th:style="'background-image: url(&quot;./img/item/' + 'studio-4.jpg' + '&quot;); background-position: center;'"></div>
+											<div class="colored-shadow" th:style="'background-image: url(&quot;./img/item/' + 'studio-4.jpg' + '&quot;); opacity: 1;'"></div>
+										</a>
+									</div>
+									<div class="card-body">
+										<div class="card-description">
+											<a class="card-link" th:href="@{/}">
+												<span class="desc-title">item4 title</span>
+											</a>
+										</div>
+										<div class="card-footer">
+											<span>Creater By <a href="#" class="card-link"><font class="text-orange">COCO</font></a></span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!--/* CARD LIST ITEM END */-->
+						</li>
+						<li class="swiper-slide" data-aos="fade-left">
+							<!--/* CARD LIST ITEM START */-->
+							<div class="card card-shadow">
+								<div class="row">
+									<div class="card-header">
+										<a class="card-link" th:href="@{/}">
+											<div class="card-image" th:style="'background-image: url(&quot;./img/item/' + 'studio-5.jpg' + '&quot;); background-position: center;'"></div>
+											<div class="colored-shadow" th:style="'background-image: url(&quot;./img/item/' + 'studio-5.jpg' + '&quot;); opacity: 1;'"></div>
+										</a>
+									</div>
+									<div class="card-body">
+										<div class="card-description">
+											<a class="card-link" th:href="@{/}">
+												<span class="desc-title">item5 title</span>
+											</a>
+										</div>
+										<div class="card-footer">
+											<span>Creater By <a href="#" class="card-link"><font class="text-orange">COCO</font></a></span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!--/* CARD LIST ITEM END */-->
+						</li>
+						<li class="swiper-slide" data-aos="fade-left">
+							<!--/* CARD LIST ITEM START */-->
+							<div class="card card-shadow">
+								<div class="row">
+									<div class="card-header">
+										<a class="card-link" th:href="@{/}">
+											<div class="card-image" th:style="'background-image: url(&quot;./img/item/' + 'card-product1.jpg' + '&quot;); background-position: center;'"></div>
+											<div class="colored-shadow" th:style="'background-image: url(&quot;./img/item/' + 'card-product1.jpg' + '&quot;); opacity: 1;'"></div>
+										</a>
+									</div>
+									<div class="card-body">
+										<div class="card-description">
+											<a class="card-link" th:href="@{/}">
+												<span class="desc-title">item6 title</span>
+											</a>
+										</div>
+										<div class="card-footer">
+											<span>Creater By <a href="#" class="card-link"><font class="text-orange">COCO</font></a></span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!--/* CARD LIST ITEM END */-->
+						</li>
+						<li class="swiper-slide" data-aos="fade-left">
+							<!--/* CARD LIST ITEM START */-->
+							<div class="card card-shadow">
+								<div class="row">
+									<div class="card-header">
+										<a class="card-link" th:href="@{/}">
+											<div class="card-image" th:style="'background-image: url(&quot;./img/item/' + 'card-project6.jpg' + '&quot;); background-position: center;'"></div>
+											<div class="colored-shadow" th:style="'background-image: url(&quot;./img/item/' + 'card-project6.jpg' + '&quot;); opacity: 1;'"></div>
+										</a>
+									</div>
+									<div class="card-body">
+										<div class="card-description">
+											<a class="card-link" th:href="@{/}">
+												<span class="desc-title">item7 title</span>
+											</a>
+										</div>
+										<div class="card-footer">
+											<span>Creater By <a href="#" class="card-link"><font class="text-orange">COCO</font></a></span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!--/* CARD LIST ITEM END */-->
+						</li>
+						<li class="swiper-slide" data-aos="fade-left">
+							<!--/* CARD LIST ITEM START */-->
+							<div class="card card-shadow">
+								<div class="row">
+									<div class="card-header">
+										<a class="card-link" th:href="@{/}">
+											<div class="card-image" th:style="'background-image: url(&quot;./img/item/' + 'clem-onojegaw.jpg' + '&quot;); background-position: center;'"></div>
+											<div class="colored-shadow" th:style="'background-image: url(&quot;./img/item/' + 'clem-onojegaw.jpg' + '&quot;); opacity: 1;'"></div>
+										</a>
+									</div>
+									<div class="card-body">
+										<div class="card-description">
+											<a class="card-link" th:href="@{/}">
+												<span class="desc-title">item1 title</span>
+											</a>
+										</div>
+										<div class="card-footer">
+											<span>Creater By <a href="#" class="card-link"><font class="text-orange">COCO</font></a></span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!--/* CARD LIST ITEM END */-->
+						</li>
+					</ul>
+    				<ul class="swiper-pagination swiper-pagination-brand"></ul>
+				</div>
+			</ul>
+	    </div>
+	    <!-- Initialize Swiper -->
+		<script>
+		document.addEventListener("DOMContentLoaded", function(){
+			var swiper2 = new Swiper('.swiper-brandlist', {
+				// Optional parameters 
+				slidesPerView: 4, //한번에 보여지는 슬라이드 개수 
+				spaceBetween: 10, //마진값 
+				grabCursor: true,
+				//반응형 
+				breakpointsInverse: true, 
+				breakpoints: { 
+					// when window width is >= 320px 
+					320: { 
+						slidesPerView: 1, 
+						spaceBetween: 10 
+					},
+					// when window width is >= 640px 
+					640: { 
+						slidesPerView: 2, 
+						spaceBetween: 10 
+					},
+					// when window width is >= 768px 
+					768: { 
+						slidesPerView: 2, 
+						spaceBetween: 10 
+					},
+					1024: {
+						slidesPerView: 3, 
+						spaceBetween: 10 
+					},
+					1440: {
+						slidesPerView: 4, 
+						spaceBetween: 10 
+					}
+				},
+				pagination: {
+					el: '.swiper-pagination-brand',
+					clickable: false,
+					dynamicBullets: true
+			    }
+			});
+		});
+	  </script>
+	</div>
+</body>
+</html>

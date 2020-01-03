@@ -1,26 +1,6 @@
 @charset "UTF-8";
 
-.menu-title {
-    border-left: 5px solid #9c27b0;
-}
-
-/*  Category List CSS Start  */
-/*  Category List CSS End  */
-
-/*  Trend List CSS Start  */
-
-/*  Trend List CSS End  */
-
-body {
-	font-family: "돋움", dotum, "굴림", gulim, arial, helvetica, serif !important;
-}
-
-.title {
-	margin-top: -10px;
-	font-family: "돋움", dotum, "굴림", gulim !important;
-}
-
-.footer {
-	background: linear-gradient(to right, #05A3E6, #9c27b0) !important;
-    color: #fff;
+.two-layout {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
 }

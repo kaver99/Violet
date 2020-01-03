@@ -1,0 +1,109 @@
+@charset "UTF-8";
+
+.card {
+	border-radius: .5rem;
+	padding-left: 15px;
+	padding-right: 15px;
+/* 	max-height: 15rem; */
+}
+
+.card .row .card-title {
+	margin-bottom: 0.5rem;
+	font-size: 1rem;
+	font-family: Nanumgothic;
+	font-weight: bold;
+	letter-spacing: 2px;
+}
+
+.card .row .card-header {
+	width: 100%;
+	padding: 0;
+	border: 0;
+}
+
+.card .row .card-header .card-image {
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	border-top-left-radius: .5rem;
+	border-top-right-radius: .5rem;
+}
+
+.card .row .card-body {
+	padding: .5rem;
+	border: 0;
+}
+
+.card .row .card-body .card-description {
+	width: 100%;
+	font-family: Nanumgothic;
+	color: #050609;
+}
+
+.card .row .card-body .card-description .desc-title {
+	margin-bottom: 0.5rem;
+	font-size: .9rem;
+	font-family: Nanumgothic;
+	font-weight: bold;
+	letter-spacing: 1px;
+}
+
+.card .row .card-body .card-description .card-text {
+	margin-bottom: 0.5rem;
+	font-size: .7rem;
+	font-family: Nanumgothic;
+	color: #2b242496;
+}
+
+.card .row .card-body .card-description .card-tag {
+	font-family: Nanumgothic;
+	font-size: .6rem;
+}
+
+.card .row .card-footer {
+	background-color: unset;
+	width: 100%;
+	font-family: Nanumgothic;
+	font-size: .5rem;
+	padding: .2rem;
+	text-align: right;
+	border: 0;
+	position: absolute;
+	bottom: 0;
+	color: rgba(26,26,26,0.7);
+}
+
+.b-mark {
+	display: flex;
+	position: absolute;
+	top: -10px;
+	bottom: 10px;
+	right: 10px;
+	width: 4.5rem;
+	height: 4.5rem;
+	border-radius: 3rem;
+	border: 2px solid #ffffff;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	transition: .7s all;
+}
+
+.b-mark:hover {
+	border: 2px solid #f4361e;
+}
+
+
+.card-shadow {
+	z-index: 1;
+    -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	-moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+@media only screen and (max-width: 768px) {
+	.card-layout {
+		min-width: 10rem !important;
+		padding: .7rem;
+	}
+}

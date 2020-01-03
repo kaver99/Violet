@@ -1,0 +1,133 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+<head>
+</head>
+<body>
+<div th:fragment="menubar" class="index-page sidebar-collapse">
+    <!-- this is header -->
+    <nav class="navbar navbar-layout fixed-top navbar-expand-md bg-white">
+        <div class="container" style="flex-wrap: wrap !important;">
+        	<div class="nav-item col-md-12">
+        		<a class="nav-link" href="#"><span style="float: right; font-size: 14px;">고객센터</span></a>
+        	</div>
+        	<div class="nav-item col-md-12">
+	            <div class="navbar-translate">
+	                <a th:href="@{/}">
+	                	<span class="navbar-brand text-gradation">VIOLET</span>
+	                </a>
+	                <button class="navbar-toggler" type="button" data-toggle="collapse" aria-expanded="false" aria-label="Toggle navigation">
+	                    <span class="sr-only">Toggle navigation</span>
+	                    <span class="navbar-toggler-icon"></span>
+	                    <span class="navbar-toggler-icon"></span>
+	                    <span class="navbar-toggler-icon"></span>
+	                </button>
+	            </div>
+	            <div class="collapse navbar-collapse">
+	                <ul class="navbar-nav ml-auto">
+						<!--/*  User Login Start  */-->
+						<!--/* User is Not Login */-->
+						<div th:if="${session.username == null}" th:remove="tag">
+	                        <li class="nav-item">
+	                            <a th:href="@{/login.violet}" class="nav-link" data-toggle="tooltip" data-placement="bottom" title="LOGIN" style="font-size: 15px;">
+									<span class="" style="font-size: 32px; display: table; color: #9c27b0;">
+										<i class="fas fa-user-circle" style="margin-right: 10px;"></i>
+										<h6 style="display: table-cell; vertical-align: middle">LOGIN</h6>
+									</span>
+	                            </a>
+	                        </li>
+						</div>
+						<!--/* User Login */-->
+						<div th:if="${session.username != null}" th:remove="tag">
+	                        <li class="dropdown nav-item">
+	                            <a th:href="@{#login.violet}" class="profile-photo nav-link" data-toggle="dropdown">
+	                               	<div th:if="${session.imgThumbnail == null}" th:remove="tag">
+	                                	<div class="" data-toggle="tooltip" data-placement="bottom" title="LOGIN" style="width: 40px;">
+											<span class="" style="font-size: 32px; display: table; color: #9c27b0;">
+												<i class="fas fa-user-circle" style="margin-right: 10px;"></i>
+											</span>
+	                           			</div>
+	                           		</div>
+	                         		<div th:if="${session.imgThumbnail != null}" th:remove="tag">
+	     	                      		<div class="profile-photo-small" >
+	                                    	<img th:src="@{${session.imgThumbnail}}" alt="Circle Image" class="rounded-circle img-fluid" style="width: 40px; height: 40px;">
+	                                    </div>
+	                                </div>
+	                            </a>
+	                            <!--/* user profile */-->
+	                            <div class="nav-menu dropdown-menu dropdown-menu-right" style="width: 300px; padding: 10px;">
+	                            	<ul class="navmenu-header" style="width: 114px; height: 114px;">
+	                            		<li class="navmenu-item">
+	                           				<div th:if="${session.imgThumbnail != null}" th:remove="tag"> 
+	                           					<img th:src="@{${session.imgThumbnail}}" alt="Circle Image" class="Rounded Image img-fluid" style="width: 114px; height: 114px;">
+	                           				</div>
+	                           				<div th:if="${session.imgThumbnail == null}" th:remove="tag">
+	                           					<i class="material-icons" style="font-size: 114px;">account_circle</i>
+	                           				</div>
+	                            		</li>
+	                            	</ul>
+	                            	<ul class="navmenu-body">
+	                            		<li class="navmenu-item-header">
+			                            	<h4 class="navmenu-item-name dropdown-header font-weight-bold">[[${session.username}]]</h4>
+			                            </li>
+			                            <li class="navmenu-item-body">
+			                            	<h4 class="navmenu-item-name font-weight-bold">[[${session.name}]]</h4>
+			                            </li>
+			                            <li class="navmenu-item-footer">
+			                            	<h6 class="navmenu-item-name">V-Point: <font class="text-danger">100P</font></h6>
+			                            </li>
+	                                </ul>
+	                                <hr style="margin: 5px 0 15px 0; clear: both;"/>	
+	                                <ul class="navmenu-footer">
+	                                	<li>
+	                                		<a th:href="@{/basket.violet}" class="dropdown-item">
+	                                			<i class="material-icons">shopping_cart</i>&nbsp;Shooping Basket
+	                                			&nbsp;&nbsp;<span class="badge badge-pill badge-info">2</span>
+	                                		</a>
+	                                	</li>
+	                                	<li>
+	                                		<a th:href="@{/favorite.violet}" class="dropdown-item">
+	                                			<i class="material-icons">favorite</i>&nbsp;Favorite
+	                                			&nbsp;&nbsp;<span class="badge badge-pill badge-danger">2</span>
+	                                		</a>
+	                                	</li>
+	                                	<li>
+	                                		<a th:href="@{/orderHisotry.violet}" class="dropdown-item">
+	                                			<i class="material-icons">credit_card</i>&nbsp;Order History
+	
+	                                		</a>
+	                                	</li>
+	                                	<li>
+	                                		<a th:href="@{/profile.violet}" class="dropdown-item">
+	                                			<i class="material-icons">assignment_ind</i>&nbsp;Profile
+	                                		</a>
+	                                	</li>
+		                               	<li>
+		                               		<a th:href="@{/logout.violet}" class="dropdown-item text-danger">
+		                               			<i class="material-icons">power_settings_new</i>&nbsp;Log Out
+		                               		</a>
+		                               	</li>
+	                                </ul>
+	                            </div>
+	                        </li>
+	                    </div>
+	                    <!--/*  User Login End  */-->
+	                </ul>
+	            </div>
+	            <div class="collapse navbar-collapse" style="justify-content: center;">
+	            	<ul class="navbar-nav">
+	            		<li class="nav-item"><a th:href="@{/}" class="nav-link">HOME</a></li>
+	            		<li class="nav-item"><a href="" class="nav-link">PAPER</a></li>
+	            		<li class="nav-item"><a href="" class="nav-link">BRAND</a></li>
+	            		<li class="nav-item"><a href="" class="nav-link">FASHION</a></li>
+	            		<li class="nav-item"><a href="" class="nav-link">BEAUTY</a></li>
+	            		<li class="nav-item"><a href="" class="nav-link">LIFE</a></li>
+	            		<li class="nav-item"><a href="" class="nav-link">EVENT</a></li>
+	            		<li class="nav-item"><a href="" class="nav-link">SEARCH</a></li>
+	            	</ul>
+	            </div>
+			</div>
+        </div>
+    </nav>
+</div>
+</body>
+</html>

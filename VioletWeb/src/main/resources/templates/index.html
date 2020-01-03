@@ -4,30 +4,48 @@
     <title>Violet Shop</title>
 
     <!--/*  User Css Start  */-->
-    <th:block layout:fragment="user-css">
-    </th:block>
+<!--     <th:block layout:fragment="user-css"> -->
+    <link rel="stylesheet" type="text/css" th:href="@{/css/list/card-layout.css}" />
+    <link rel="stylesheet" type="text/css" th:href="@{/css/list/paper-swiper.css}" />
+    <link rel="stylesheet" type="text/css" th:href="@{/css/list/brandlist.css}" />
+    <link rel="stylesheet" type="text/css" th:href="@{/css/list/newlist.css}" />
+    <link rel="stylesheet" type="text/css" th:href="@{/css/list/taglist.css}" />
+    <link rel="stylesheet" type="text/css" th:href="@{/css/list/stylerlist.css}" />
+    <link rel="stylesheet" type="text/css" th:href="@{/css/layout/main.css}" />
+<!--     </th:block> -->
     <!--/*  User Css End  */-->
 </head>
 <body>
-    <div layout:fragment="content">
-        <!--/*  Main Start  */-->
-        <div class="main">
-            <div class="section-space"></div>
-            <!--/*  Paper Start  */-->
-            <div class="cd-section" id="paper">
-                <div th:replace="main/paper :: paper"></div>
-            </div>
-            <!--/*  Paper End  */-->
-
-            <!--/*  Category Start  */-->
-			<div th:replace="main/categorylist :: categorylist"></div>
-            <!--/*  Category End  */-->
-            <!--/*  BookMark Start  */-->
-            <!--/* <div th:replace="menu/menu-bookmark :: menu-bookmark"></div> */-->
-            <!--/*  BookMark End  */-->
-        </div>
-        <!--/*  Main End  */-->
-    </div>
+<div layout:fragment="content" th:remove="tag">
+	<!--/*  Main Start  */-->
+	<div class="main index-page" style="background-color: rgba(200,200,200,.2);">
+	    <!--/*  Paper Start  */-->
+	    <div th:replace="main/paper-swiper :: paper-swiper" th:remove="tag"></div>
+	    <!--/*  Paper End  */-->
+	    
+	    <!--/* [BRAND] ITEM Scroll LIST Start */-->
+	    <div th:replace="main/brandlist :: brandlist" th:remove="tag"></div>
+	    <!--/* [BRAND] ITEM Scroll LIST End */-->
+		
+		<!--/* [NEW] ITEM LIST Start */-->
+		<div th:replace="main/newlist :: newlist" th:remove="tag"></div>
+		<!--/* [NEW] ITEM LIST End */-->
+		
+		<!--/* [TAG] ITEM LIST Start */-->
+		<div th:replace="main/taglist :: taglist" th:remove="tag"></div>
+		<!--/* [TAG] ITEM LIST End */-->
+		
+		<!--/* [STYLER] ITEM LIST Start */-->
+		<div th:replace="main/stylerlist :: stylerlist" th:remove="tag"></div>
+		<!--/* [STYLER] ITEM LIST End */-->
+		
+		<!--/* [SEASON] ITEM LIST Start */-->
+		<div th:replace="main/stylerlist :: stylerlist" th:remove="tag"></div>
+		<!--/* [SEASON] ITEM LIST End */-->
+		
+	</div>
+	<!--/*  Main End  */-->
+</div>
 
     <!--/*  User Js Start  */-->
     <th:block layout:fragment="user-js">

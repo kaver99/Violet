@@ -26,10 +26,19 @@ public class IndexController {
 	@RequestMapping(value = {"/", "/main.violet"})
 	public String index(HttpServletRequest request, @RequestParam(defaultValue="1") int page) {
 		/* Other way : model.addAttribute("Test", "Shop"); */
-		// Main Slide Data
+		// paper
 		List<PaperEntity> paperListAll = doPaperListAll();
 		request.setAttribute("paperListAll", paperListAll);
 		
+		// Brand List (max : 10)
+		
+		// New List (fixed: 24)
+		
+		// Tag List (max: 20)
+		
+		// Styler List (fixed: 6)
+
+
 		// List Data
 		Map<String, Object> newListMap = doNewListAll(page);
 		request.setAttribute("pagination", newListMap.get("pagination"));

@@ -1,0 +1,152 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" > 
+<head>
+</head>
+<body>
+	<div th:fragment="taglist" id="taglist" class="tag-layout">
+	    <div class="container">
+	    	<ul class="row">
+	    		<li class="paragraph-title"><span>#Tag</span></li>
+	    		<li class="paragraph-list-more">
+	    			<a href="#" class="nav-link"><span>FASHION</span></a>
+	    			<a href="#" class="nav-link"><span>BEAUTY</span></a>
+	    			<a href="#" class="nav-link"><span>LIFE</span></a>
+	    		</li>
+	    	</ul>
+			<ul class="row">
+				<!-- Swiper -->
+  				<div class="swiper-container swiper-taglist">
+					<ul class="swiper-wrapper">
+						<li class="swiper-slide" data-aos="fade-left">
+							<!--/* CARD LIST ITEM START */-->
+							<a class="card-link card-shadow" th:href="@{/}">
+								<div class="card-image" th:style="'background-image: url(&quot;./img/item/' + 'studio-1.jpg' + '&quot;); background-position: center;'"></div>
+								<div class="card-caption">#화려함</div>
+							</a>
+							<!--/* CARD LIST ITEM END */-->
+						</li>
+						<li class="swiper-slide" data-aos="fade-left">
+							<!--/* CARD LIST ITEM START */-->
+							<a class="card-link card-shadow" th:href="@{/}">
+								<div class="card-image" th:style="'background-image: url(&quot;./img/item/' + 'studio-1.jpg' + '&quot;); background-position: center;'"></div>
+								<div class="card-caption">#화려함</div>
+							</a>
+							<!--/* CARD LIST ITEM END */-->
+						</li>
+						<li class="swiper-slide" data-aos="fade-left">
+							<!--/* CARD LIST ITEM START */-->
+							<a class="card-link card-shadow" th:href="@{/}">
+								<div class="card-image" th:style="'background-image: url(&quot;./img/item/' + 'studio-1.jpg' + '&quot;); background-position: center;'"></div>
+								<div class="card-caption">#화려함</div>
+							</a>
+							<!--/* CARD LIST ITEM END */-->
+						</li>
+						<li class="swiper-slide" data-aos="fade-left">
+							<!--/* CARD LIST ITEM START */-->
+							<a class="card-link card-shadow" th:href="@{/}">
+								<div class="card-image" th:style="'background-image: url(&quot;./img/item/' + 'studio-1.jpg' + '&quot;); background-position: center;'"></div>
+								<div class="card-caption">#화려함</div>
+							</a>
+							<!--/* CARD LIST ITEM END */-->
+						</li>
+						<li class="swiper-slide" data-aos="fade-left">
+							<!--/* CARD LIST ITEM START */-->
+							<a class="card-link card-shadow" th:href="@{/}">
+								<div class="card-image" th:style="'background-image: url(&quot;./img/item/' + 'studio-1.jpg' + '&quot;); background-position: center;'"></div>
+								<div class="card-caption">#화려함</div>
+							</a>
+							<!--/* CARD LIST ITEM END */-->
+						</li>
+						<li class="swiper-slide" data-aos="fade-left">
+							<!--/* CARD LIST ITEM START */-->
+							<a class="card-link card-shadow" th:href="@{/}">
+								<div class="card-image" th:style="'background-image: url(&quot;./img/item/' + 'studio-1.jpg' + '&quot;); background-position: center;'"></div>
+								<div class="card-caption">#화려함</div>
+							</a>
+							<!--/* CARD LIST ITEM END */-->
+						</li>
+						<li class="swiper-slide" data-aos="fade-left">
+							<!--/* CARD LIST ITEM START */-->
+							<a class="card-link card-shadow" th:href="@{/}">
+								<div class="card-image" th:style="'background-image: url(&quot;./img/item/' + 'studio-1.jpg' + '&quot;); background-position: center;'"></div>
+								<div class="card-caption">#화려함</div>
+							</a>
+							<!--/* CARD LIST ITEM END */-->
+						</li>
+						<li class="swiper-slide" data-aos="fade-left">
+							<!--/* CARD LIST ITEM START */-->
+							<a class="card-link card-shadow" th:href="@{/}">
+								<div class="card-image" th:style="'background-image: url(&quot;./img/item/' + 'studio-1.jpg' + '&quot;); background-position: center;'"></div>
+								<div class="card-caption">#화려함</div>
+							</a>
+							<!--/* CARD LIST ITEM END */-->
+						</li>
+						<li class="swiper-slide" data-aos="fade-left">
+							<!--/* CARD LIST ITEM START */-->
+							<a class="card-link card-shadow" th:href="@{/}">
+								<div class="card-image" th:style="'background-image: url(&quot;./img/item/' + 'studio-1.jpg' + '&quot;); background-position: center;'"></div>
+								<div class="card-caption">#화려함</div>
+							</a>
+							<!--/* CARD LIST ITEM END */-->
+						</li>
+						<li class="swiper-slide" data-aos="fade-left">
+							<!--/* CARD LIST ITEM START */-->
+							<a class="card-link card-shadow" th:href="@{/}">
+								<div class="card-image" th:style="'background-image: url(&quot;./img/item/' + 'studio-1.jpg' + '&quot;); background-position: center;'"></div>
+								<div class="card-caption">#화려함</div>
+							</a>
+							<!--/* CARD LIST ITEM END */-->
+						</li>
+					</ul>
+    				<ul class="swiper-pagination swiper-pagination-tag"></ul>
+				</div>
+			</ul>
+	    </div>
+	    <!-- Initialize Swiper -->
+		<script>
+		document.addEventListener("DOMContentLoaded", function(){
+			var swiper4 = new Swiper('.swiper-taglist', {
+				// Optional parameters 
+				slidesPerView: 8, //한번에 보여지는 슬라이드 개수 
+				spaceBetween: 40, //마진값
+				grabCursor: true,
+				freeMode: true,
+				//반응형 
+				breakpointsInverse: true, 
+				breakpoints: { 
+					// when window width is >= 320px 
+					320: { 
+						slidesPerView: 3, 
+						spaceBetween: 20 
+					}, 
+					// when window width is >= 480px 
+					425: { 
+						slidesPerView: 4, 
+						spaceBetween: 20 
+					}, 
+					// when window width is >= 640px 
+					640: { 
+						slidesPerView: 6, 
+						spaceBetween: 20 
+					},
+					// when window width is >= 860px 
+					860: { 
+						slidesPerView: 8, 
+						spaceBetween: 20 
+					},
+					// when window width is >= 1024px 
+					1024: {
+						slidesPerView: 8,
+						spaceBetween: 40
+					}
+				}
+// 				pagination: {
+// 					el: '.swiper-pagination-tag',
+// 					clickable: false,
+// 			    }
+			});
+		});
+	  </script>
+	</div>
+</body>
+</html>

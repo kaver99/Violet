@@ -3,62 +3,45 @@
 <head>
 </head>
 <body>
-	<div th:fragment="paper">
-	    <div id="carouselPaperIndicators" class="carousel slide" data-ride="carousel">
-        	<div th:if="${#lists.isEmpty(paperListAll)}" th:remove="tag">
-        	</div>
-        	<div th:unless="${#lists.isEmpty(paperListAll)}" th:remove="tag">
-        		<ol class="carousel-indicators">
-	            <th:block th:each="paperList : ${paperListAll}" th:remove="tag">
-                	<li data-target="#carouselPaperIndicators" th:attr="data-slide-to=${paperList.paper_no - 1}" th:class="${paperList.paper_no == 1 ? 'active' : ''}"></li>
-	            </th:block>
-	            </ol>
-            </div>
-	        <div class="carousel-inner">
-	        <div th:if="${#lists.isEmpty(paperListAll)}" th:remove="tag">
-	            <div class="page-header header-filter" style="background-color: currentColor;">
-	                <div class="container">
-	                    <div class="row">
-	                        <div class="col-md-6 text-left">
-	                            <h1 class="title">No Title.</h1>
-	                            <h4>Product is being prepared.</h4>
-	                        </div>
-	                    </div>
-	                </div>
-	            </div>
-	        </div>
-	        <div th:unless="${#lists.isEmpty(paperListAll)}" th:remove="tag">
-	            <div th:each="paperList : ${paperListAll}" th:remove="tag">
-	                <div th:class="${paperList.paper_no == 1 ? 'carousel-item active' : 'carousel-item'}">
-	                    <div class="page-header header-filter" th:style="'background-image: url(&quot;./img/main/paper/' + ${paperList.paper_img} + '&quot;);'">
-	                        <div class="container">
-	                            <div class="row">
-	                                <div class="col-md-6 text-left">
-	                                    <h1 class="title">[[${paperList.paper_title}]]</h1>
-	                                    <h4>[[${paperList.paper_description}]]</h4>
-	                                    <br>
-	                                    <div class="buttons">
-	                                        <a href="#" class="btn btn-danger btn-lg">
-	                                            More <i class="material-icons">add</i>
-	                                        </a>
-	                                    </div>
-	                                </div>
-	                            </div>
-	                        </div>
-	                    </div>
-	                </div>
-	            </div>
-	        </div>
-	        </div>
-	        <a class="carousel-control-prev" href="#carouselPaperIndicators" role="button" data-slide="prev">
-	            <i class="material-icons">keyboard_arrow_left</i>
-	            <span class="sr-only">Previous</span>
-	        </a>
-	        <a class="carousel-control-next" href="#carouselPaperIndicators" role="button" data-slide="next">
-	            <i class="material-icons">keyboard_arrow_right</i>
-	            <span class="sr-only">Next</span>
-	        </a>
-	    </div>
+	<div th:fragment="paper" th:remove="tag">
+		<div id="carouselPaper" class="carousel slide" data-ride="carousel">
+			<ol class="carousel-indicators">
+				<li data-target="#carouselPaper" data-slide-to="0" class="active"></li>
+				<li data-target="#carouselPaper" data-slide-to="1"></li>
+			</ol>
+			<div class="carousel-inner">
+				<div class="carousel-item active">
+					<div class="carousel-img carousel-img-filter d-block" th:style="'background-image: url(&quot;./img/main/paper/' + 'paper_bgImg1.png' + '&quot;);'" alt="1 slide">
+						<div class="carousel-text">
+							<div class="container">
+								<div class="row">
+									<h4>상품 설명</h4>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="carousel-item">
+					<div class="carousel-img carousel-img-filter d-block" th:style="'background-image: url(&quot;./img/main/paper/' + 'paper_bgImg2.jpg' + '&quot;);'" alt="2 slide">
+						<div class="carousel-text">
+							<div class="container">
+								<div class="row">
+									<h4>상품 소개</h4>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<a class="carousel-control-prev" href="#carouselPaper" role="button" data-slide="prev">
+				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				<span class="sr-only">Previous</span>
+			</a>
+			<a class="carousel-control-next" href="#carouselPaper" role="button" data-slide="next">
+				<span class="carousel-control-next-icon" aria-hidden="true"></span>
+				<span class="sr-only">Next</span>
+			</a>
+		</div>
 	</div>
 </body>
 </html>

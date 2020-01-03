@@ -1,0 +1,39 @@
+2019-12-10 12:22:53 [INFO ] [StartupInfoLogger.java] logStarting(50) : Starting VioletWebApplication on Minui-MacBook-Pro.local with PID 10724 (/Users/minsungkim/git/Violet/VioletWeb/target/classes started by minsungkim in /Users/minsungkim/git/Violet/VioletWeb)
+2019-12-10 12:22:53 [INFO ] [SpringApplication.java] logStartupProfileInfo(679) : The following profiles are active: local
+2019-12-10 12:22:54 [WARN ] [ClassPathMapperScanner.java] doScan(166) : No MyBatis mapper was found in '[com.violet.web]' package. Please check your configuration.
+2019-12-10 12:22:54 [INFO ] [PostProcessorRegistrationDelegate.java] postProcessAfterInitialization(330) : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$2657daa4] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-10 12:22:54 [INFO ] [AbstractAddressingEndpointMapping.java] afterPropertiesSet(236) : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2019-12-10 12:22:54 [INFO ] [PostProcessorRegistrationDelegate.java] postProcessAfterInitialization(330) : Bean 'org.springframework.hateoas.config.HateoasConfiguration' of type [org.springframework.hateoas.config.HateoasConfiguration$$EnhancerBySpringCGLIB$$14062d7] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-10 12:22:54 [INFO ] [PostProcessorRegistrationDelegate.java] postProcessAfterInitialization(330) : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$81c015a5] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-10 12:22:54 [INFO ] [TomcatWebServer.java] initialize(90) : Tomcat initialized with port(s): 80 (http)
+2019-12-10 12:22:54 [INFO ] [DirectJDKLog.java] log(173) : Starting service [Tomcat]
+2019-12-10 12:22:54 [INFO ] [DirectJDKLog.java] log(173) : Starting Servlet Engine: Apache Tomcat/9.0.13
+2019-12-10 12:22:54 [INFO ] [DirectJDKLog.java] log(173) : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/minsungkim/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2019-12-10 12:22:55 [INFO ] [DirectJDKLog.java] log(173) : Initializing Spring embedded WebApplicationContext
+2019-12-10 12:22:55 [INFO ] [ServletWebServerApplicationContext.java] prepareWebApplicationContext(296) : Root WebApplicationContext: initialization completed in 1203 ms
+2019-12-10 12:22:55 [INFO ] [DefaultSecurityFilterChain.java] <init>(43) : Creating filter chain: Ant [pattern='/js/**'], []
+2019-12-10 12:22:55 [INFO ] [DefaultSecurityFilterChain.java] <init>(43) : Creating filter chain: Ant [pattern='/css/**'], []
+2019-12-10 12:22:55 [INFO ] [DefaultSecurityFilterChain.java] <init>(43) : Creating filter chain: Ant [pattern='/img/**'], []
+2019-12-10 12:22:55 [INFO ] [DefaultSecurityFilterChain.java] <init>(43) : Creating filter chain: Ant [pattern='/assets/**'], []
+2019-12-10 12:22:56 [INFO ] [DefaultSecurityFilterChain.java] <init>(43) : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6d67f5eb, org.springframework.security.web.context.SecurityContextPersistenceFilter@3b4a1a75, org.springframework.security.web.header.HeaderWriterFilter@6680f714, org.springframework.security.web.csrf.CsrfFilter@2577a95d, org.springframework.security.web.authentication.logout.LogoutFilter@58b5a2f3, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@17b37e9a, org.springframework.web.filter.CompositeFilter@4f654cee, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@276cc8dc, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7ddd84b5, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3e1fd62b, org.springframework.security.web.session.SessionManagementFilter@7d97e06c, org.springframework.security.web.access.ExceptionTranslationFilter@45c9b3, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@62a68bcb]
+2019-12-10 12:22:56 [INFO ] [ExecutorConfigurationSupport.java] initialize(171) : Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-10 12:22:56 [INFO ] [WelcomePageHandlerMapping.java] <init>(61) : Adding welcome page template: index
+2019-12-10 12:22:56 [INFO ] [TomcatWebServer.java] start(204) : Tomcat started on port(s): 80 (http) with context path ''
+2019-12-10 12:22:56 [INFO ] [StartupInfoLogger.java] logStarted(59) : Started VioletWebApplication in 3.445 seconds (JVM running for 3.938)
+2019-12-10 12:22:58 [INFO ] [DirectJDKLog.java] log(173) : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-12-10 12:22:58 [INFO ] [FrameworkServlet.java] initServletBean(524) : Initializing Servlet 'dispatcherServlet'
+2019-12-10 12:22:58 [INFO ] [FrameworkServlet.java] initServletBean(546) : Completed initialization in 12 ms
+2019-12-10 12:22:58 [WARN ] [HikariConfig.java] validateNumerics(1008) : {} - idleTimeout has been set but has no effect because the pool is operating as a fixed size pool.
+2019-12-10 12:22:58 [INFO ] [HikariDataSource.java] getConnection(110) : hikari-cp - Starting...
+2019-12-10 12:22:58 [WARN ] [DriverDataSource.java] <init>(68) : Registered driver with driverClassName=oracle.jdbc.driver.OracleDriver was not found, trying direct instantiation.
+2019-12-10 12:22:58 [INFO ] [PoolBase.java] getAndSetNetworkTimeout(525) : hikari-cp - Driver does not support get/set network timeout for connections. (oracle.jdbc.driver.T4CConnection.getNetworkTimeout()I)
+2019-12-10 12:22:58 [INFO ] [HikariDataSource.java] getConnection(123) : hikari-cp - Start completed.
+2019-12-10 12:22:59 [WARN ] [FragmentProcessor.groovy] doProcess(75) : You don't need to put the layout:fragment/data-layout-fragment attribute into the <head> section - the decoration process will automatically copy the <head> section of your content templates into your layout page.
+2019-12-10 12:33:57 [WARN ] [HikariPool.java] run(758) : hikari-cp - Retrograde clock change detected (housekeeper delta=29s126ms), soft-evicting connections from pool.
+2019-12-10 13:11:47 [WARN ] [HikariPool.java] run(766) : hikari-cp - Thread starvation or clock leap detected (housekeeper delta=5m49s181ms).
+2019-12-10 15:49:33 [WARN ] [HikariPool.java] run(766) : hikari-cp - Thread starvation or clock leap detected (housekeeper delta=1m45s562ms).
+2019-12-10 15:50:33 [WARN ] [HikariPool.java] run(758) : hikari-cp - Retrograde clock change detected (housekeeper delta=29s819ms), soft-evicting connections from pool.
+2019-12-10 17:26:55 [INFO ] [SpringApplicationAdminMXBeanRegistrar.java] shutdown(164) : Application shutdown requested.
+2019-12-10 17:26:55 [INFO ] [ExecutorConfigurationSupport.java] shutdown(208) : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-12-10 17:26:55 [INFO ] [HikariDataSource.java] close(350) : hikari-cp - Shutdown initiated...
+2019-12-10 17:26:55 [INFO ] [HikariDataSource.java] close(352) : hikari-cp - Shutdown completed.

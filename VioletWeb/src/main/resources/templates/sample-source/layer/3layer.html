@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"> 
+<head>
+</head>
+<body>
+	<div th:fragment="3layer" id="3layer" th:remove="tag">
+		<!--/* CARD LIST 3 ITEM START */-->
+		<div class="card card-layout">
+			<div class="item-list">
+				<div class="card-header-image">
+					<div class="card-img" th:style="'background-image: url(&quot;./img/item/' + 'clem-onojegaw.jpg' + '&quot;); background-position: center; height: 100px;'"></div>
+					<div class="colored-shadow" th:style="'background-image: url(&quot;./img/item/' + 'clem-onojegaw.jpg' + '&quot;); opacity: 1;'"></div>
+				</div>
+				<div class="card-body">
+					<div class="card-titlt card-title-label-primary">
+						<h4 class="font-weight-bold" style="margin-left: 5px;">TITLE</h4>
+					</div>
+				</div>
+			</div>
+			<div class="item-list">
+				<div class="card-header-image">
+					<div class="card-img" th:style="'background-image: url(&quot;./img/item/' + 'clem-onojegaw.jpg' + '&quot;); background-position: center; height: 100px;'"></div>
+					<div class="colored-shadow" th:style="'background-image: url(&quot;./img/item/' + 'clem-onojegaw.jpg' + '&quot;); opacity: 1;'"></div>
+				</div>
+				<div class="card-body">
+					<div class="card-titlt card-title-label-primary">
+						<h4 class="font-weight-bold" style="margin-left: 5px;">TITLE</h4>
+					</div>
+				</div>
+			</div>
+			<div class="item-list">
+				<div class="card-header-image">
+					<div class="card-img" th:style="'background-image: url(&quot;./img/item/' + 'clem-onojegaw.jpg' + '&quot;); background-position: center; height: 100px;'"></div>
+					<div class="colored-shadow" th:style="'background-image: url(&quot;./img/item/' + 'clem-onojegaw.jpg' + '&quot;); opacity: 1;'"></div>
+				</div>
+				<div class="card-body">
+					<div class="card-titlt card-title-label-primary">
+						<h4 class="font-weight-bold" style="margin-left: 5px;">TITLE</h4>
+					</div>
+				</div>
+			</div>
+			<div class="card-footer card-footer-layout">
+				<h6 class="text-muted">stylist by<font class="text-primary">&nbsp;&nbsp;CC</font></h6>
+			</div>
+		</div>
+		<!--/* CARD LIST 3 ITEM END */-->
+	</div>
+</body>
+</html>
