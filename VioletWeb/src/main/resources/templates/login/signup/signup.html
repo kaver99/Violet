@@ -10,133 +10,104 @@
 </head>
 <body>
     <div layout:fragment="content" th:remove="tag">
-	    <div class="profile-page sidebar-collapse text-center">
-			<div class="page-header header-filter" data-parallax="true" style="background-image: url(&quot;../assets/img/city-profile.jpg&quot;);"></div>
-			
-			<div class="main main-raised col-md-6" style="display: inline-block; top: -100px;">
-				<div class="profile-content">
-    				<div class="container">
-      					<div class="form-row" style="margin: 25px;">
-							<div class="col-md-12 ml-auto mr-auto">
-							<form class="form" method="post" th:action="@{/signup.violet}" enctype="multipart/form-data" autocomplete="off">
-								<div class="avatar">
-									<label for="imageUpload">
-										<div id="imagePreview" style="display: inline-block;">
-											<div id="btn-icon" draggable="false">
-												<i class="material-icons" style="font-size: 5rem;">account_circle</i><h6>Click Here</h6>
-											</div>
-										</div>
-									</label>
-						            <input type='file' id="imageUpload" name="imageUpload" accept=".png, .jpg, .jpeg" readonly />
-								</div>
-								<!--/* Tab Menu Start */-->
-								<div class="col-md-12">
-									<ul class="nav nav-pills nav-pills-rose justify-content-center">
-										<li class="nav-item">
-											<a class="nav-link avoid-clicks float-left active" href="#step1" data-toggle="tab" style="margin-right: 20px;">
-												<i class="material-icons">verified_user</i> Certification
-											</a>
-											<a class="nav-link avoid-clicks float-left" href="#step2" data-toggle="tab" style="margin-right: 20px;">
-												<i class="material-icons">assignment_late</i> Agreement
-											</a>
-											<a class="nav-link avoid-clicks float-left" href="#step3" data-toggle="tab" style="margin-right: 20px;">
-												<i class="material-icons">assignment_ind</i> Details
-											</a>
-											<a class="nav-link avoid-clicks float-left" href="#step4" data-toggle="tab">
-												<i class="material-icons">how_to_vote</i> Address
-											</a>
-										</li>
-									</ul>
-									<hr/>
-								</div>
-								<!--/* Tab Menu End */-->
-								<div class="tab-content tab-space">
-									<!--/* Agreement Start */-->
-									<div class="tab-pane active" id="step1">
-										<div th:replace="login/signup/signup_certification :: signup_certification"></div>
-										<br/>
-										<div class="float-left" id="back-btn" style="display: flex;">
-											<a class="btn btn-default btn-lg text-white">
-												<i class="material-icons">arrow_back_ios</i>
-												BACK
-											</a>
-										</div>
-										
-										<div class="float-right" id="next-btn" style="display: flex;">
-											<a class="btn btn-primary btn-lg text-white">
-												NEXT
-												<i class="material-icons">arrow_forward_ios</i>
-											</a>
+	    <div class="profile-page bg-gradation text-center">
+			<div class="col-md-12 align-self-center">
+   				<div class="profile-content">
+     				<div class="form-row bg-white">
+						<form class="form" method="post" th:action="@{/signup.violet}" enctype="multipart/form-data" autocomplete="off">
+							<div class="avatar">
+								<label for="imageUpload">
+									<div id="imagePreview">
+										<div id="btn-icon" draggable="false">
+											<i class="fas fa-user-circle signup-icon" style="font-size: 5rem;"></i><span class="text-thumbnail">Click Here</span>
 										</div>
 									</div>
-									<!--/* Agreement End */-->
-									
-									<!--/* Certification Start */-->
-									<div class="tab-pane" id="step2">
-										<div th:replace="login/signup/signup_agreement :: signup_agreement"></div>
-										<br/>
-										<div class="float-left" id="back-btn" style="display: flex;">
-											<a class="btn btn-primary btn-lg text-white">
-												<i class="material-icons">arrow_back_ios</i>
-												BACK
-											</a>
-										</div>
-										
-										<div class="float-right" id="next-btn" style="display: flex;">
-											<a class="btn btn-primary btn-lg text-white">
-												NEXT
-												<i class="material-icons">arrow_forward_ios</i>
-											</a>
-										</div>
-									</div>
-									<!--/* Certification End */-->
-									
-									<!--/* Details Start */-->
-									<div class="tab-pane" id="step3">
-										<div th:replace="login/signup/signup_detail :: signup_detail"></div>
-										<br/>
-										<div class="float-left" id="back-btn" style="display: flex;">
-											<a class="btn btn-primary btn-lg text-white">
-												<i class="material-icons">arrow_back_ios</i>
-												BACK
-											</a>
-										</div>
-										
-										<div class="float-right" id="next-btn" style="display: flex;">
-											<a class="btn btn-primary btn-lg text-white">
-												NEXT
-												<i class="material-icons">arrow_forward_ios</i>
-											</a>
-										</div>
-									</div>
-									<!--/* Details End */-->
-									
-									<!--/* Address Start */-->
-									<div class="tab-pane" id="step4">
-										<div th:replace="login/signup/signup_address :: signup_address"></div>
-										<br/>
-										<div class="float-left" id="back-btn" style="display: flex;">
-											<a class="btn btn-primary btn-lg text-white">
-												<i class="material-icons">arrow_back_ios</i>
-												BACK
-											</a>
-										</div>
-										
-										<div class="float-right" id="finish-btn" style="display: flex;">
-											<button type="submit" class="btn btn-success btn-wd btn-lg"><i class="material-icons">check</i> Finish</button>
-										</div>
-									</div>
-								</div>
-							</form>
+								</label>
+					            <input type='file' id="imageUpload" name="imageUpload" accept=".png, .jpg, .jpeg" readonly />
 							</div>
-						</div>
+							<!--/* Tab Menu Start */-->
+							<div class="nav nav-pills justify-content-center">
+								<a class="nav-link avoid-clicks float-left active" href="#step1" data-toggle="tab">
+									<i class="fas fa-lock signup-icon"></i> <span class="text-tab">Certification</span>
+								</a>
+								<a class="nav-link avoid-clicks float-left" href="#step2" data-toggle="tab">
+									<i class="fas fa-clipboard-list signup-icon"></i> <span class="text-tab">Agreement</span>
+								</a>
+								<a class="nav-link avoid-clicks float-left" href="#step3" data-toggle="tab">
+									<i class="fas fa-address-card signup-icon"></i> <span class="text-tab">Details</span>
+								</a>
+								<a class="nav-link avoid-clicks float-left" href="#step4" data-toggle="tab">
+									<i class="fas fa-location-arrow signup-icon"></i> <span class="text-tab">Address</span>
+								</a>
+							</div>
+							<hr/>
+							<!--/* Tab Menu End */-->
+							<div class="tab-content tab-space">
+								<!--/* Agreement Start */-->
+								<div class="tab-pane active" id="step1">
+									<div th:replace="login/signup/signup_certification :: signup_certification"></div>
+									<br/>
+									<div class="btn-layout">
+										<a class="btn btn-primary btn-lg text-white float-right next-btn">
+											NEXT
+											<i class="fas fa-arrow-right"></i>
+										</a>
+									</div>
+								</div>
+								<!--/* Agreement End */-->
+								
+								<!--/* Certification Start */-->
+								<div class="tab-pane" id="step2">
+									<div th:replace="login/signup/signup_agreement :: signup_agreement"></div>
+									<br/>
+									<div class="btn-layout">
+										<a class="btn btn-primary btn-lg text-white float-left back-btn">
+											<i class="fas fa-arrow-left"></i>
+											BACK
+										</a>
+										<a class="btn btn-primary btn-lg text-white float-right next-btn">
+											NEXT
+											<i class="fas fa-arrow-right"></i>
+										</a>
+									</div>
+								</div>
+								<!--/* Certification End */-->
+								
+								<!--/* Details Start */-->
+								<div class="tab-pane" id="step3">
+									<div th:replace="login/signup/signup_detail :: signup_detail"></div>
+									<br/>
+									<div class="btn-layout">
+										<a class="btn btn-primary btn-lg text-white float-left back-btn">
+											<i class="fas fa-arrow-left"></i>
+											BACK
+										</a>
+										<a class="btn btn-primary btn-lg text-white float-right next-btn">
+											NEXT
+											<i class="fas fa-arrow-right"></i>
+										</a>
+									</div>
+								</div>
+								<!--/* Details End */-->
+								
+								<!--/* Address Start */-->
+								<div class="tab-pane" id="step4">
+									<div th:replace="login/signup/signup_address :: signup_address"></div>
+									<br/>
+									<div class="btn-layout">
+										<a class="btn btn-primary btn-lg text-white float-left back-btn">
+											<i class="fas fa-arrow-left"></i>
+											BACK
+										</a>
+										<button type="submit" class="btn btn-success btn-wd btn-lg float-right finish-btn"><i class="fas fa-check"></i> Finish</button>
+									</div>
+								</div>
+							</div>
+						</form>
 					</div>
 				</div>
 			</div>
 	    </div>
-	    <!--/* Error Alert START */-->
-	    <div th:replace="common/alert :: alert"></div>
-	    <!--/* Error Alert END */-->
 	</div>
 <!--/*  User JS Start  */-->
 <th:block layout:fragment="user-js">
@@ -166,13 +137,13 @@
 		/*[- Img Thumbnail -]*/
 		$("#imageUpload").change(function() {
 			$("#btn-icon").css("opacity", "0");
-			$("#btn-icon").html('<i class="material-icons" style="font-size: 5rem;">highlight_off</i><h6>Default Thumbnail</h6>');
+			$("#btn-icon").html('<i class="far fa-times-circle" style="font-size: 5rem;"></i><span class="text-thumbnail">Default Thumbnail</span>');
 			readURL(this);
 		});
 		
 		$("#btn-icon").click(function() {
 			$("#btn-icon").css("opacity", "1");
-			$("#btn-icon").html('<i class="material-icons" style="font-size: 5rem;">account_circle</i><h6>Click Here</h6>');
+			$("#btn-icon").html('<i class="fas fa-user-circle" style="font-size: 5rem;"></i><span class="text-thumbnail">Click Here</span>');
 			$("#imageUpload").val("");
 			$("#imagePreview").css("background-image", "");
             $("#imagePreview").hide();
@@ -203,19 +174,19 @@
 		/*[- --------------------------------------------------------- -]*/
 		/*[- [back] / [next] button Event -]*/
 		/*[- BACK Button -]*/
-			$("#back-btn > a").click(function() {
-				$(".nav-item > .active").prev(".nav-link").trigger("click");
+			$(".back-btn").click(function() {
+				$(".nav-link.active").prev(".nav-link").trigger("click");
 			});
 			
 			/*[- NEXT Button -]*/
-			$("#next-btn > a").click(function() {
+			$(".next-btn").click(function() {
 				var step = $(".tab-content > .active").attr("id");
 				if(nextValidation(step) == true) {
-	  				$(".nav-item > .active").next(".nav-link").trigger("click");
+	  				$(".nav-link.active").next(".nav-link").trigger("click");
 				}
 			});
 			
-			$("#finish-btn > a").click(function() {
+			$(".finish-btn").click(function() {
 				var status = "[[${status == null ? '' : status}]]";
 				var content = "[[${errMsg == null ? '' : errMsg}]]";
 				alertCallEvent(status, content);

@@ -1,10 +1,7 @@
 @charset "UTF-8";
 
-.avatar {
-	margin-top: -125px;
-}
-
 #imagePreview {
+	display: inline-block;
 	width: 192px;
     height: 192px;
 	position: relative;
@@ -40,8 +37,15 @@
 #imageUpload {
 	opacity: 0;
 	position: absolute;
-	z-index: -1;	
+	z-index: -1;
+	width: 1px;	
 }
+
+.text-thumbnail {
+	display: block;
+	margin-top: .5rem;
+}
+
 
 /*
 icon css call

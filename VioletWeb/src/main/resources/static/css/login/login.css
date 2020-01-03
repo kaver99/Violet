@@ -7,11 +7,6 @@
 	padding-bottom: calc(70 / 1024 * 100%);
 }
 
- .bg-gradation {
-	background: linear-gradient(to right, #05A3E6, #9c27b0);
-/* 	opacity: 0.5; */
-}
-
 .login-layout .container .card {
 	width: 20rem;
 	height: 32rem;
