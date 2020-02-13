@@ -3,8 +3,8 @@
 
 .login-layout {
 	width: 100%;
-	padding-top: calc(70 / 1024 * 100%);
-	padding-bottom: calc(70 / 1024 * 100%);
+	padding-top: calc(60 / 1024 * 100%);
+	padding-bottom: calc(60 / 1024 * 100%);
 }
 
 .login-layout .container .card {
@@ -171,7 +171,7 @@
 .login-layout .container .card .card-body .row .card-link::after {
 	display: block;
 	content: '';
-	border: 2px solid #050609;
+	border: 2px solid #f4361e;
 	transform: scaleX(0);
 	transition: transform 250ms ease-in-out;
 }

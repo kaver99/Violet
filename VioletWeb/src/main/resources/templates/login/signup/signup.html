@@ -243,42 +243,6 @@
 		
 		/*[- --------------------------------------------------------- -]*/
 		/*[- email check and ajax user email using check -]*/
-		function checkId() {
-			var username = $('#username').val();
-			var regExp = /^[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*@[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*.[a-zA-Z]{2,3}$/i;
-
-			if(regExp.test(username)) {
-				setTimeout(function () {
-					$.ajax({
-						url: '/signup/userChk.violet'
-						,type: 'post'
-						,data: {username:username}
-						,success: function(data) {
-							if($.trim(data) == 0) {
-								$('#usernameInput').removeClass("has-danger");
-								$('#usernameInput').addClass("has-success");
-								$('#usernameInput > .form-control-feedback').html('<i class="material-icons">done</i>');
-								
-							} else {
-								$('#usernameInput').removeClass("has-success");
-								$('#usernameInput').addClass("has-danger");
-								$('#usernameInput > .form-control-feedback').html('<i class="material-icons">clear</i>');
-								
-							}
-						}
-						,error: function(msg) {
-		// 					$('.modal-domain').add('<div th:replace="menu/modal :: modal" th:remove="tag"></div>');
-						}
-					})
-				}, 500);
-				
-			} else {
-				$('#usernameInput').removeClass("has-success");
-				$('#usernameInput').addClass("has-danger");
-				$('.form-control-feedback').html('<i class="material-icons">clear</i>');
-				
-			}
-		}
 		
 		/*[- --------------------------------------------------------- -]*/
 	    /*[- DAUM ZipCode API -]*/

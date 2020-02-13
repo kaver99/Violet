@@ -92,7 +92,6 @@
 	min-height: 8rem;
 	bottom: 0;
     border-radius: .5rem;
-	background-image: linear-gradient(to bottom, transparent 0%, #000000 90%);
 }
 
 .brand-layout .container .row .card .row .card-body .card-description {
