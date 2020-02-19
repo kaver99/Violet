@@ -20,7 +20,6 @@ import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.builders.WebSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
-import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.oauth2.client.OAuth2ClientContext;
 import org.springframework.security.oauth2.client.OAuth2RestTemplate;
 import org.springframework.security.oauth2.client.filter.OAuth2ClientAuthenticationProcessingFilter;
@@ -121,14 +120,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
             .logoutSuccessUrl("/")
             .invalidateHttpSession(true)
             .clearAuthentication(true)
-            .deleteCookies("JSESSIONID","remember-me")
-//        .and()
-//        	.rememberMe().key("uniqueAndSecret")
-//        	.rememberMeParameter("remember-me")
-//        	.rememberMeCookieName("violet-login-remember-me")
-//        	.tokenValiditySeconds(10000000)
-//        	.userDetailsService(userDetailsService())
-        	
+            .deleteCookies("JSESSIONID")
         .and()
 	    	// csrf is used Setting
 	        // csrf 설정을 사용하면 모든 request에 csrf 값을 함께 전달해야한다.
@@ -138,7 +130,6 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
         .and()
             // Filter Setting
         	.authenticationProvider(authProvider)
-//        	.addFilterBefore(csrfHeaderFilter(), CsrfFilter.class)
         	.addFilterBefore(ssoFilter(), BasicAuthenticationFilter.class);
     }
 
@@ -166,7 +157,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 	}
 	
 	/**
-	 * Social Loogin Filter
+	 * Social Login Filter
 	 * URL : https://spring.io/guides/tutorials/spring-boot-oauth2/#_social_login_logout
 	 * @param client
 	 * @param path
@@ -184,6 +175,9 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 		
 		return filter;
 	}
+	
+	
+	/*** -- 아래 미사용 -- ***/
 	
 	/**
 	 * CSRF Token Repository

@@ -48,7 +48,7 @@ function agreement_validation() {
 }
 
 /*[- --------------------------------------------------------- -]*/
-/*[- STEP3 Validation Check -]*/
+/*[- STEP3 Validation Check -]*/	
 var invalid = [];
 
 function checkId() {
@@ -177,14 +177,24 @@ function checkPassword2() {
 	}
 }
 
-$("#phone").inputmask("999-999[9]-9999",{ placeholder:" ", clearMaskOnLostFocus: true,  keepStatic: true });
+//$("#phone").inputmask("999-999[9]-9999",{ placeholder:" ", clearMaskOnLostFocus: true,  keepStatic: true });
 function checkPhone() {
 	var content = "";
 	var _phoneNum = $("#phone").val();
 	var phoneRegExp = /(01[016789])-([0-9]{1}[0-9]{2,3})-([0-9]{4})$/;
 	
-	if(_phoneNum.length < 11 || _phoneNum.length > 14 || phoneRegExp.test(_phoneNum) == false) {
-		content = "휴대폰 번호를 13자리 이내로 작성하여 주세요.";
+	if(phoneRegExp.test(_phoneNum) == false) {
+		content = "* 000-0000-0000 양식에 맞추어 휴대폰 번호를 작성하여 주세요.";
+		input_focus('phone', 'error', content);
+//		$('label[for=phone]').nextAll('.input-help').html(content);
+//		$('label[for=phone] > .input-border').css('background', '#f4361e');
+//		$('label[for=phone] > .input-label').css('color', '#f4361e');
+//		$('label[for=phone] + .input-help').css('color', '#f4361e');
+//		$('#phone').focus();
+		return false;
+		
+	} else if(_phoneNum.length < 11 || _phoneNum.length > 14) {
+		content = "* 휴대폰 번호를 13자리 이내로 작성하여 주세요.";
 		input_focus('phone', 'error', content);
 //		$('label[for=phone]').nextAll('.input-help').html(content);
 //		$('label[for=phone] > .input-border').css('background', '#f4361e');

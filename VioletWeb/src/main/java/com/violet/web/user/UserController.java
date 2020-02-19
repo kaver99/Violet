@@ -42,11 +42,16 @@ public class UserController {
 	}
 	
 	
+	/**
+	 * Login Error
+	 * @param request
+	 * @return
+	 */
 	@RequestMapping("/login-error.violet")
 	public String loginError(HttpServletRequest request) {
 		return "login/login";
 	}
-	
+
 	
 	/**
 	 * Signup page Show

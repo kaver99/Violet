@@ -38,7 +38,6 @@ public class AuthProvider implements AuthenticationProvider {
         userData.put("socialType", "local");
         
         int userCnt = userService.findByUserNameCount(userData);
-        
         if(userCnt == 0) {
 //        	log.error("Authentication failed : [ " + username + " ] " + " Not Found Exception.");
         	throw new UsernameNotFoundException("Authentication failed : [ " + username + " ] " + " Not Found Exception.");
